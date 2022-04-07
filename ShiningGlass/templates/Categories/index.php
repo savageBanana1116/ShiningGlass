@@ -5,6 +5,8 @@
  */
 ?>
 <div class="categories index content">
+    <?= $this->Html->css('styles.css') ?>
+    <?= $this->element('nav')?>
     <?= $this->Html->link(__('New Category'), ['action' => 'add'], ['class' => 'button float-right']) ?>
     <h3><?= __('Categories') ?></h3>
     <div class="table-responsive">
