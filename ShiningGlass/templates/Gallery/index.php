@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Shining Glass</title>
+    <title>Gallery</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
@@ -19,7 +19,7 @@
 </head>
 <body id="page-top">
 <!-- Navigation-->
-    <?= $this->element('nav')?>
+<?= $this->element('nav')?>
 <!--<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">-->
 <!--    <div class="container">-->
 <!--        <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>-->
@@ -41,8 +41,8 @@
 <!-- Masthead-->
 <header class="masthead">
     <div class="container">
-        <div class="masthead-subheading">Landing/Home Page</div>
-        <div class="masthead-heading text-uppercase">This is the landing/home page</div>
+        <div class="masthead-subheading">Gallery</div>
+        <div class="masthead-heading text-uppercase">This is the gallery page</div>
         <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
     </div>
 </header>
@@ -610,3 +610,4 @@
 <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 </html>
+
