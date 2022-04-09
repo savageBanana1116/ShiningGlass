@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 02, 2022 at 12:48 PM
+-- Generation Time: Apr 09, 2022 at 02:20 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.8
 
@@ -28,9 +28,9 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `admins` (
-  `id` int(11) NOT NULL,
-  `username` varchar(64) NOT NULL,
-  `password` varchar(64) NOT NULL
+                          `id` int(11) NOT NULL,
+                          `username` varchar(64) NOT NULL,
+                          `password` varchar(64) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -40,22 +40,37 @@ CREATE TABLE `admins` (
 --
 
 CREATE TABLE `artworks` (
-  `id` int(11) NOT NULL,
-  `sku` int(12) NOT NULL,
-  `price` float NOT NULL,
-  `weight` float NOT NULL,
-  `size` varchar(32) NOT NULL,
-  `descriptions` varchar(255) NOT NULL,
-  `create_date` datetime NOT NULL,
-  `order_id` int(11) DEFAULT NULL
+                            `id` int(11) NOT NULL,
+                            `price` float NOT NULL,
+                            `weight` float NOT NULL,
+                            `size` varchar(32) NOT NULL,
+                            `descriptions` varchar(255) NOT NULL,
+                            `create_date` datetime NOT NULL,
+                            `order_id` int(11) DEFAULT NULL,
+                            `image` varchar(255) DEFAULT 'No image'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `artworks`
 --
 
-INSERT INTO `artworks` (`id`, `sku`, `price`, `weight`, `size`, `descriptions`, `create_date`, `order_id`) VALUES
-(1, 0, 0, 0, '', '', '2022-03-31 01:58:45', NULL);
+INSERT INTO `artworks` (`id`, `price`, `weight`, `size`, `descriptions`, `create_date`, `order_id`, `image`) VALUES
+(1, 1, 1, '1', '1', '2022-03-31 01:58:45', NULL, '0'),
+(2, 10, 10, '10', 'abc', '2022-04-09 18:33:20', NULL, '0'),
+(3, 10, 1, '1', '1', '2022-04-09 18:36:14', NULL, '0'),
+(6, 1, 1, '1', '1', '2022-04-09 19:44:19', NULL, 'WIN_20220312_16_33_21_Pro.jpg'),
+(7, 1, 1, '1', '11', '2022-04-09 20:08:10', NULL, 'cake-logo.png'),
+(8, 1, 1, '1', '1', '2022-04-09 20:17:46', NULL, 'cake.icon.png'),
+(9, 1, 1, '1', '1', '2022-04-09 20:48:44', NULL, 'cake.icon.png'),
+(10, 1, 1, '1', '1', '2022-04-09 20:48:44', NULL, 'cake.icon.png'),
+(11, 1, 1, '1', '1', '2022-04-09 21:39:12', NULL, 'cake.icon.png'),
+(12, 1, 1, '1', '1', '2022-04-09 21:39:12', NULL, 'cake.icon.png'),
+(13, 1, 1, '1', '1', '2022-04-09 21:43:42', NULL, 'cake.icon.png'),
+(14, 1, 1, '1', '1', '2022-04-09 21:43:42', NULL, 'cake.icon.png'),
+(15, 1, 1, '1', '1', '2022-04-09 21:43:42', NULL, 'cake.icon.png'),
+(16, 1, 1, '1', '1', '2022-04-09 21:43:42', NULL, 'cake.icon.png'),
+(17, 1, 1, '1', '1', '2022-04-09 21:43:42', NULL, 'cake.icon.png'),
+(18, 1, 1, '1', '1', '2022-04-09 21:43:42', NULL, 'C:\\xampp\\tmp\\php4743.tmp');
 
 -- --------------------------------------------------------
 
@@ -64,9 +79,9 @@ INSERT INTO `artworks` (`id`, `sku`, `price`, `weight`, `size`, `descriptions`, 
 --
 
 CREATE TABLE `artworks_categories` (
-  `id` int(11) NOT NULL,
-  `artwork_id` int(11) NOT NULL,
-  `category_id` int(11) NOT NULL
+                                       `id` int(11) NOT NULL,
+                                       `artwork_id` int(11) NOT NULL,
+                                       `category_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -76,9 +91,9 @@ CREATE TABLE `artworks_categories` (
 --
 
 CREATE TABLE `artwork_images` (
-  `file_name` varchar(255) NOT NULL,
-  `artwork_id` int(11) NOT NULL,
-  `id` int(11) NOT NULL
+                                  `file_name` varchar(255) NOT NULL,
+                                  `artwork_id` int(11) NOT NULL,
+                                  `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -88,10 +103,10 @@ CREATE TABLE `artwork_images` (
 --
 
 CREATE TABLE `categories` (
-  `name` int(32) NOT NULL,
-  `description` int(255) NOT NULL,
-  `create_date` datetime NOT NULL,
-  `id` int(11) NOT NULL
+                              `name` int(32) NOT NULL,
+                              `description` int(255) NOT NULL,
+                              `create_date` datetime NOT NULL,
+                              `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -101,9 +116,9 @@ CREATE TABLE `categories` (
 --
 
 CREATE TABLE `category_images` (
-  `file_name` varchar(255) NOT NULL,
-  `category_id` int(11) NOT NULL,
-  `id` int(11) NOT NULL
+                                   `file_name` varchar(255) NOT NULL,
+                                   `category_id` int(11) NOT NULL,
+                                   `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -113,12 +128,23 @@ CREATE TABLE `category_images` (
 --
 
 CREATE TABLE `customers` (
-  `first_name` varchar(255) NOT NULL,
-  `last_name` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `phone` int(20) NOT NULL,
-  `id` int(11) NOT NULL
+                             `first_name` varchar(255) NOT NULL,
+                             `last_name` varchar(255) NOT NULL,
+                             `email` varchar(255) NOT NULL,
+                             `password` varchar(255) NOT NULL,
+                             `phone` int(20) NOT NULL,
+                             `id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `homepages`
+--
+
+CREATE TABLE `homepages` (
+                             `Heading` varchar(255) NOT NULL,
+                             `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -128,14 +154,14 @@ CREATE TABLE `customers` (
 --
 
 CREATE TABLE `orders` (
-  `customer_id` int(11) NOT NULL,
-  `quantity` int(10) NOT NULL,
-  `address` varchar(255) NOT NULL,
-  `city` int(32) NOT NULL,
-  `zip_code` int(8) NOT NULL,
-  `country` int(32) NOT NULL,
-  `order_time` datetime NOT NULL,
-  `id` int(11) NOT NULL
+                          `customer_id` int(11) NOT NULL,
+                          `quantity` int(10) NOT NULL,
+                          `address` varchar(255) NOT NULL,
+                          `city` int(32) NOT NULL,
+                          `zip_code` int(8) NOT NULL,
+                          `country` int(32) NOT NULL,
+                          `order_time` datetime NOT NULL,
+                          `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -146,20 +172,20 @@ CREATE TABLE `orders` (
 -- Indexes for table `admins`
 --
 ALTER TABLE `admins`
-  ADD PRIMARY KEY (`id`);
+    ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `artworks`
 --
 ALTER TABLE `artworks`
-  ADD PRIMARY KEY (`id`),
+    ADD PRIMARY KEY (`id`),
   ADD KEY `order_id` (`order_id`);
 
 --
 -- Indexes for table `artworks_categories`
 --
 ALTER TABLE `artworks_categories`
-  ADD PRIMARY KEY (`id`),
+    ADD PRIMARY KEY (`id`),
   ADD KEY `artwork_id` (`artwork_id`),
   ADD KEY `category_id` (`category_id`);
 
@@ -167,33 +193,39 @@ ALTER TABLE `artworks_categories`
 -- Indexes for table `artwork_images`
 --
 ALTER TABLE `artwork_images`
-  ADD PRIMARY KEY (`id`),
+    ADD PRIMARY KEY (`id`),
   ADD KEY `artwork_id` (`artwork_id`);
 
 --
 -- Indexes for table `categories`
 --
 ALTER TABLE `categories`
-  ADD PRIMARY KEY (`id`);
+    ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `category_images`
 --
 ALTER TABLE `category_images`
-  ADD PRIMARY KEY (`id`),
+    ADD PRIMARY KEY (`id`),
   ADD KEY `category_id` (`category_id`);
 
 --
 -- Indexes for table `customers`
 --
 ALTER TABLE `customers`
-  ADD PRIMARY KEY (`id`);
+    ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `homepages`
+--
+ALTER TABLE `homepages`
+    ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `orders`
 --
 ALTER TABLE `orders`
-  ADD PRIMARY KEY (`id`),
+    ADD PRIMARY KEY (`id`),
   ADD KEY `customer_id` (`customer_id`);
 
 --
@@ -204,49 +236,55 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT for table `admins`
 --
 ALTER TABLE `admins`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `artworks`
 --
 ALTER TABLE `artworks`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `artworks_categories`
 --
 ALTER TABLE `artworks_categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `artwork_images`
 --
 ALTER TABLE `artwork_images`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `category_images`
 --
 ALTER TABLE `category_images`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `homepages`
+--
+ALTER TABLE `homepages`
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Constraints for dumped tables
@@ -256,32 +294,32 @@ ALTER TABLE `orders`
 -- Constraints for table `artworks`
 --
 ALTER TABLE `artworks`
-  ADD CONSTRAINT `artworks_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+    ADD CONSTRAINT `artworks_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `artworks_categories`
 --
 ALTER TABLE `artworks_categories`
-  ADD CONSTRAINT `artworks_categories_ibfk_1` FOREIGN KEY (`artwork_id`) REFERENCES `artworks` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+    ADD CONSTRAINT `artworks_categories_ibfk_1` FOREIGN KEY (`artwork_id`) REFERENCES `artworks` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `artworks_categories_ibfk_2` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `artwork_images`
 --
 ALTER TABLE `artwork_images`
-  ADD CONSTRAINT `artwork_images_ibfk_1` FOREIGN KEY (`artwork_id`) REFERENCES `artworks` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+    ADD CONSTRAINT `artwork_images_ibfk_1` FOREIGN KEY (`artwork_id`) REFERENCES `artworks` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `category_images`
 --
 ALTER TABLE `category_images`
-  ADD CONSTRAINT `category_images_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+    ADD CONSTRAINT `category_images_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `orders`
 --
 ALTER TABLE `orders`
-  ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+    ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

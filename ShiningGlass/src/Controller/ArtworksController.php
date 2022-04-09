@@ -52,6 +52,38 @@ class ArtworksController extends AppController
         $artwork = $this->Artworks->newEmptyEntity();
         if ($this->request->is('post')) {
             $artwork = $this->Artworks->patchEntity($artwork, $this->request->getData());
+//            $imageFile = $this->request->getData('image');
+//
+//            debug($_FILES);
+//            //$fileName = $imageFile->getClientFilename();
+//            $tmp_name = $_FILES['image']['tmp_name'];
+//            //debug($fileName);
+//            //exit();
+//            $fileDestination = "C:" . DIRECTORY_SEPARATOR . "xampp" . DIRECTORY_SEPARATOR . "htdocs" .
+//                DIRECTORY_SEPARATOR . "team18-app_fit3047" . DIRECTORY_SEPARATOR .
+//                "ShiningGlass" . DIRECTORY_SEPARATOR . "Uploads".DIRECTORY_SEPARATOR.$tmp_name;
+//            //$fileDestination = 'Uploads'.DIRECTORY_SEPARATOR."123";
+//
+//            //$imageFile->moveTo($fileDestination);
+//            move_uploaded_file($tmp_name,$fileDestination);
+//
+//            $artwork->image=$tmp_name;
+            if(!$artwork->getErrors) {
+                $image = $this->request->getData('image_file');
+
+                $name = $image->getClientFilename();
+
+                if (!is_dir(WWW_ROOT . 'img' . DS . 'artwork-img'))
+                    mkdir(WWW_ROOT . 'img' . DS . 'artwork-img', 0775);
+
+                $targetPath = WWW_ROOT . 'img' . DS . 'artwork-img' . DS . $name;
+
+                if ($name)
+                    $image->moveTo($targetPath);
+
+                $artwork->image = 'artwork-img/' . $name;
+            }
+
             if ($this->Artworks->save($artwork)) {
                 $this->Flash->success(__('The artwork has been saved.'));
 

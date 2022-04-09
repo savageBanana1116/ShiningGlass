@@ -15,11 +15,10 @@
     </aside>
     <div class="column-responsive column-80">
         <div class="artworks form content">
-            <?= $this->Form->create($artwork) ?>
+            <?= $this->Form->create($artwork,['type'=>'file']) ?>
             <fieldset>
                 <legend><?= __('Add Artwork') ?></legend>
                 <?php
-                    echo $this->Form->control('sku');
                     echo $this->Form->control('price');
                     echo $this->Form->control('weight');
                     echo $this->Form->control('size');
@@ -27,6 +26,7 @@
                     echo $this->Form->control('create_date');
                     echo $this->Form->control('order_id', ['options' => $orders, 'empty' => true]);
                     echo $this->Form->control('categories._ids', ['options' => $categories]);
+                    echo $this->Form->control('image_file',['type'=>'file']);
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>

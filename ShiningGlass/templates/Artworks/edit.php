@@ -24,13 +24,13 @@
             <fieldset>
                 <legend><?= __('Edit Artwork') ?></legend>
                 <?php
-                    echo $this->Form->control('sku');
                     echo $this->Form->control('price');
                     echo $this->Form->control('weight');
                     echo $this->Form->control('size');
                     echo $this->Form->control('descriptions');
                     echo $this->Form->control('create_date');
                     echo $this->Form->control('order_id', ['options' => $orders, 'empty' => true]);
+                    echo $this->Form->control('image');
                     echo $this->Form->control('categories._ids', ['options' => $categories]);
                 ?>
             </fieldset>

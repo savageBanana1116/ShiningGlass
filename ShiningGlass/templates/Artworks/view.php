@@ -31,12 +31,12 @@
                     <td><?= $artwork->has('order') ? $this->Html->link($artwork->order->id, ['controller' => 'Orders', 'action' => 'view', $artwork->order->id]) : '' ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Id') ?></th>
-                    <td><?= $this->Number->format($artwork->id) ?></td>
+                    <th><?= __('Image') ?></th>
+                    <td><?= h($artwork->image) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Sku') ?></th>
-                    <td><?= $this->Number->format($artwork->sku) ?></td>
+                    <th><?= __('Id') ?></th>
+                    <td><?= $this->Number->format($artwork->id) ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Price') ?></th>
