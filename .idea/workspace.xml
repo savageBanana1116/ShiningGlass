@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b996caa-245c-4430-b1ca-426b468ea5d4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database_Schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Database_Schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/ArtworksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/src/Controller/ArtworksController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Model/Table/ArtworksTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/src/Model/Table/ArtworksTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,6 +134,7 @@
       <updated>1649339790259</updated>
       <workItem from="1649339792151" duration="247000" />
       <workItem from="1649340056508" duration="249000" />
+      <workItem from="1649507084591" duration="611000" />
     </task>
     <servers />
   </component>

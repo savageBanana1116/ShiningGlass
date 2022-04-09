@@ -71,11 +71,6 @@ class ArtworksTable extends Table
             ->allowEmptyString('id', null, 'create');
 
         $validator
-            ->integer('sku')
-            ->requirePresence('sku', 'create')
-            ->notEmptyString('sku');
-
-        $validator
             ->numeric('price')
             ->requirePresence('price', 'create')
             ->notEmptyString('price');
@@ -101,6 +96,11 @@ class ArtworksTable extends Table
             ->dateTime('create_date')
             ->requirePresence('create_date', 'create')
             ->notEmptyDateTime('create_date');
+
+        $validator
+            ->scalar('image')
+            ->maxLength('image', 255)
+            ->allowEmptyFile('image');
 
         return $validator;
     }

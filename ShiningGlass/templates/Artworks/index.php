@@ -12,13 +12,13 @@
             <thead>
                 <tr>
                     <th><?= $this->Paginator->sort('id') ?></th>
-                    <th><?= $this->Paginator->sort('sku') ?></th>
                     <th><?= $this->Paginator->sort('price') ?></th>
                     <th><?= $this->Paginator->sort('weight') ?></th>
                     <th><?= $this->Paginator->sort('size') ?></th>
                     <th><?= $this->Paginator->sort('descriptions') ?></th>
                     <th><?= $this->Paginator->sort('create_date') ?></th>
                     <th><?= $this->Paginator->sort('order_id') ?></th>
+                    <th><?= $this->Paginator->sort('image') ?></th>
                     <th class="actions"><?= __('Actions') ?></th>
                 </tr>
             </thead>
@@ -26,13 +26,13 @@
                 <?php foreach ($artworks as $artwork): ?>
                 <tr>
                     <td><?= $this->Number->format($artwork->id) ?></td>
-                    <td><?= $this->Number->format($artwork->sku) ?></td>
                     <td><?= $this->Number->format($artwork->price) ?></td>
                     <td><?= $this->Number->format($artwork->weight) ?></td>
                     <td><?= h($artwork->size) ?></td>
                     <td><?= h($artwork->descriptions) ?></td>
                     <td><?= h($artwork->create_date) ?></td>
                     <td><?= $artwork->has('order') ? $this->Html->link($artwork->order->id, ['controller' => 'Orders', 'action' => 'view', $artwork->order->id]) : '' ?></td>
+                    <td><?= h($artwork->image) ?></td>
                     <td class="actions">
                         <?= $this->Html->link(__('View'), ['action' => 'view', $artwork->id]) ?>
                         <?= $this->Html->link(__('Edit'), ['action' => 'edit', $artwork->id]) ?>
