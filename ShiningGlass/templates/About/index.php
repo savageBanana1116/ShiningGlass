@@ -31,14 +31,17 @@
 
 <!--Image -->
     <div class="container">
-        <div class ="row">
+        <div class="col-12 col-md-6 col-lg-4" >
+         <div class ="row">
              <div class="card" >
                  <div class="card-body">
                      <img src="assets/img/SamSmith.png" class="card-img-top" alt="SamSmith">
                     <h5 class="card-title">Artist: Sam Smith</h5>
                 </div>
-            </div>
+             </div>
+         </div>
         </div>
+        <div class="col-12 col-md-6 col-lg-4"
         <div class = "row2">
             <div class="card" >
                 <h5 class="card-header">Who is Sam Smith?</h5>
@@ -59,6 +62,7 @@
                 </div>
             </div>
         </div>
+       </div>
     </div>
 
 
