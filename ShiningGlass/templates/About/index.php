@@ -31,34 +31,36 @@
 
 <!--Image -->
     <div class="container">
-        <div class ="row"
-                 <div class="card" >
-                     <div class="card-body">
-                         <img src="assets/img/SamSmith.png" class="card-img-top" alt="SamSmith">
-                        <h5 class="card-title">Artist: Sam Smith</h5>
-                    </div>
+        <div class ="row">
+             <div class="card" >
+                 <div class="card-body">
+                     <img src="assets/img/SamSmith.png" class="card-img-top" alt="SamSmith">
+                    <h5 class="card-title">Artist: Sam Smith</h5>
                 </div>
-             </div>
-            <div class="card" >
-            <h5 class="card-header">Who is Sam Smith?</h5>
-                <div class="card-body">
-                <p class="card-text">Coming soon</p>
-                </div>
-            </div>
-        <div class="card" >
-            <h5 class="card-header">What is Shining Glass?</h5>
-            <div class="card-body">
-                <p class="card-text">Coming soon</p>
             </div>
         </div>
-        <div class="card" >
-            <h5 class="card-header">Achievements/Recommendations</h5>
-            <div class="card-body">
-                <p class="card-text">Coming soon</p>
+        <div class = "row2">
+            <div class="card" >
+                <h5 class="card-header">Who is Sam Smith?</h5>
+                    <div class="card-body">
+                    <p class="card-text">Coming soon</p>
+                    </div>
+            </div>
+            <div class="card" >
+                <h5 class="card-header">What is Shining Glass?</h5>
+                <div class="card-body">
+                    <p class="card-text">Coming soon</p>
+                </div>
+            </div>
+            <div class="card" >
+                <h5 class="card-header">Achievements/Recommendations</h5>
+                <div class="card-body">
+                    <p class="card-text">Coming soon</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
+
 
              <!--        <div class="card" style="width: 18rem; "
                          <div class="card-body">
