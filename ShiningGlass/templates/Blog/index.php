@@ -22,7 +22,7 @@
 <?= $this->element('nav')?>
 <div style="padding-top: 80px; background-color: #272a2e" ></div>
 <div style="padding-top: 30px; background-color: #d5d8db ;font-size: 20px ;text-align: center ; padding-bottom: 30px ; font-family: 'Segoe Print'; font-weight: bold"> Blog</div>
-<div class="container" >
+ <div class="container" >
     <div class="row" style="margin-top: 120px">
         <div class="col-12 col-md-6 col-lg-4" >
             <div class="card">

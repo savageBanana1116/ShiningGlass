@@ -30,9 +30,10 @@
 
 
 <!--Image -->
-    <div class="container">
-        <div class="col-12 col-md-6 col-lg-4" >
-         <div class ="row">
+    <div class="container" >
+        <div class ="row">
+        <div class="col-12 col-md-6 col-lg-4" style="margin-top: 50px" >
+
              <div class="card" >
                  <div class="card-body">
                      <img src="assets/img/SamSmith.png" class="card-img-top" alt="SamSmith">
@@ -40,25 +41,24 @@
                 </div>
              </div>
          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4"
-        <div class = "row2">
+
+        <div class="col-12 col-md-6 col-lg-6" style="margin-top: 50px">
             <div class="card" >
                 <h5 class="card-header">Who is Sam Smith?</h5>
                     <div class="card-body">
-                    <p class="card-text">Coming soon</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
             </div>
-            <div class="card" >
+            <div class="card" style="margin-top: 20px" >
                 <h5 class="card-header">What is Shining Glass?</h5>
                 <div class="card-body">
-                    <p class="card-text">Coming soon</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum rhoncus est pellentesque elit ullamcorper. Risus pretium quam vulputate dignissim. Ultrices eros in cursus turpis massa tincidunt. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor. </p>
                 </div>
             </div>
-            <div class="card" >
+            <div class="card" style="margin-top: 20px" >
                 <h5 class="card-header">Achievements/Recommendations</h5>
                 <div class="card-body">
-                    <p class="card-text">Coming soon</p>
+                    <p class="card-text">Egestas tellus rutrum tellus pellentesque eu tincidunt. Sit amet aliquam id diam maecenas ultricies mi.</p>
                 </div>
             </div>
         </div>
@@ -66,49 +66,15 @@
     </div>
 
 
-             <!--        <div class="card" style="width: 18rem; "
-                         <div class="card-body">
-                             <h5 class="card-title">Special title treatment</h5>
-                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                         </div>
-                     </div>
-                     <div class="card" style="width: 18rem;">
-                         <div class="card-body">
-                             <h5 class="card-title">Special title treatment</h5>
-                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                         </div>
-                     </div>
 
-                     <div class="card text-end" style="width: 18rem;">
-                         <div class="card-body">
-                             <h5 class="card-title">Special title treatment</h5>
-                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                         </div>
-                     </div>
-    </div>
+
+
+<div class="container">
+    <br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </div>
 
-
-<!-- Footer -->
-<footer class="footer py-4">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-4 text-lg-start">Copyright &copy; Shining Glass</div>
-            <div class="col-lg-4 text-lg-middle">
-                <a class="link-dark text-decoration-none me-3" href="#!">Contact Details</a>
-                <br>
-                <a class="link-dark text-decoration-none me-3" href="#!">Email: Lisa@shiningglass.com.au</a>
-                <br>
-                <a class="link-dark text-decoration-none" href="#!">Mobile: 04451267432</a>
-            </div>
-        </div>
-    </div>
-</footer>
-
-
-
-
-
+<?= $this->element('footer')?>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
