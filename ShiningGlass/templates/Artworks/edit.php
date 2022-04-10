@@ -23,7 +23,7 @@
             <?= $this->Form->create($artwork) ?>
             <fieldset>
                 <legend><?= __('Edit Artwork') ?></legend>
-                <?php
+                <?php//
                     echo $this->Form->control('name');
                     echo $this->Form->control('price');
                     echo $this->Form->control('weight');

@@ -35,7 +35,7 @@
                    <?= __('Price: $') ?>
                     <?= $this->Number->format($artwork->price) ?>
                 <br>
-                    <?= __('Weight: ') ?>
+                    <?= __('Weight: ') //?>
                     <?= $this->Number->format($artwork->weight) ?>
                 <br>
 
