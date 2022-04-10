@@ -31,6 +31,7 @@
         <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
         <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
     </ol>
+
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img class="d-block w-100" src="assets/img/img1.jpg" alt="First slide">

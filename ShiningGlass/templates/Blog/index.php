@@ -23,7 +23,7 @@
 <?= $this->element('nav') ?>
 <div style="padding-top: 80px; background-color: #272a2e"></div>
 <div
-    style="padding-top: 30px; background-color: #d5d8db ;font-size: 20px ;text-align: center ; padding-bottom: 30px ; font-family: 'Segoe Print'; font-weight: bold">
+    style="padding-top: 30px; background-color: #d5d8db ;font-size: 20px ;text-align: center ; padding-bottom: 30px ; font-weight: bold">
     Stay up to date on Sam Smith and Shining Glass News
 </div>
 

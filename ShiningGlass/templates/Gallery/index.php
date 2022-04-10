@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
-    <title>Gallery</title>
+    <title>Blog</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
     <!-- Font Awesome icons (free version)-->
@@ -20,7 +20,7 @@
 <body id="page-top">
 <!-- Navigation-->
 <div
-    style="padding-top: 30px; background-color: #d5d8db ;font-size: 20px ;text-align: center ; padding-bottom: 30px ; font-family: 'Segoe Print'; font-weight: bold">
+    style="padding-top: 30px; background-color: #d5d8db ;font-size: 20px ;text-align: center ; padding-bottom: 30px ; font-weight: bold">
     The Artworks of Sam Smith
 </div>
 <!--<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">-->
@@ -81,16 +81,16 @@
                                             <h1 class="font-weight-light"><?= h($artwork->name) ?></h1>
                                             <h4><?= h($artwork->descriptions) ?></h4>
                                             <hr>
-                                            <br>
-                                            <p style="text-align: left">Size: <?= h($artwork->size) ?><br>
-                                            Price: <?= h($artwork->price) ?><br>
-                                            Item Weight: <?= h($artwork->weight) ?></p>
-                                            <hr>
-                                            <br>
-                                            <p>This is a template that is great for small businesses. It doesn't have
+<!--                                            <br>-->
+                                            <p style="text-align: left">This is a template that is great for small businesses. It doesn't have
                                                 too much fancy flare to it, but it makes a great use of the standard
                                                 Bootstrap core components. Feel free to use this template for any
                                                 project you want!</p>
+                                            <hr>
+<!--                                            <br>-->
+                                            <p style="text-align: left">Size: <?= h($artwork->size) ?><br>
+                                                Price: <?= h($artwork->price) ?><br>
+                                                Item Weight: <?= h($artwork->weight) ?></p>
                                             <hr>
                                             <br>
 
@@ -107,6 +107,8 @@
         <?php $i++; ?>
         <?php endforeach; ?>
     </div>
+</div>
+</div>
 <br>
 <hr>
 
