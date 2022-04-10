@@ -19,8 +19,6 @@
 </head>
 <body id="page-top">
 <!-- Navigation-->
-<?= $this->element('nav') ?>
-<div style="padding-top: 80px; background-color: #272a2e"></div>
 <div
     style="padding-top: 30px; background-color: #d5d8db ;font-size: 20px ;text-align: center ; padding-bottom: 30px ; font-family: 'Segoe Print'; font-weight: bold">
     The Artworks of Sam Smith
@@ -46,56 +44,47 @@
 <!-- Footer-->
 <div class="container">
     <div class="row" style="margin-top: 60px">
+        <?php $i = 1; ?>
+        <?php foreach ($results as $artwork): ?>
         <div class="col">
             <div class="card card shadow mb-4">
-                <img src="assets/img/img1.jpg" class="card-img-top" alt="first image">
+                <?= $this->Html->image($artwork->image, ['class' => 'card-img-top']) ?>
                 <div class="card-body">
-                    <h5 class="card-title text-center">Artwork Test 1</h5>
-                    <p class="card-text">Some quick example text to build on the Event Name and make up the bulk of the
-                        card's content.</p>
+                    <h5 class="card-title"><?= h($artwork->descriptions) ?></h5>
+                    <p class="card-text"><?= h($artwork->descriptions) ?></p>
                     <!--                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Read-->
                     <!--                        More</a>-->
-                    <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#myModal">
-                        Contact Us
+                    <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#myModal-<?php echo $i; // Displaying the increment ?>">
+                        View More
                     </button>
                     <!-- Modal -->
-                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+                    <div class="modal fade" id="myModal-<?php echo $i; // Displaying the increment ?>" tabindex="-1" role="dialog"
                          aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-xl modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h4 class="modal-title" id="exampleModalLongTitle">Artwork Test 1</h4>
+                                    <h4 class="modal-title" id="exampleModalLongTitle">View Individual Artwork</h4>
                                 </div>
                                 <div class="modal-body">
                                     <div class="row gx-4 gx-lg-5 align-items-center my-5">
-                                        <div class="col-lg-7"><img class="img-fluid rounded"
-                                                                   src="https://dummyimage.com/900x400/dee2e6/6c757d.jpg"
-                                                                   alt="..."/>
-                                            <div style="max-width: 900px; margin-top: 15px">
-                                                <img class="img-fluid rounded"
-                                                     src="https://dummyimage.com/150x150/dee2e6/6c757d.jpg"
-                                                     alt="..."/>
-                                                <img class="img-fluid rounded"
-                                                     src="https://dummyimage.com/150x150/dee2e6/6c757d.jpg"
-                                                     alt="..."/>
-                                                <img class="img-fluid rounded"
-                                                     src="https://dummyimage.com/150x150/dee2e6/6c757d.jpg"
-                                                     alt="..."/>
-                                                <img class="img-fluid rounded"
-                                                     src="https://dummyimage.com/150x150/dee2e6/6c757d.jpg"
-                                                     alt="..."/></div>
+                                        <div class="col-lg-7"><?= $this->Html->image($artwork->image, ['style' => 'max-height: 900px; max-width: 400px']) ?>
+                                            <div style="max-width: 900px; margin-top: 15px";>
+                                                <?= $this->Html->image($artwork->image, ['style' => 'max-height: 150px; max-width: 150px']) ?>
+                                                <?= $this->Html->image($artwork->image, ['style' => 'max-height: 150px; max-width: 150px']) ?>
+                                                <?= $this->Html->image($artwork->image, ['style' => 'max-height: 150px; max-width: 150px']) ?>
+                                                <?= $this->Html->image($artwork->image, ['style' => 'max-height: 150px; max-width: 150px']) ?>
+                                        </div>
                                         </div>
 
 
                                         <div class="col-lg-5">
-                                            <h1 class="font-weight-light">Artwork Name</h1>
-                                            <h4>Artwork Subtitle</h4>
+                                            <h1 class="font-weight-light"><?= h($artwork->name) ?></h1>
+                                            <h4><?= h($artwork->descriptions) ?></h4>
                                             <hr>
                                             <br>
-                                            <p>This is a template that is great for small businesses. It doesn't have
-                                                too much fancy flare to it, but it makes a great use of the standard
-                                                Bootstrap core components. Feel free to use this template for any
-                                                project you want!</p>
+                                            <p style="text-align: left">Size: <?= h($artwork->size) ?><br>
+                                            Price: <?= h($artwork->price) ?><br>
+                                            Item Weight: <?= h($artwork->weight) ?></p>
                                             <hr>
                                             <br>
                                             <p>This is a template that is great for small businesses. It doesn't have
@@ -105,7 +94,7 @@
                                             <hr>
                                             <br>
 
-                                            <a class="btn btn-primary text-center" href="#!">Call to Action!</a>
+                                            <a class="btn btn-primary text-center" href="#!">Coming Soon</a>
                                         </div>
                                     </div>
                                 </div>
@@ -115,99 +104,11 @@
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card card shadow mb-4">
-                <img src="assets/img/img2.jpg" class="card-img-top" alt="first image">
-                <div class="card-body">
-                    <h5 class="card-title">Event Name</h5>
-                    <p class="card-text">Some quick example text to build on the Event Name and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card card shadow mb-4">
-                <img src="assets/img/img3.jpg" class="card-img-top" alt="first image">
-                <div class="card-body">
-                    <h5 class="card-title">Event Name</h5>
-                    <p class="card-text">Some quick example text to build on the Event Name and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="col card shadow mb-4">
-                <div class="card">
-                    <img src="assets/img/img3.jpg" class="card-img-top" alt="first image">
-                    <div class="card-body">
-                        <h5 class="card-title">Event Name</h5>
-                        <p class="card-text">Some quick example text to build on the Event Name and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php $i++; ?>
+        <?php endforeach; ?>
     </div>
-
-    <div class="row" style="margin-top: 60px">
-        <div class="col">
-            <div class="card card shadow mb-4">
-                <img src="assets/img/img1.jpg" class="card-img-top" alt="first image">
-                <div class="card-body">
-                    <h5 class="card-title">Event Name</h5>
-                    <p class="card-text">Some quick example text to build on the Event Name and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Read
-                        More</a>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card card shadow mb-4">
-                <img src="assets/img/img2.jpg" class="card-img-top" alt="first image">
-                <div class="card-body">
-                    <h5 class="card-title">Event Name</h5>
-                    <p class="card-text">Some quick example text to build on the Event Name and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card card shadow mb-4">
-                <img src="assets/img/img3.jpg" class="card-img-top" alt="first image">
-                <div class="card-body">
-                    <h5 class="card-title">Event Name</h5>
-                    <p class="card-text">Some quick example text to build on the Event Name and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="col card shadow mb-4">
-                <div class="card">
-                    <img src="assets/img/img3.jpg" class="card-img-top" alt="first image">
-                    <div class="card-body">
-                        <h5 class="card-title">Event Name</h5>
-                        <p class="card-text">Some quick example text to build on the Event Name and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 <br>
 <hr>
-<?= $this->element('footer') ?>
 
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
