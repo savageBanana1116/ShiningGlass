@@ -50,27 +50,64 @@
             <div class="card card shadow mb-4">
                 <img src="assets/img/img1.jpg" class="card-img-top" alt="first image">
                 <div class="card-body">
-                    <h5 class="card-title">Event Name</h5>
+                    <h5 class="card-title text-center">Artwork Test 1</h5>
                     <p class="card-text">Some quick example text to build on the Event Name and make up the bulk of the
                         card's content.</p>
-<!--                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Read-->
-<!--                        More</a>-->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Contact Us</button>
+                    <!--                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Read-->
+                    <!--                        More</a>-->
+                    <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#myModal">
+                        Contact Us
+                    </button>
                     <!-- Modal -->
-                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+                         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-xl modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLongTitle">Event Name (1)</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
+                                    <h4 class="modal-title" id="exampleModalLongTitle">Artwork Test 1</h4>
                                 </div>
                                 <div class="modal-body">
-                                    ...
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <div class="row gx-4 gx-lg-5 align-items-center my-5">
+                                        <div class="col-lg-7"><img class="img-fluid rounded"
+                                                                   src="https://dummyimage.com/900x400/dee2e6/6c757d.jpg"
+                                                                   alt="..."/>
+                                            <div style="max-width: 900px; margin-top: 15px">
+                                                <img class="img-fluid rounded"
+                                                     src="https://dummyimage.com/150x150/dee2e6/6c757d.jpg"
+                                                     alt="..."/>
+                                                <img class="img-fluid rounded"
+                                                     src="https://dummyimage.com/150x150/dee2e6/6c757d.jpg"
+                                                     alt="..."/>
+                                                <img class="img-fluid rounded"
+                                                     src="https://dummyimage.com/150x150/dee2e6/6c757d.jpg"
+                                                     alt="..."/>
+                                                <img class="img-fluid rounded"
+                                                     src="https://dummyimage.com/150x150/dee2e6/6c757d.jpg"
+                                                     alt="..."/></div>
+                                        </div>
+
+
+                                        <div class="col-lg-5">
+                                            <h1 class="font-weight-light">Artwork Name</h1>
+                                            <h4>Artwork Subtitle</h4>
+                                            <hr>
+                                            <br>
+                                            <p>This is a template that is great for small businesses. It doesn't have
+                                                too much fancy flare to it, but it makes a great use of the standard
+                                                Bootstrap core components. Feel free to use this template for any
+                                                project you want!</p>
+                                            <hr>
+                                            <br>
+                                            <p>This is a template that is great for small businesses. It doesn't have
+                                                too much fancy flare to it, but it makes a great use of the standard
+                                                Bootstrap core components. Feel free to use this template for any
+                                                project you want!</p>
+                                            <hr>
+                                            <br>
+
+                                            <a class="btn btn-primary text-center" href="#!">Call to Action!</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -168,19 +205,19 @@
     </div>
 </div>
 
-    <br>
-        <hr>
-        <?= $this->element('footer') ?>
+<br>
+<hr>
+<?= $this->element('footer') ?>
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<!-- * *                               SB Forms JS                               * *-->
+<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 </html>
 
