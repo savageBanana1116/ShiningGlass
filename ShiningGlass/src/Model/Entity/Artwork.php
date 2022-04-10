@@ -33,7 +33,7 @@ class Artwork extends Entity
      * @var array
      */
     protected $_accessible = [
-        'sku' => true,
+        'name' => true,
         'price' => true,
         'weight' => true,
         'size' => true,
