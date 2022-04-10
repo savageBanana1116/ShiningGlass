@@ -18,9 +18,6 @@ class ArtworksController extends AppController
      */
     public function index()
     {
-        $this->paginate = [
-            'contain' => ['Orders'],
-        ];
         $artworks = $this->paginate($this->Artworks);
 
         $this->set(compact('artworks'));

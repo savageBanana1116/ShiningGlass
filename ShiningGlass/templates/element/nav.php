@@ -8,10 +8,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                <li class="nav-item"><a class="nav-link" href="about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="Gallery">Gallery</a></li>
-                <li class="nav-item"><a class="nav-link" href="blog">Blog</a></li>
-                <li class="nav-item"><a class="nav-link" href="adminportal#">Admin Portal</a></li>
+                <li class="nav-item"><a class="nav-link" href="/team18-app_fit3047/ShiningGlass/about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="/team18-app_fit3047/ShiningGlass/Gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="/team18-app_fit3047/ShiningGlass/Blog">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="/team18-app_fit3047/ShiningGlass/adminportal#">Admin Portal</a></li>
             </ul>
         </div>
     </div>
