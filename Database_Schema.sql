@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 09, 2022 at 02:20 PM
+-- Generation Time: Apr 10, 2022 at 07:58 AM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.8
 
@@ -47,30 +47,24 @@ CREATE TABLE `artworks` (
                             `descriptions` varchar(255) NOT NULL,
                             `create_date` datetime NOT NULL,
                             `order_id` int(11) DEFAULT NULL,
-                            `image` varchar(255) DEFAULT 'No image'
+                            `image` varchar(255) DEFAULT 'No image',
+                            `name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `artworks`
 --
 
-INSERT INTO `artworks` (`id`, `price`, `weight`, `size`, `descriptions`, `create_date`, `order_id`, `image`) VALUES
-(1, 1, 1, '1', '1', '2022-03-31 01:58:45', NULL, '0'),
-(2, 10, 10, '10', 'abc', '2022-04-09 18:33:20', NULL, '0'),
-(3, 10, 1, '1', '1', '2022-04-09 18:36:14', NULL, '0'),
-(6, 1, 1, '1', '1', '2022-04-09 19:44:19', NULL, 'WIN_20220312_16_33_21_Pro.jpg'),
-(7, 1, 1, '1', '11', '2022-04-09 20:08:10', NULL, 'cake-logo.png'),
-(8, 1, 1, '1', '1', '2022-04-09 20:17:46', NULL, 'cake.icon.png'),
-(9, 1, 1, '1', '1', '2022-04-09 20:48:44', NULL, 'cake.icon.png'),
-(10, 1, 1, '1', '1', '2022-04-09 20:48:44', NULL, 'cake.icon.png'),
-(11, 1, 1, '1', '1', '2022-04-09 21:39:12', NULL, 'cake.icon.png'),
-(12, 1, 1, '1', '1', '2022-04-09 21:39:12', NULL, 'cake.icon.png'),
-(13, 1, 1, '1', '1', '2022-04-09 21:43:42', NULL, 'cake.icon.png'),
-(14, 1, 1, '1', '1', '2022-04-09 21:43:42', NULL, 'cake.icon.png'),
-(15, 1, 1, '1', '1', '2022-04-09 21:43:42', NULL, 'cake.icon.png'),
-(16, 1, 1, '1', '1', '2022-04-09 21:43:42', NULL, 'cake.icon.png'),
-(17, 1, 1, '1', '1', '2022-04-09 21:43:42', NULL, 'cake.icon.png'),
-(18, 1, 1, '1', '1', '2022-04-09 21:43:42', NULL, 'C:\\xampp\\tmp\\php4743.tmp');
+INSERT INTO `artworks` (`id`, `price`, `weight`, `size`, `descriptions`, `create_date`, `order_id`, `image`, `name`) VALUES
+(9, 1, 1, '1', '1', '2022-04-09 20:48:44', NULL, 'cake.icon.png', 'hive'),
+(10, 1, 1, '1', '1', '2022-04-09 20:48:44', NULL, 'cake.icon.png', 'blue'),
+(11, 1, 1, '1', '1', '2022-04-09 21:39:12', NULL, 'cake.icon.png', 'paint'),
+(12, 1, 1, '1', '1', '2022-04-09 21:39:12', NULL, 'cake.icon.png', 'pineapple'),
+(13, 1, 1, '1', '1', '2022-04-09 21:43:42', NULL, 'cake.icon.png', 'yello'),
+(14, 1, 1, '1', '1', '2022-04-09 21:43:42', NULL, 'cake.icon.png', 'leaf'),
+(20, 1, 1, '1', '11', '2022-04-10 12:46:26', NULL, 'No image', '1'),
+(21, 1, 1, '1', '1', '2022-04-10 12:47:51', NULL, 'No image1', 'my artworks'),
+(22, 1, 1, '1', '1', '2022-04-09 20:48:44', NULL, 'cake.icon.png', 'edge');
 
 -- --------------------------------------------------------
 
@@ -103,11 +97,18 @@ CREATE TABLE `artwork_images` (
 --
 
 CREATE TABLE `categories` (
-                              `name` int(32) NOT NULL,
-                              `description` int(255) NOT NULL,
+                              `name` varchar(32) NOT NULL,
+                              `description` varchar(255) NOT NULL,
                               `create_date` datetime NOT NULL,
                               `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `categories`
+--
+
+INSERT INTO `categories` (`name`, `description`, `create_date`, `id`) VALUES
+('collection 1', 'this is our first collection', '2022-04-10 05:22:21', 1);
 
 -- --------------------------------------------------------
 
@@ -242,7 +243,7 @@ ALTER TABLE `admins`
 -- AUTO_INCREMENT for table `artworks`
 --
 ALTER TABLE `artworks`
-    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `artworks_categories`
@@ -260,7 +261,7 @@ ALTER TABLE `artwork_images`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `category_images`
