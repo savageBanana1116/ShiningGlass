@@ -16,7 +16,6 @@
     }
 </style>
 <?= $this->Html->link(__('New Artwork'), ['action' => 'add'], ['class' => 'button float-right']) ?>
-<h3><?= __('Artworks') ?></h3>
 <div class="grid-container">
             <?php foreach ($artworks as $artwork): ?>
 
