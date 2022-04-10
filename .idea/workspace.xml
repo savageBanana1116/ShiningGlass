@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b1819f3-35b0-4125-91e8-d4a45f76a1ab" name="Changes" comment="About page changes 1.0">
+    <list default="true" id="8b1819f3-35b0-4125-91e8-d4a45f76a1ab" name="Changes" comment="changes to view page of artworks:&#10; - on delete display name and id">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +19,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ShiningGlass/templates/Artworks/add.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ShiningGlass/templates/Artworks/edit.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ShiningGlass/templates/Artworks/index.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ShiningGlass/templates/Artworks/view.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ShiningGlass/config/app_local.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -127,6 +130,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../macthon2022_FoodMag_TBC" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -142,7 +146,7 @@
       <option name="presentableId" value="Default" />
       <updated>1649487549387</updated>
       <workItem from="1649487554593" duration="18397000" />
-      <workItem from="1649559050036" duration="2387000" />
+      <workItem from="1649559050036" duration="6133000" />
     </task>
     <task id="LOCAL-00001" summary="About page changes 1.0">
       <created>1649507887922</created>
@@ -151,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649507887922</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="changes to view page of artworks:&#10; - on delete display name and id">
+      <created>1649561662963</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1649561662963</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +182,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="About page changes 1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="About page changes 1.0" />
+    <MESSAGE value="changes to view page of artworks:&#10; - on delete display name and id" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes to view page of artworks:&#10; - on delete display name and id" />
   </component>
 </project>

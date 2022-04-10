@@ -9,7 +9,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                 <li class="nav-item"><a class="nav-link" href="about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="artworks">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="Gallery">Gallery</a></li>
                 <li class="nav-item"><a class="nav-link" href="blog">Blog</a></li>
                 <li class="nav-item"><a class="nav-link" href="adminportal#">Admin Portal</a></li>
             </ul>
