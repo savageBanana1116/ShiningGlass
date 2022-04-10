@@ -24,7 +24,7 @@
             <fieldset>
                 <legend><?= __('Edit Artwork') ?></legend>
                 <?php
-                    echo $this->From->control('name');
+                    echo $this->Form->control('name');
                     echo $this->Form->control('price');
                     echo $this->Form->control('weight');
                     echo $this->Form->control('size');

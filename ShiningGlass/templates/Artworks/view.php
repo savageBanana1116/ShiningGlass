@@ -4,6 +4,9 @@
  * @var \App\Model\Entity\Artwork $artwork
  */
 ?>
+
+
+
 <style>
     img{
        float: left;
@@ -15,6 +18,7 @@
     }
 
 </style>
+
 
     <div class="artworkscontainer">
 <?= $this->Html->image($artwork->image, ['class' => 'image']) ?>
@@ -31,13 +35,22 @@
                    <?= __('Price: $') ?>
                     <?= $this->Number->format($artwork->price) ?>
                 <br>
-                    <?= __('Weight: ') ?>
+                    <?= __('Weight: ') //?>
                     <?= $this->Number->format($artwork->weight) ?>
                 <br>
 
 
         <p>For enquiries about this item please contact us at Lisa@shiningglass.com.au </p>
     </div>
+<div class="related">
+    <div class="related">
+        <h4 class="heading"><?= __('Actions') ?></h4>
+        <?= $this->Html->link(__('Edit Artwork'), ['action' => 'edit', "11"], ['class' => 'side-nav-item']) ?>
+        <?= $this->Form->postLink(__('Delete Artwork'), ['action' => 'delete', $artwork->id], ['confirm' => __('Are you sure you want to delete artwork id {0} & name {1}?', $artwork->id,$artwork->name), 'class' => 'side-nav-item']) ?>
+        <?= $this->Html->link(__('List Artworks'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
+        <?= $this->Html->link(__('New Artwork'), ['action' => 'add'], ['class' => 'side-nav-item']) ?>
+    </div>
+</div>
     <?php if (!empty($artwork->categories)) : ?>
             <div class="related">
                 <h4><?= __('Related Categories') ?></h4>
@@ -97,13 +110,5 @@
                 <?php endif; ?>
             </div>
 
-    <div class="related">
-        <div class="related">
-            <h4 class="heading"><?= __('Actions') ?></h4>
-            <?= $this->Html->link(__('Edit Artwork'), ['action' => 'edit', $artwork->id], ['class' => 'side-nav-item']) ?>
-            <?= $this->Form->postLink(__('Delete Artwork'), ['action' => 'delete', $artwork->id], ['confirm' => __('Are you sure you want to delete artwork id {0} & name {1}?', $artwork->id,$artwork->name), 'class' => 'side-nav-item']) ?>
-            <?= $this->Html->link(__('List Artworks'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
-            <?= $this->Html->link(__('New Artwork'), ['action' => 'add'], ['class' => 'side-nav-item']) ?>
-        </div>
-    </div>
+
 
