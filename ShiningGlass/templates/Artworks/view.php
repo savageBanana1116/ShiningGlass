@@ -15,9 +15,13 @@
     }
 
 </style>
-            <h3><?= h($artwork->descriptions) ?></h3>
+
     <div class="artworkscontainer">
 <?= $this->Html->image($artwork->image, ['class' => 'image']) ?>
+                    <?=__('Name: ') ?>
+                    <?= h($artwork->name)?>
+
+                    <br>
                     <?= __('Size: ') ?>
                     <?= h($artwork->size) ?>
                     <br>
@@ -29,12 +33,15 @@
                 <br>
                     <?= __('Weight: ') ?>
                     <?= $this->Number->format($artwork->weight) ?>
-        <br>
+                <br>
+
+
         <p>For enquiries about this item please contact us at Lisa@shiningglass.com.au </p>
     </div>
+    <?php if (!empty($artwork->categories)) : ?>
             <div class="related">
                 <h4><?= __('Related Categories') ?></h4>
-                <?php if (!empty($artwork->categories)) : ?>
+
                 <div class="table-responsive">
                     <table>
                         <tr>
@@ -62,8 +69,9 @@
                 <?php endif; ?>
             </div>
             <div class="related">
-                <h4><?= __('Related Artwork Images') ?></h4>
                 <?php if (!empty($artwork->artwork_images)) : ?>
+                <h4><?= __('Related Artwork Images') ?></h4>
+
                 <div class="table-responsive">
                     <table>
                         <tr>
@@ -80,7 +88,7 @@
                             <td class="actions">
                                 <?= $this->Html->link(__('View'), ['controller' => 'ArtworkImages', 'action' => 'view', $artworkImages->id]) ?>
                                 <?= $this->Html->link(__('Edit'), ['controller' => 'ArtworkImages', 'action' => 'edit', $artworkImages->id]) ?>
-                                <?= $this->Form->postLink(__('Delete'), ['controller' => 'ArtworkImages', 'action' => 'delete', $artworkImages->id], ['confirm' => __('Are you sure you want to delete # {0}?', $artworkImages->id)]) ?>
+                                <?= $this->Form->postLink(__('Delete'), ['controller' => 'ArtworkImages', 'action' => 'delete', $artworkImages->id], ['confirm' => __('Are you sure you want to delete item id {0} & name {1}?', $artworkImages->id)]) ?>
                             </td>
                         </tr>
                         <?php endforeach; ?>
@@ -89,12 +97,13 @@
                 <?php endif; ?>
             </div>
 
-    <aside class="column">
-        <div class="side-nav">
+    <div class="related">
+        <div class="related">
             <h4 class="heading"><?= __('Actions') ?></h4>
             <?= $this->Html->link(__('Edit Artwork'), ['action' => 'edit', $artwork->id], ['class' => 'side-nav-item']) ?>
-            <?= $this->Form->postLink(__('Delete Artwork'), ['action' => 'delete', $artwork->id], ['confirm' => __('Are you sure you want to delete # {0}?', $artwork->id), 'class' => 'side-nav-item']) ?>
+            <?= $this->Form->postLink(__('Delete Artwork'), ['action' => 'delete', $artwork->id], ['confirm' => __('Are you sure you want to delete artwork id {0} & name {1}?', $artwork->id,$artwork->name), 'class' => 'side-nav-item']) ?>
             <?= $this->Html->link(__('List Artworks'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
             <?= $this->Html->link(__('New Artwork'), ['action' => 'add'], ['class' => 'side-nav-item']) ?>
         </div>
-    </aside>
+    </div>
+

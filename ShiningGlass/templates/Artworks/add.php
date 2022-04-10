@@ -19,6 +19,7 @@
             <fieldset>
                 <legend><?= __('Add Artwork') ?></legend>
                 <?php
+                    echo $this->Form->control('name');
                     echo $this->Form->control('price');
                     echo $this->Form->control('weight');
                     echo $this->Form->control('size');

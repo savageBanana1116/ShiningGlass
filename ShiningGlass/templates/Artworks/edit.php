@@ -13,7 +13,7 @@
             <?= $this->Form->postLink(
                 __('Delete'),
                 ['action' => 'delete', $artwork->id],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $artwork->id), 'class' => 'side-nav-item']
+                ['confirm' => __('Are you sure you want to delete item id {0} & name {1}?', $artwork->id,$artwork->name), 'class' => 'side-nav-item']
             ) ?>
             <?= $this->Html->link(__('List Artworks'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
         </div>
@@ -24,6 +24,7 @@
             <fieldset>
                 <legend><?= __('Edit Artwork') ?></legend>
                 <?php
+                    echo $this->From->control('name');
                     echo $this->Form->control('price');
                     echo $this->Form->control('weight');
                     echo $this->Form->control('size');

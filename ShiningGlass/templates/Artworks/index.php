@@ -20,7 +20,7 @@
             <?php foreach ($artworks as $artwork): ?>
 
 
-                <div class="grid-item"><?= $this->Html->image($artwork->image, ['class' => 'image']) ?><br><?= $this->Html->link(__($artwork->descriptions), ['action' => 'view', $artwork->id]) ?></div>
+                <div class="grid-item"><?= $this->Html->image($artwork->image, ['class' => 'image']) ?><br><?= $this->Html->link(__($artwork->name), ['action' => 'view', $artwork->id]) ?></div>
 
                 <!--                        <div class="grid-item">2</div>-->
                 <!--                        <div class="grid-item">3</div>-->

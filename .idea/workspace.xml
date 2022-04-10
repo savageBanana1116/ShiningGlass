@@ -6,15 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="8b1819f3-35b0-4125-91e8-d4a45f76a1ab" name="Changes" comment="About page changes 1.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/About/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/About/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/webroot/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/ShiningGlass/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -130,12 +133,6 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
-      <option name="pathToComposerJson" value="$PROJECT_DIR$/ShiningGlass/composer.json" />
-      <method v="2" />
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -145,6 +142,7 @@
       <option name="presentableId" value="Default" />
       <updated>1649487549387</updated>
       <workItem from="1649487554593" duration="18397000" />
+      <workItem from="1649559050036" duration="2387000" />
     </task>
     <task id="LOCAL-00001" summary="About page changes 1.0">
       <created>1649507887922</created>
@@ -169,6 +167,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="About page changes 1.0" />
