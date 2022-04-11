@@ -3,7 +3,7 @@
         position: fixed;
         bottom: 0;
         width: 100%;
-        background-color: gray;
+        background-color: white;
     }
 </style>
 <footer class="footer py-4" id="ft-1">

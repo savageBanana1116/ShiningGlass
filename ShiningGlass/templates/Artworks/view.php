@@ -45,7 +45,6 @@
 <div class="related">
     <div class="related">
         <h4 class="heading"><?= __('Actions') ?></h4>
-        <?= $this->Html->link(__('Edit Artwork'), ['action' => 'edit', "11"], ['class' => 'side-nav-item']) ?>
         <?= $this->Form->postLink(__('Delete Artwork'), ['action' => 'delete', $artwork->id], ['confirm' => __('Are you sure you want to delete artwork id {0} & name {1}?', $artwork->id,$artwork->name), 'class' => 'side-nav-item']) ?>
         <?= $this->Html->link(__('List Artworks'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
         <?= $this->Html->link(__('New Artwork'), ['action' => 'add'], ['class' => 'side-nav-item']) ?>
