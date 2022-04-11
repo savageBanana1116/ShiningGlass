@@ -21,7 +21,7 @@
 <!-- Navigation-->
 <?= $this->element('nav')?>
 <div style="padding-top: 80px; background-color: #272a2e" ></div>
-<div style="padding-top: 30px; background-color: #d5d8db ;font-size: 20px ;text-align: center ; padding-bottom: 30px ; font-family: 'Segoe Print'; font-weight: bold"> One sentence that catches the audience</div>
+<div style="padding-top: 30px; background-color: #d5d8db ;font-size: 20px ;text-align: center ; padding-bottom: 30px ;  font-weight: bold"> Shining Glass as the shining stars in the sky</div>
 
 
 <!-- slider-->
@@ -36,8 +36,8 @@
         <div class="carousel-item active">
             <img class="d-block w-100" src="assets/img/img1.jpg" alt="First slide">
             <div class="carousel-caption">
-                <h1>Artwork Title</h1>
-                <p>Artwork Description</p>
+                <h1>Welcome to Shining Glass</h1>
+                <p>Artworks by sam smith</p>
                 <div class="slider-btn">
                     <button class="btn btn-1"onclick="window.location.href='gallery'">View more collection</button>
                 </div>
@@ -46,8 +46,8 @@
         <div class="carousel-item">
             <img class="d-block w-100" src="assets/img/img2.jpg" alt="Second slide">
             <div class="carousel-caption">
-                <h1>Artwork Title</h1>
-                <p>Artwork Description</p>
+                <h1>Welcome to Shining Glass</h1>
+                <p>Artworks by sam smith</p>
                 <div class="slider-btn">
                     <button class="btn btn-1" onclick="window.location.href='gallery'">View more collection</button>
                 </div>
@@ -56,8 +56,8 @@
         <div class="carousel-item">
             <img class="d-block w-100" src="assets/img/img3.jpg" alt="Third slide">
             <div class="carousel-caption">
-                <h1 >Artwork Title</h1>
-                <p>Artwork Description</p>
+                <h1 >Welcome to Shining Glass</h1>
+                <p>Artworks by sam smith</p>
                 <div class="slider-btn">
                     <button class="btn btn-1" onclick="window.location.href='gallery'">View more collection</button>
                 </div>
