@@ -4,339 +4,295 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b1819f3-35b0-4125-91e8-d4a45f76a1ab" name="Changes" comment="Edit Page fixed">
-      <change afterPath="$PROJECT_DIR$/ShiningGlass/webroot/img/Water Dance sculpture (1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShiningGlass/webroot/img/Wave scuplture (1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShiningGlass/webroot/img/artwork-img/COUSIN.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShiningGlass/webroot/img/artwork-img/Free Flowing Sculpture (1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShiningGlass/webroot/img/artwork-img/Jellyfish Sculpture (1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShiningGlass/webroot/img/artwork-img/New-Thinkers_front (1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShiningGlass/webroot/img/artwork-img/Water Dance sculpture (1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShiningGlass/webroot/img/artwork-img/Wave scuplture (1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShiningGlass/webroot/img/artwork-img/image_1 (1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShiningGlass/webroot/img/artwork-img/image_2 (1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShiningGlass/webroot/img/artwork-img/istockphoto-1346279256-1024x1024 (1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShiningGlass/webroot/img/artwork-img/water-sculpture-commission600 (1).jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="8b1819f3-35b0-4125-91e8-d4a45f76a1ab" name="Changes" comment="Pull from dev cPanel and pushed to git for local development">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/config/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/ArtworksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/src/Controller/ArtworksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/GalleryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/src/Controller/GalleryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/LandingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/src/Controller/LandingController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/bin/cake" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/bin/cake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/config/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Application.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Console/Installer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Controller/AboutController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Controller/AdminPortalController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Controller/AdminsController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Controller/AppController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Controller/ArtworkImagesController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Controller/ArtworksController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Controller/BlogController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Controller/CategoriesController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Controller/CategoryImagesController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Controller/Component/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Controller/ContactController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Controller/CustomersController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Controller/ErrorController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Controller/GalleryController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Controller/LandingController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Controller/OrdersController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Controller/PagesController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Model/Behavior/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Model/Entity/Admin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Model/Entity/Artwork.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Model/Entity/ArtworkImage.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Model/Entity/Category.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Model/Entity/CategoryImage.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Model/Entity/Customer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Model/Entity/Order.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Model/Table/AdminsTable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Model/Table/ArtworkImagesTable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Model/Table/ArtworksTable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Model/Table/CategoriesTable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Model/Table/CategoryImagesTable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Model/Table/CustomersTable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/Model/Table/OrdersTable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/View/AjaxView.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/View/AppView.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/View/Cell/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/src/View/Helper/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/About/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/AdminPortal/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/Admins/add.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/Admins/edit.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/Admins/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/Admins/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/ArtworkImages/add.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/ArtworkImages/edit.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/ArtworkImages/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/ArtworkImages/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/Artworks/add.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/Artworks/edit.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/Artworks/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/Artworks/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/Blog/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/Categories/add.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/Categories/edit.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/Categories/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/Categories/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/CategoryImages/add.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/CategoryImages/edit.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/CategoryImages/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/CategoryImages/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/Contact/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/Customers/add.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/Customers/edit.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/Customers/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/Customers/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/Error/error400.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/Error/error500.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/Gallery/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/Landing/home.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/Orders/add.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/Orders/edit.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/Orders/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/Orders/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/Pages/home.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/cell/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/element/flash/default.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/element/flash/error.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/element/flash/info.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/element/flash/success.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/element/flash/warning.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/element/footer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/element/nav.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/email/html/default.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/email/text/default.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/layout/ajax.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/layout/default.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/layout/email/html/default.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/layout/email/text/default.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/templates/layout/error.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/assets/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/assets/img/SamSmith.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/assets/img/about/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/assets/img/about/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/assets/img/about/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/assets/img/about/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/assets/img/close-icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/assets/img/header-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/assets/img/img1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/assets/img/img2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/assets/img/img3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/assets/img/logos/facebook.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/assets/img/logos/google.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/assets/img/logos/ibm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/assets/img/logos/microsoft.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/assets/img/map-image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/assets/img/navbar-logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/assets/img/portfolio/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/assets/img/portfolio/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/assets/img/portfolio/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/assets/img/portfolio/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/assets/img/portfolio/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/assets/img/portfolio/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/assets/img/team/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/assets/img/team/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/assets/img/team/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/css/cake.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/css/home.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/css/milligram.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/css/normalize.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/css/sb-admin-2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/css/sb-admin-2.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/font/cakedingbats-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/font/cakedingbats-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/font/cakedingbats-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/font/cakedingbats-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/font/cakedingbats-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/img/artwork-img/New-Thinkers_front.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/img/artwork-img/cat.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/img/artwork-img/image_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/img/artwork-img/image_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/img/artwork-img/water-sculpture-commission600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/img/cake-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/img/cake.icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/img/cake.logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/img/cake.power.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/img/undraw_posting_photo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/img/undraw_profile.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/img/undraw_profile_1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/img/undraw_profile_2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/img/undraw_profile_3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/img/undraw_rocket.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/demo/chart-area-demo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/demo/chart-bar-demo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/demo/chart-pie-demo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/demo/datatables-demo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/sb-admin-2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/sb-admin-2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/scripts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_alert.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_badge.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_breadcrumb.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_button-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_card.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_carousel.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_close.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_code.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_custom-forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_dropdown.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_functions.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_grid.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_images.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_input-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_jumbotron.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_list-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_media.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_modal.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_nav.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_navbar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_pagination.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_popover.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_print.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_progress.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_reboot.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_root.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_spinners.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_tables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_toasts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_tooltip.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_transitions.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_type.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_utilities.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/bootstrap-grid.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/bootstrap-reboot.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/bootstrap.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_alert.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_background-variant.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_badge.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_border-radius.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_box-shadow.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_breakpoints.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_caret.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_clearfix.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_deprecate.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_float.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_gradients.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_grid-framework.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_grid.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_hover.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_image.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_list-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_lists.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_nav-divider.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_pagination.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_reset-text.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_resize.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_screen-reader.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_size.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_table-row.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_text-emphasis.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_text-hide.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_text-truncate.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_transition.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_visibility.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_align.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_background.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_borders.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_clearfix.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_display.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_embed.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_flex.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_float.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_interactions.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_overflow.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_position.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_screenreaders.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_shadows.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_sizing.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_spacing.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_stretched-link.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_text.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_visibility.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/bootstrap/scss/vendor/_rfs.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/chart.js/Chart.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/chart.js/Chart.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/chart.js/Chart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/chart.js/Chart.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/datatables/dataTables.bootstrap4.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/datatables/dataTables.bootstrap4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/datatables/dataTables.bootstrap4.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/datatables/dataTables.bootstrap4.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/datatables/jquery.dataTables.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/datatables/jquery.dataTables.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/jquery-easing/jquery.easing.compatibility.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/jquery-easing/jquery.easing.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/jquery-easing/jquery.easing.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/jquery/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/jquery/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/jquery/jquery.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/jquery/jquery.slim.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/jquery/jquery.slim.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/js/vendor/jquery/jquery.slim.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/scss/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/scss/_cards.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/scss/_charts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/scss/_dropdowns.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/scss/_error.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/scss/_footer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/scss/_global.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/scss/_login.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/scss/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/scss/_navs.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/scss/_utilities.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/scss/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/scss/navs/_global.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/scss/navs/_sidebar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/scss/navs/_topbar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/scss/sb-admin-2.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/scss/utilities/_animation.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/scss/utilities/_background.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/scss/utilities/_border.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/scss/utilities/_display.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/scss/utilities/_progress.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/scss/utilities/_rotate.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/team18-app_fit3047/ShiningGlass/webroot/scss/utilities/_text.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/About/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/About/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/AdminPortal/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/AdminPortal/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Blog/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Blog/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Categories/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Categories/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Categories/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Categories/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Categories/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Categories/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Gallery/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Gallery/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Landing/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Landing/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/element/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/element/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/element/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/element/nav.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/chart.js/Chart.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/chart.js/Chart.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/chart.js/Chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/chart.js/Chart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/bin/cake" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/bin/cake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/config/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/config/bootstrap.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/config/bootstrap_cli.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/config/paths.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/config/requirements.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/config/schema/i18n.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/config/schema/sessions.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Application.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Console/Installer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/AboutController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/AdminPortalController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/AdminsController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/AppController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/ArtworkImagesController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/BlogController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/CategoriesController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/CategoryImagesController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/Component/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/ContactController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/CustomersController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/ErrorController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/OrdersController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/PagesController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Model/Behavior/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Model/Entity/Admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Model/Entity/Artwork.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Model/Entity/ArtworkImage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Model/Entity/Category.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Model/Entity/CategoryImage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Model/Entity/Customer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Model/Entity/Order.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Model/Table/AdminsTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Model/Table/ArtworkImagesTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Model/Table/ArtworksTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Model/Table/CategoriesTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Model/Table/CategoryImagesTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Model/Table/CustomersTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Model/Table/OrdersTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/View/AjaxView.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/View/AppView.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/View/Cell/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/View/Helper/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Admins/add.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Admins/edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Admins/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Admins/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/ArtworkImages/add.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/ArtworkImages/edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/ArtworkImages/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/ArtworkImages/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Categories/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/CategoryImages/add.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/CategoryImages/edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/CategoryImages/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/CategoryImages/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Contact/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Customers/add.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Customers/edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Customers/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Customers/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Error/error400.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Error/error500.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Orders/add.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Orders/edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Orders/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Orders/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Pages/home.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/cell/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/element/flash/default.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/element/flash/error.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/element/flash/info.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/element/flash/success.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/element/flash/warning.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/email/html/default.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/email/text/default.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/layout/ajax.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/layout/default.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/layout/email/html/default.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/layout/email/text/default.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/layout/error.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/assets/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/assets/img/SamSmith.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/assets/img/about/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/assets/img/about/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/assets/img/about/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/assets/img/about/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/assets/img/close-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/assets/img/header-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/assets/img/img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/assets/img/img2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/assets/img/img3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/assets/img/logos/facebook.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/assets/img/logos/google.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/assets/img/logos/ibm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/assets/img/logos/microsoft.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/assets/img/map-image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/assets/img/navbar-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/assets/img/portfolio/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/assets/img/portfolio/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/assets/img/portfolio/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/assets/img/portfolio/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/assets/img/portfolio/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/assets/img/portfolio/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/assets/img/team/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/assets/img/team/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/assets/img/team/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/css/cake.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/css/home.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/css/milligram.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/css/normalize.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/css/sb-admin-2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/css/sb-admin-2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/font/cakedingbats-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/font/cakedingbats-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/font/cakedingbats-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/font/cakedingbats-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/font/cakedingbats-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/img/artwork-img/New-Thinkers_front.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/img/artwork-img/cat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/img/artwork-img/image_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/img/artwork-img/image_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/img/artwork-img/water-sculpture-commission600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/img/cake-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/img/cake.icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/img/cake.logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/img/cake.power.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/img/undraw_posting_photo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/img/undraw_profile.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/img/undraw_profile_1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/img/undraw_profile_2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/img/undraw_profile_3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/img/undraw_rocket.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/demo/chart-area-demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/demo/chart-bar-demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/demo/chart-pie-demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/demo/datatables-demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/sb-admin-2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/sb-admin-2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_alert.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_breadcrumb.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_button-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_card.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_carousel.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_close.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_code.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_custom-forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_functions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_images.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_input-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_jumbotron.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_list-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_media.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_modal.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_nav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_popover.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_print.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_progress.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_reboot.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_root.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_spinners.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_tables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_toasts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_tooltip.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_transitions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_type.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/bootstrap-grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/bootstrap-reboot.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/bootstrap.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_alert.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_background-variant.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_border-radius.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_box-shadow.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_breakpoints.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_caret.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_clearfix.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_deprecate.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_float.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_gradients.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_grid-framework.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_hover.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_image.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_list-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_lists.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_nav-divider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_reset-text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_resize.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_size.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_table-row.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_text-emphasis.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_text-hide.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_text-truncate.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_transition.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/mixins/_visibility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_align.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_background.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_borders.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_clearfix.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_display.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_embed.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_flex.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_float.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_interactions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_overflow.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_position.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_screenreaders.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_shadows.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_sizing.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_spacing.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_stretched-link.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/utilities/_visibility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/bootstrap/scss/vendor/_rfs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/chart.js/Chart.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/chart.js/Chart.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/chart.js/Chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/chart.js/Chart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/datatables/dataTables.bootstrap4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/datatables/dataTables.bootstrap4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/datatables/dataTables.bootstrap4.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/datatables/dataTables.bootstrap4.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/datatables/jquery.dataTables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/datatables/jquery.dataTables.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/jquery-easing/jquery.easing.compatibility.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/jquery-easing/jquery.easing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/jquery-easing/jquery.easing.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/jquery/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/jquery/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/jquery/jquery.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/jquery/jquery.slim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/jquery/jquery.slim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/js/vendor/jquery/jquery.slim.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/scss/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/scss/_cards.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/scss/_charts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/scss/_dropdowns.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/scss/_error.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/scss/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/scss/_global.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/scss/_login.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/scss/_navs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/scss/_utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/scss/navs/_global.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/scss/navs/_sidebar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/scss/navs/_topbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/scss/sb-admin-2.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/scss/utilities/_animation.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/scss/utilities/_background.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/scss/utilities/_border.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/scss/utilities/_display.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/scss/utilities/_progress.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/scss/utilities/_rotate.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/scss/utilities/_text.scss" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -465,6 +421,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -491,6 +448,9 @@
       <workItem from="1650943943524" duration="1109000" />
       <workItem from="1650970095904" duration="109000" />
       <workItem from="1651109997682" duration="167000" />
+      <workItem from="1651110264931" duration="451000" />
+      <workItem from="1651110734914" duration="155000" />
+      <workItem from="1651111092229" duration="315000" />
     </task>
     <task id="LOCAL-00001" summary="About page changes 1.0">
       <created>1649507887922</created>
@@ -534,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649644881348</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Pull from dev cPanel and pushed to git for local development">
+      <created>1651110519042</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1651110519042</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -558,6 +525,7 @@
     <MESSAGE value="Update Gallery page and layout template" />
     <MESSAGE value="Removal of edit button from individual view page" />
     <MESSAGE value="Edit Page fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edit Page fixed" />
+    <MESSAGE value="Pull from dev cPanel and pushed to git for local development" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pull from dev cPanel and pushed to git for local development" />
   </component>
 </project>
