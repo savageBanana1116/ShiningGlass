@@ -6,12 +6,10 @@ use Cake\Datasource\ConnectionManager;
 use Cake\Auth\DefaultPasswordHasher;
 
 class LandingController extends AppController{
-    public function home()
+    public function index()
     {
         $this->viewBuilder()->setLayout('ajax');
-        $artworks = TableRegistry::get('artworks');
-        $query = $artworks->find();
-        $this->set('results',$query);
+     
     }
 
 }

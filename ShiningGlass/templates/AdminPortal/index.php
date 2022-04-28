@@ -42,41 +42,12 @@
                     <i class="fa fa-bars"></i>
                 </button>
 
-                <!-- Topbar Search -->
-                <form
-                    class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                    <div class="input-group">
-                        <div class="input-group-append">
-                        </div>
-                    </div>
-                </form>
-
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
 
-                    <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-                    <li class="nav-item dropdown no-arrow d-sm-none">
-                        <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-search fa-fw"></i>
-                        </a>
-                        <!-- Dropdown - Messages -->
-                        <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
-                             aria-labelledby="searchDropdown">
-                            <form class="form-inline mr-auto w-100 navbar-search">
-                                <div class="input-group">
-                                    <input type="text" class="form-control bg-light border-0 small"
-                                           placeholder="Search for..." aria-label="Search"
-                                           aria-describedby="basic-addon2">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-primary" type="button">
-                                            <i class="fas fa-search fa-sm"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </li>
+                        <li class="nav-item active">
+                            <a class=" nav-link" href="index.php"><strong>Click to navigate back to client-side view</strong></a>
+                        </li>
 
                     <!-- Nav Item - User Information -->
                     <li class="nav-item dropdown no-arrow">
@@ -110,7 +81,7 @@
                         </div>
                     </li>
 
-                </ul>
+                </>
 
             </nav>
             <!-- End of Topbar -->
@@ -121,7 +92,7 @@
                 <!-- Page Heading -->
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
                     <h1 class="h3 mb-0 text-gray-800">Admin Dashboard</h1>
-                    <div class="card bg-gradient-danger text-white shadow">
+                    <div class="card bg-gradient-dark text-white shadow">
                         <div class="card-body"
                              onclick="location.href='index.php#';" style="cursor: pointer;">
                             <a class="text-white" href="index.php">Client Side-View</a>
@@ -165,7 +136,7 @@
                                 <div class="card bg-gradient-primary text-white shadow"
                                      onclick="location.href='categories#';" style="cursor: pointer;">
                                     <div class="card-body">
-                                        <a class="text-white" href="categories#">Categories Management System</a>
+                                        <a class="text-white" href="categories#">Categories Management System (Coming Soon)</a>
                                         <div class="text-white-50 small">Can be used to add, view and remove
                                             categories
                                         </div>
@@ -177,7 +148,7 @@
                                 <div class="card bg-gradient-primary text-white shadow"
                                      onclick="location.href='customers#';" style="cursor: pointer;">
                                     <div class="card-body">
-                                        <a class="text-white" href="customers#">Customer Management System</a>
+                                        <a class="text-white" href="customers#">Customer Management System (Coming Soon)</a>
                                         <div class="text-white-50 small">Can be used to add, view and remove customers
                                         </div>
                                     </div>

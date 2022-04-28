@@ -17,20 +17,23 @@
             <?= $this->Html->link(__('List Categories'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
         </div>
     </aside>
-    <div class="column-responsive column-80">
+    <div class="column-responsive column-80" align="left">
         <div class="categories form content">
             <?= $this->Form->create($category) ?>
             <fieldset>
                 <legend><?= __('Edit Category') ?></legend>
                 <?php
-                    echo $this->Form->control('name');
-                    echo $this->Form->control('description');
-                    echo $this->Form->control('create_date');
-                    echo $this->Form->control('artworks._ids', ['options' => $artworks]);
+                    echo $this->Form->control('name', ['type' => 'text', 'class' => 'form-control']);
+                    echo $this->Form->control('description', ['type' => 'textarea', 'class' => 'form-control']);
+                    echo $this->Form->control('create_date', ['class' => 'form-control']);
                 ?>
             </fieldset>
+            <br>
             <?= $this->Form->button(__('Submit')) ?>
             <?= $this->Form->end() ?>
         </div>
     </div>
 </div>
+
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">

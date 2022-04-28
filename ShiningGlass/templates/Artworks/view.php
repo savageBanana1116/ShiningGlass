@@ -18,7 +18,18 @@
     }
 
 </style>
-
+<div class="related">
+    <div class="related">
+        <h4 class="heading"><?= __('Actions') ?></h4>
+        <?= $this->Html->link(__('Edit Artwork'), ['action' => 'edit', "$artwork->id"], ['class' => 'side-nav-item']) ?>
+        <br>
+        <?= $this->Form->postLink(__('Delete Artwork'), ['action' => 'delete', $artwork->id], ['confirm' => __('Are you sure you want to delete artwork {0}?', $artwork->name), 'class' => 'side-nav-item']) ?>
+        <br>
+        <?= $this->Html->link(__(' Go Back to Listed Artworks'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
+    </div>
+</div>
+<hr>
+<br>
 
     <div class="artworkscontainer">
 <?= $this->Html->image($artwork->image, ['class' => 'image']) ?>
@@ -42,15 +53,6 @@
 
         <p>For enquiries about this item please contact us at Lisa@shiningglass.com.au </p>
     </div>
-<div class="related">
-    <div class="related">
-        <h4 class="heading"><?= __('Actions') ?></h4>
-        <?= $this->Html->link(__('Edit Artwork'), ['action' => 'edit', "$artwork->id"], ['class' => 'side-nav-item']) ?>
-        <?= $this->Form->postLink(__('Delete Artwork'), ['action' => 'delete', $artwork->id], ['confirm' => __('Are you sure you want to delete artwork id {0} & name {1}?', $artwork->id,$artwork->name), 'class' => 'side-nav-item']) ?>
-        <?= $this->Html->link(__('List Artworks'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
-        <?= $this->Html->link(__('New Artwork'), ['action' => 'add'], ['class' => 'side-nav-item']) ?>
-    </div>
-</div>
     <?php if (!empty($artwork->categories)) : ?>
             <div class="related">
                 <h4><?= __('Related Categories') ?></h4>

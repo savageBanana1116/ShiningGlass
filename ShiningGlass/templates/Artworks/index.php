@@ -14,35 +14,20 @@
         display: grid;
         column-gap: 50px;
     }
+    
+    .grid-item{
+        margin-top:10px;
+        margin-bottom:10px;
+    }
 </style>
-<?= $this->Html->link(__('New Artwork'), ['action' => 'add'], ['class' => 'button float-right']) ?>
+        <h2 class="heading"><?= __('Actions') ?></h2>
+        <?= $this->Html->link(__('Add New Artwork'), ['action' => 'add'], ['class' => 'button float-right']) ?>
 <div class="grid-container">
             <?php foreach ($artworks as $artwork): ?>
 
 
-                <div class="grid-item"><?= $this->Html->image($artwork->image, ['class' => 'image']) ?><br><?= $this->Html->link(__($artwork->name), ['action' => 'view', $artwork->id]) ?></div>
-
-                <!--                        <div class="grid-item">2</div>-->
-                <!--                        <div class="grid-item">3</div>-->
-                <!--                        <div class="grid-item">4</div>-->
-                <!--                        <div class="grid-item">5</div>-->
-                <!--                        <div class="grid-item">6</div>-->
-                <!--                        <div class="grid-item">7</div>-->
-                <!--                        <div class="grid-item">8</div>-->
-                <!--                        <div class="grid-item">9</div>-->
+                <div class="grid-item"><?= $this->Html->image($artwork->image, ['class' => 'image', 'margin-top' => '100px', 'width' => '400px', 'height' => '250px']) ?><br><?= $this->Html->link(__($artwork->name), ['action' => 'view', $artwork->id,]) ?></div>
             <?php endforeach; ?>
         </div>
-        <!--            </tbody>-->
-        <!--        </table>-->
-        <!--    </div>-->
-        <div class="paginator">
-            <ul class="pagination">
-                <?= $this->Paginator->first('<< ' . __('first')) ?>
-                <?= $this->Paginator->prev('< ' . __('previous')) ?>
-                <?= $this->Paginator->numbers() ?>
-                <?= $this->Paginator->next(__('next') . ' >') ?>
-                <?= $this->Paginator->last(__('last') . ' >>') ?>
-            </ul>
-            <p><?= $this->Paginator->counter(__('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')) ?></p>
-        </div>
+       
     </div>

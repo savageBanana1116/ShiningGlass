@@ -27,7 +27,7 @@
 <div style="padding-top: 80px; background-color: #272a2e"></div>
 <div
     style="padding-top: 30px; background-color: #d5d8db ;font-size: 20px ;text-align: center ; padding-bottom: 30px ; font-weight: bold">
-    About Page
+    The Company and its Owner
 </div>
 
 
@@ -39,7 +39,7 @@
             <div class="card">
                 <div class="card-body">
                     <img src="assets/img/SamSmith.png" class="card-img-top" alt="SamSmith">
-                    <h5 class="card-title">Artist: Sam Smith</h5>
+                    <h5 class="card-title" align="center" style="margin-top:10px">Artist: Sam Smith</h5>
                 </div>
             </div>
         </div>
@@ -48,25 +48,20 @@
             <div class="card">
                 <h5 class="card-header">Who is Sam Smith?</h5>
                 <div class="card-body">
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="card-text">Sam is a 41 year old artist from Melbourne who specialises in Glass Sculptures. Sam loves to draw upon his past experiences and bring them to life through his artwork.</p>
                 </div>
             </div>
             <div class="card" style="margin-top: 20px">
                 <h5 class="card-header">What is Shining Glass?</h5>
                 <div class="card-body">
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Vestibulum rhoncus est pellentesque elit
-                        ullamcorper. Risus pretium quam vulputate dignissim. Ultrices eros in cursus turpis massa
-                        tincidunt. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et.
-                        Viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor. </p>
+                    <p class="card-text">Established in 2018, Sam Smith wanted to share his artworks and vision with the world. Starting from selling out of his own garage, he has built Shining Glass from the ground up, owning his own glass artwork store in Melbourne CBD.</p>
                 </div>
             </div>
             <div class="card" style="margin-top: 20px">
                 <h5 class="card-header">Achievements/Recommendations</h5>
                 <div class="card-body">
-                    <p class="card-text">Egestas tellus rutrum tellus pellentesque eu tincidunt. Sit amet aliquam id
-                        diam maecenas ultricies mi.</p>
+                    <p class="card-text">- Freemantle Glass-Making Award 2020<br>
+                    - Clemenger Contemporary Art Award 2021</p>
                 </div>
             </div>
         </div>
@@ -74,7 +69,6 @@
 </div>
 </body>
 <br>
-<hr>
 <?= $this->element('footer') ?>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

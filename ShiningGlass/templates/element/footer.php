@@ -1,11 +1,12 @@
 <style>
     #ft-1{
-        position: fixed;
+        /*position: fixed;*/
         bottom: 0;
         width: 100%;
         background-color: white;
     }
 </style>
+<hr>
 <footer class="footer py-4" id="ft-1">
     <div class="container">
         <div class="row align-items-center">

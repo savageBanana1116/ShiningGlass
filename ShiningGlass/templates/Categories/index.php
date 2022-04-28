@@ -16,17 +16,16 @@
                     <th><?= $this->Paginator->sort('name') ?></th>
                     <th><?= $this->Paginator->sort('description') ?></th>
                     <th><?= $this->Paginator->sort('create_date') ?></th>
-                    <th><?= $this->Paginator->sort('id') ?></th>
                     <th class="actions"><?= __('Actions') ?></th>
                 </tr>
             </thead>
             <tbody>
                 <?php foreach ($categories as $category): ?>
                 <tr>
-                    <td><?= $this->Number->format($category->name) ?></td>
-                    <td><?= $this->Number->format($category->description) ?></td>
+                    
+                    <td><?= h($category->name) ?></td>
+                    <td><?= h($category->description) ?></td>
                     <td><?= h($category->create_date) ?></td>
-                    <td><?= $this->Number->format($category->id) ?></td>
                     <td class="actions">
                         <?= $this->Html->link(__('View'), ['action' => 'view', $category->id]) ?>
                         <?= $this->Html->link(__('Edit'), ['action' => 'edit', $category->id]) ?>

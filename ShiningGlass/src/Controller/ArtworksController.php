@@ -131,7 +131,7 @@ class ArtworksController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $artwork = $this->Artworks->get($id);
         if ($this->Artworks->delete($artwork)) {
-            $this->Flash->success(__('The artwork has been deleted.'));
+            $this->Flash->success(__('{0} has been deleted', $artwork->name), ['style' => 'font-weight:bold;']);
         } else {
             $this->Flash->error(__('The artwork could not be deleted. Please, try again.'));
         }
