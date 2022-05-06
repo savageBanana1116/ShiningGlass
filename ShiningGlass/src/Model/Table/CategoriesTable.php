@@ -63,12 +63,12 @@ class CategoriesTable extends Table
     public function validationDefault(Validator $validator): Validator
     {
         $validator
-            ->integer('name')
+            ->scalar('name')
             ->requirePresence('name', 'create')
             ->notEmptyString('name');
 
         $validator
-            ->integer('description')
+            ->scalar('description')
             ->requirePresence('description', 'create')
             ->notEmptyString('description');
 
