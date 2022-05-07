@@ -1,3 +1,13 @@
+<?php
+/**
+ * @var \App\View\AppView $this
+ * * @var \App\Model\Entity\Category $categories
+ * @var string[]|\Cake\Collection\CollectionInterface $categories
+ *  * @var \App\Model\Entity\Artwork[]|\Cake\Collection\CollectionInterface $artworks
+ *  * @property \App\Model\Table\CategoriesTable&\Cake\ORM\Association\BelongsToMany $Categories
+ * * @property \App\Model\Entity\Category[] $categories
+ */
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,9 +29,27 @@
 </head>
 <body id="page-top">
 <!-- Navigation-->
+<!--    <select style="width: 250px;margin-top: 10px" id="category_id" name="category_id">-->
+<!---->
+<!--        <option > --Select a category to filter--</option>-->
+<!--        --><?php //foreach ($result as $categories) { ?>
+<!--        <option value="--><?php //$categories->category_id?><!--">--><?php //echo $categories->name?><!--</option>-->
+<!---->
+<!--        --><?php //} ?>
+<!--        --><?php //$category_id = $_POST['category_id']?>
+<!--    </select>-->
 <div
     style ="padding-top: 30px; background-color: #d5d8db ;font-size: 20px ;text-align: center ; padding-bottom: 30px ; font-weight: bold; width:100%;"> The Artworks of Sam Smith
 </div>
+ <div class="drop">
+
+     <?= $this->Form->create(null,['type'=>'get'])?>
+     <?= $this->Form->control('category_id',['label' => 'Filter','type'=>'number','value'=>$this->request->getQuery('category_id')])?>
+     <?= $this->Form->submit('Filter')?>
+     <?= $this->Form->end()?>
+
+
+ </div>
 
 <div class="container">
     <div class="row" style="margin-top: 60px">
@@ -83,6 +111,7 @@
             </div>
         </div>
         <?php $i++; ?>
+
         <?php endforeach; ?>
     </div>
 </div>
@@ -98,6 +127,7 @@
 <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
 <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
 </body>
 </html>
 

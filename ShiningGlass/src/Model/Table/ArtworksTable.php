@@ -45,6 +45,7 @@ class ArtworksTable extends Table
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
 
+
         $this->belongsTo('Orders', [
             'foreignKey' => 'order_id',
         ]);
@@ -56,6 +57,8 @@ class ArtworksTable extends Table
             'targetForeignKey' => 'category_id',
             'joinTable' => 'artworks_categories',
         ]);
+
+
     }
 
     /**
