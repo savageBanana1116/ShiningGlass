@@ -50,7 +50,7 @@
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span data-toggle="modal" data-target="#orangeModalSubscription" style="padding-right: 10px">SIGN IN</span>
                             <img data-toggle="modal" data-target="#orangeModalSubscription" class="img-profile rounded-circle"
-                                 src="img/undraw_profile.svg" alt="">
+                                 src="" alt="">
                         </a>
                     </li>
                 </ul>
@@ -80,8 +80,8 @@
                                     <!-- Password input -->
                                     <div class="form-outline mb-3">
                                         <label class="form-label">Password</label>
-                                        <input type="password" id="form3Example3" class="form-control form-control-md"
-                                               placeholder="Enter a valid password" />
+                                        <label for="form3Example3"></label><input type="password" id="form3Example3" class="form-control form-control-md"
+                                                                                  placeholder="Enter a valid password" />
                                     </div>
                             </div>
                             <!--Footer-->
@@ -106,7 +106,7 @@
                              onclick="location.href='index.php#';" style="cursor: pointer;">
                             <a class="text-white" href="index.php">Client Side-View</a>
                             <div class="text-white-50 small">Currently used to navigate back to the
-                                client-side landing page
+                                client-side landing (home) page
                             </div>
                         </div>
                     </div>
