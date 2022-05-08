@@ -166,7 +166,24 @@
                                 <h6 class="m-0 font-weight-bold text-primary">Content Management System</h6>
                             </div>
                             <div class="card-body">
-                                <p>Coming Soon</p>
+                                <div class="card bg-gradient-primary text-white shadow"
+                                     onclick="location.href='abouts#';" style="cursor: pointer;">
+                                    <div class="card-body">
+                                        <a class="text-white" href="abouts#">About Page Content Management System</a>
+                                        <div class="text-white-50 small">Edit Text
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card bg-gradient-primary text-white shadow"
+                                     onclick="location.href='artists#';" style="cursor: pointer;">
+                                    <div class="card-body">
+                                        <a class="text-white" href="abouts#">About Page Content Management System</a>
+                                        <div class="text-white-50 small">Edit  Artist
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 

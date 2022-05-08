@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 10, 2022 at 07:58 AM
+-- Generation Time: May 08, 2022 at 08:59 AM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.8
 
@@ -24,6 +24,28 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `abouts`
+--
+
+CREATE TABLE `abouts` (
+                          `id` int(11) NOT NULL,
+                          `title` varchar(50) NOT NULL,
+                          `text` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `abouts`
+--
+
+INSERT INTO `abouts` (`id`, `title`, `text`) VALUES
+(1, 'Who is Sam Smith?', 'Sam Smith is a 41 year old artist from Melbourne who specialises in Glass Sculptures. Sam loves to draw upon his past experiences and bring them to life through his artwork.'),
+(2, 'What is Shining Glass?', 'Established in 2018, Sam Smith wanted to share his artworks and vision with the world. Starting from selling out of his own garage, he has built Shining Glass from the ground up, owning his own glass artwork store in Melbourne CBD.'),
+(3, 'Achievements/Recommendations', '- Freemantle Glass-Making Award 2020 - Clemenger Contemporary Art Award 2021'),
+(4, 'The Company and its Owner', '');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `admins`
 --
 
@@ -32,6 +54,25 @@ CREATE TABLE `admins` (
                           `username` varchar(64) NOT NULL,
                           `password` varchar(64) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `artists`
+--
+
+CREATE TABLE `artists` (
+                           `id` int(11) NOT NULL,
+                           `name` varchar(64) NOT NULL,
+                           `image` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `artists`
+--
+
+INSERT INTO `artists` (`id`, `name`, `image`) VALUES
+(2, 'Sam Smith', 'artist-img/WIN_20220312_16_33_21_Pro.jpg');
 
 -- --------------------------------------------------------
 
@@ -108,7 +149,8 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`name`, `description`, `create_date`, `id`) VALUES
-('collection 1', 'this is our first collection', '2022-04-10 05:22:21', 1);
+('collection 1', 'this is our first collection', '2022-04-10 05:22:21', 1),
+('1', '1', '2022-05-01 22:06:28', 2);
 
 -- --------------------------------------------------------
 
@@ -132,21 +174,16 @@ CREATE TABLE `customers` (
                              `first_name` varchar(255) NOT NULL,
                              `last_name` varchar(255) NOT NULL,
                              `email` varchar(255) NOT NULL,
-                             `password` varchar(255) NOT NULL,
                              `phone` int(20) NOT NULL,
                              `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- --------------------------------------------------------
-
 --
--- Table structure for table `homepages`
+-- Dumping data for table `customers`
 --
 
-CREATE TABLE `homepages` (
-                             `Heading` varchar(255) NOT NULL,
-                             `id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+INSERT INTO `customers` (`first_name`, `last_name`, `email`, `phone`, `id`) VALUES
+('JOhn', 'Doe', 'john@email.com', 41234566, 1);
 
 -- --------------------------------------------------------
 
@@ -170,9 +207,21 @@ CREATE TABLE `orders` (
 --
 
 --
+-- Indexes for table `abouts`
+--
+ALTER TABLE `abouts`
+    ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `admins`
 --
 ALTER TABLE `admins`
+    ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `artists`
+--
+ALTER TABLE `artists`
     ADD PRIMARY KEY (`id`);
 
 --
@@ -217,12 +266,6 @@ ALTER TABLE `customers`
     ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `homepages`
---
-ALTER TABLE `homepages`
-    ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `orders`
 --
 ALTER TABLE `orders`
@@ -234,16 +277,28 @@ ALTER TABLE `orders`
 --
 
 --
+-- AUTO_INCREMENT for table `abouts`
+--
+ALTER TABLE `abouts`
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- AUTO_INCREMENT for table `admins`
 --
 ALTER TABLE `admins`
     MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `artists`
+--
+ALTER TABLE `artists`
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `artworks`
 --
 ALTER TABLE `artworks`
-    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `artworks_categories`
@@ -261,7 +316,7 @@ ALTER TABLE `artwork_images`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `category_images`
@@ -273,13 +328,7 @@ ALTER TABLE `category_images`
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `homepages`
---
-ALTER TABLE `homepages`
-    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `orders`
