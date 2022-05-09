@@ -4,34 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b1819f3-35b0-4125-91e8-d4a45f76a1ab" name="Changes" comment="added content management system&#10;added abouts page&#10;added artists page">
-      <change afterPath="$PROJECT_DIR$/ShiningGlass/templates/Pages/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_05_2022_3_38_pm__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_05_2022_3_38_pm__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/team18-app_fit3047.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/team18-app_fit3047.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/src/Application.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/AboutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/src/Controller/AboutController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/AboutsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/src/Controller/AboutsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/AdminPortalController.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/src/Controller/AdminPortalController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/src/Controller/AppController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/src/Controller/BlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/src/Controller/ContactController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/GalleryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/src/Controller/GalleryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/LandingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/src/Controller/LandingController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/AdminPortal/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/AdminPortal/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Admins/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Admins/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Categories/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Categories/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Gallery/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Gallery/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/element/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/element/nav.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/css/sb-admin-2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/webroot/css/sb-admin-2.min.css" afterDir="false" />
-    </list>
+    <list default="true" id="8b1819f3-35b0-4125-91e8-d4a45f76a1ab" name="Changes" comment="Added functioning login page with password hashing - working on implementation of modal login" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -203,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651993469758</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added functioning login page with password hashing - working on implementation of modal login">
+      <created>1652081549734</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1652081549734</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +204,7 @@
     <MESSAGE value="About page changes 1.0" />
     <MESSAGE value="changes to view page of artworks:&#10; - on delete display name and id" />
     <MESSAGE value="added content management system&#10;added abouts page&#10;added artists page" />
-    <option name="LAST_COMMIT_MESSAGE" value="added content management system&#10;added abouts page&#10;added artists page" />
+    <MESSAGE value="Added functioning login page with password hashing - working on implementation of modal login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added functioning login page with password hashing - working on implementation of modal login" />
   </component>
 </project>
