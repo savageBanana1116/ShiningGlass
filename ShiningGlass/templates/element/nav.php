@@ -44,26 +44,26 @@
             </div>
 
             <!--Body-->
-            <div class="modal-body">
-                <form method="post" action="Users/login">
-                    <!-- Email input -->
-                    <div class="form-outline mb-3">
-                        <label class="form-label">Email address</label>
-                        <input type="email" id="email" class="form-control form-control-md"
-                               placeholder="Enter a valid email address"/>
-                    </div>
-                    <!-- Password input -->
-                    <div class="form-outline mb-3">
-                        <label class="form-label">Password</label>
-                        <label for="form3Example3"></label><input type="password" id="password"
-                                                                  class="form-control form-control-md"
-                                                                  placeholder="Enter a valid password"/>
-                    </div>
-            </div>
-            <!--Footer-->
-            <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-success" onclick="location.href = 'Users/login';">Login</button>
-            </div>
+<!--            <div class="modal-body">-->
+<!--                <form method="post" action="Users/login">-->
+<!--                    <!-- Email input -->-->
+<!--                    <div class="form-outline mb-3">-->
+<!--                        <label class="form-label">Email address</label>-->
+<!--                        <input type="email" id="email" class="form-control form-control-md"-->
+<!--                               placeholder="Enter a valid email address"/>-->
+<!--                    </div>-->
+<!--                    <!-- Password input -->-->
+<!--                    <div class="form-outline mb-3">-->
+<!--                        <label class="form-label">Password</label>-->
+<!--                        <label for="form3Example3"></label><input type="password" id="password"-->
+<!--                                                                  class="form-control form-control-md"-->
+<!--                                                                  placeholder="Enter a valid password"/>-->
+<!--                    </div>-->
+<!--            </div>-->
+<!--            <!--Footer-->-->
+<!--            <div class="modal-footer justify-content-center">-->
+<!--                <button type="button" class="btn btn-success" onclick="location.href = 'Users/login';">Login</button>-->
+<!--            </div>-->
         </div>
         <!--/.Content-->
     </div>
