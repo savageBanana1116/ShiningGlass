@@ -44,45 +44,54 @@
 
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
-
-                        <li class="nav-item active">
-                            <a class=" nav-link" href="index.php"><strong>Click to navigate back to client-side view</strong></a>
-                        </li>
-
                     <!-- Nav Item - User Information -->
-                    <li class="nav-item dropdown no-arrow">
+                    <li class="nav-item dropdown no-arrow" data-toggle="modal" data-target="#orangeModalSubscription">
                         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span
-                                class="mr-2 d-none d-lg-inline text-gray-600 small">Profile Feature (Coming Soon)</span>
-                            <img class="img-profile rounded-circle"
-                                 src="img/undraw_profile.svg" alt="">
+                            <span data-toggle="modal" data-target="#orangeModalSubscription" style="padding-right: 10px">SIGN IN</span>
+                            <img data-toggle="modal" data-target="#orangeModalSubscription" class="img-profile rounded-circle"
+                                 src="" alt="">
                         </a>
-                        <!-- Dropdown - User Information -->
-                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                             aria-labelledby="userDropdown">
-                            <a class="dropdown-item" href="#">
-                                <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                (Coming Soon)
-                                <!--                                </a>-->
-                                <!--                                <a class="dropdown-item" href="#">-->
-                                <!--                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>-->
-                                <!--                                    Settings-->
-                                <!--                                </a>-->
-                                <!--                                <a class="dropdown-item" href="#">-->
-                                <!--                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>-->
-                                <!--                                    Activity Log-->
-                                <!--                                </a>-->
-                                <!--                                <div class="dropdown-divider"></div>-->
-                                <!--                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">-->
-                                <!--                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>-->
-                                <!--                                    Logout-->
-                            </a>
-                        </div>
                     </li>
+                </ul>
 
-                </>
+                <div class="modal fade" id="orangeModalSubscription" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <!--Content-->
+                        <div class="modal-content">
+                            <!--Header-->
+                            <div class="modal-header text-center" style="background-color: #333333">
+                                <h4 class="modal-title text-white w-100 font-weight-bold py-2">ADMIN LOGIN</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true" class="white-text">&times;</span>
+                                </button>
+                            </div>
 
+                            <!--Body-->
+                            <div class="modal-body">
+                                <form>
+                                    <!-- Email input -->
+                                    <div class="form-outline mb-3">
+                                        <label class="form-label">Email address</label>
+                                        <input type="email" id="form3Example3" class="form-control form-control-md"
+                                               placeholder="Enter a valid email address" />
+                                    </div>
+                                    <!-- Password input -->
+                                    <div class="form-outline mb-3">
+                                        <label class="form-label">Password</label>
+                                        <label for="form3Example3"></label><input type="password" id="form3Example3" class="form-control form-control-md"
+                                                                                  placeholder="Enter a valid password" />
+                                    </div>
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-success">Login</button>
+                            </div>
+                        </div>
+                        <!--/.Content-->
+                    </div>
+                </div>
             </nav>
             <!-- End of Topbar -->
 
@@ -97,7 +106,7 @@
                              onclick="location.href='index.php#';" style="cursor: pointer;">
                             <a class="text-white" href="index.php">Client Side-View</a>
                             <div class="text-white-50 small">Currently used to navigate back to the
-                                client-side landing page
+                                client-side landing (home) page
                             </div>
                         </div>
                     </div>
@@ -113,7 +122,7 @@
                 <div class="row">
 
                     <!-- Content Column -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-6">
 
                         <!-- Project Card Example -->
                         <div class="card shadow mb-4">
@@ -158,7 +167,7 @@
 
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-6">
 
                         <!-- Approach -->
                         <div class="card shadow mb-4">
@@ -166,28 +175,30 @@
                                 <h6 class="m-0 font-weight-bold text-primary">Content Management System</h6>
                             </div>
                             <div class="card-body">
-                                <p>Coming Soon</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-4">
-
-                        <!-- Approach -->
-                        <div class="card shadow mb-4">
-                            <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">Coming soon</h6>
+                                <div class="card bg-gradient-primary text-white shadow"
+                                     onclick="location.href='abouts#';" style="cursor: pointer;">
+                                    <div class="card-body">
+                                        <a class="text-white" href="abouts#">About Page Content Management System</a>
+                                        <div class="text-white-50 small">Use this to edit the content shown on the About Page
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="card-body">
-                                <p>Coming Soon</p>
+                                <div class="card bg-gradient-primary text-white shadow"
+                                     onclick="location.href='artists#';" style="cursor: pointer;">
+                                    <div class="card-body">
+                                        <a class="text-white" href="abouts#">Blog Page Content Management System</a>
+                                        <div class="text-white-50 small">Use this to edit the content displayed on the Blog Page
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                     </div>
                 </div>
-
-            </div>
+            </div>f
             <!-- /.container-fluid -->
         </div>
         <!-- End of Main Content -->
@@ -212,26 +223,6 @@
 <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
 </a>
-
-<!-- Logout Modal-->
-<!--    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"-->
-<!--        aria-hidden="true">-->
-<!--        <div class="modal-dialog" role="document">-->
-<!--            <div class="modal-content">-->
-<!--                <div class="modal-header">-->
-<!--                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>-->
-<!--                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">-->
-<!--                        <span aria-hidden="true">×</span>-->
-<!--                    </button>-->
-<!--                </div>-->
-<!--                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>-->
-<!--                <div class="modal-footer">-->
-<!--                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>-->
-<!--                    <a class="btn btn-primary" href="login.html">Logout</a>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
 
 <!-- Bootstrap core JavaScript-->
 <?= $this->Html->script('vendor/jquery/jquery.min.js'); ?>

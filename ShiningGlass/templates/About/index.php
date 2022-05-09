@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+
+<?php //App::import('Controller','Abouts');
+$aboutController = new \App\Controller\AboutsController();
+$artistController = new \App\Controller\ArtistsController();
+$title1 = $aboutController->getAbout(1);
+$title2 = $aboutController->getAbout(2);
+$title3 = $aboutController->getAbout(3);
+$title4 = $aboutController->getAbout(4);
+$artist = $artistController->getArtistName(2);
+?>
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
@@ -27,7 +37,7 @@
 <div style="padding-top: 80px; background-color: #272a2e"></div>
 <div
     style="padding-top: 30px; background-color: #d5d8db ;font-size: 20px ;text-align: center ; padding-bottom: 30px ; font-weight: bold">
-    The Company and its Owner
+    <?=$title4 ->title?>
 </div>
 
 
@@ -38,30 +48,29 @@
 
             <div class="card">
                 <div class="card-body">
-                    <img src="assets/img/SamSmith.png" class="card-img-top" alt="SamSmith">
-                    <h5 class="card-title" align="center" style="margin-top:10px">Artist: Sam Smith</h5>
+                    <img src="webroot/img/<?=$artist->image?>" class="card-img-top" alt="SamSmith">
+                    <h5 class="card-title" align="center" style="margin-top:10px">Artist: <?= $artist->name?></h5>
                 </div>
             </div>
         </div>
 
         <div class="col-12 col-md-6 col-lg-6" style="margin-top: 50px">
             <div class="card">
-                <h5 class="card-header">Who is Sam Smith?</h5>
+                <h5 class="card-header"> <?php echo $title1->title ?></h5>
                 <div class="card-body">
-                    <p class="card-text">Sam is a 41 year old artist from Melbourne who specialises in Glass Sculptures. Sam loves to draw upon his past experiences and bring them to life through his artwork.</p>
+                    <p class="card-text"><?php echo $title1->text?></p>
                 </div>
             </div>
             <div class="card" style="margin-top: 20px">
-                <h5 class="card-header">What is Shining Glass?</h5>
+                <h5 class="card-header"><?php echo $title2->title ?></h5>
                 <div class="card-body">
-                    <p class="card-text">Established in 2018, Sam Smith wanted to share his artworks and vision with the world. Starting from selling out of his own garage, he has built Shining Glass from the ground up, owning his own glass artwork store in Melbourne CBD.</p>
+                    <p class="card-text"><?php echo $title2->text?></p>
                 </div>
             </div>
             <div class="card" style="margin-top: 20px">
-                <h5 class="card-header">Achievements/Recommendations</h5>
+                <h5 class="card-header"><?php echo $title3->title?></h5>
                 <div class="card-body">
-                    <p class="card-text">- Freemantle Glass-Making Award 2020<br>
-                    - Clemenger Contemporary Art Award 2021</p>
+                    <p class="card-text"><?php echo $title3->text?></p>
                 </div>
             </div>
         </div>
@@ -69,7 +78,10 @@
 </div>
 </body>
 <br>
-<?= $this->element('footer') ?>
+<?= $this->element('footer');
+echo $artist->image;
+?>
+
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
