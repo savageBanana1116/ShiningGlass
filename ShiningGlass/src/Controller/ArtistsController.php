@@ -46,11 +46,12 @@ class ArtistsController extends AppController
      */
     public function add()
     {
+
         $artist = $this->Artists->newEmptyEntity();
         if ($this->request->is('post')) {
             $artist = $this->Artists->patchEntity($artist, $this->request->getData());
 
-            if(!$artist->getErrors){
+           /* if(!$artist->getErrors){
                 $image = $this -> request -> getData('image_file');
 
                 $name = $image->getClientFilename();
@@ -65,7 +66,23 @@ class ArtistsController extends AppController
                     $image->moveTo($targetPath);
 
                 $artist->image = 'artist-img/'.$name;
+            }*/
+            if(!$artist->getErrors) {
+                $image = $this->request->getData('image_file');
+
+                $name = $image->getClientFilename();
+
+                if (!is_dir(WWW_ROOT . 'img' . DS . 'artist-img'))
+                    mkdir(WWW_ROOT . 'img' . DS . 'artist-img', 0775);
+
+                $targetPath = WWW_ROOT . 'img' . DS . 'artist-img' . DS . $name;
+
+                if ($name)
+                    $image->moveTo($targetPath);
+
+                $artist->image = 'artist-img/' . $name;
             }
+
 
             if ($this->Artists->save($artist)) {
                 $this->Flash->success(__('The artist has been saved.'));
@@ -91,10 +108,27 @@ class ArtistsController extends AppController
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $artist = $this->Artists->patchEntity($artist, $this->request->getData());
+
+            if(!$artist->getErrors) {
+                $image = $this->request->getData('image_file');
+
+                $name = $image->getClientFilename();
+
+                if (!is_dir(WWW_ROOT . 'img' . DS . 'artist-img'))
+                    mkdir(WWW_ROOT . 'img' . DS . 'artist-img', 0775);
+
+                $targetPath = WWW_ROOT . 'img' . DS . 'artist-img' . DS . $name;
+
+                if ($name)
+                    $image->moveTo($targetPath);
+
+                $artist->image = 'artist-img/' . $name;
+            }
+
             if ($this->Artists->save($artist)) {
                 $this->Flash->success(__('The artist has been saved.'));
 
-                return $this->redirect(['action' => 'index']);
+                //return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('The artist could not be saved. Please, try again.'));
         }

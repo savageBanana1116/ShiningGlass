@@ -7,6 +7,7 @@ namespace App\Controller;
  * Abouts Controller
  *
  * @property \App\Model\Table\AboutsTable $Abouts
+ * @property \App\Model\Table\ArtistsTable $Artists
  * @method \App\Model\Entity\About[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
  */
 class AboutsController extends AppController
@@ -18,8 +19,11 @@ class AboutsController extends AppController
      */
     public function index()
     {
-        $abouts = $this->paginate($this->Abouts);
+        $this->loadModel('Artists');
+        $artists = $this->paginate($this->Artists);
+        $this->set(compact('artists'));
 
+        $abouts = $this->paginate($this->Abouts);
         $this->set(compact('abouts'));
     }
 

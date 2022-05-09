@@ -2,6 +2,7 @@
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\About[]|\Cake\Collection\CollectionInterface $abouts
+ * @var \App\Model\Entity\About[]|\Cake\Collection\CollectionInterface $artists
  */
 ?>
 <div class="abouts index content">
@@ -9,8 +10,30 @@
     <div class="table-responsive">
         <table>
             <thead>
+            <tr>
+                <th><?= $this->Paginator->sort('name') ?></th>
+                <th><?= $this->Paginator->sort('image') ?></th>
+                <th class="actions"><?= __('Actions') ?></th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php foreach ($artists as $artist): ?>
                 <tr>
-                    <th><?= $this->Paginator->sort('Field') ?></th>
+
+                    <td><?= h($artist->name) ?></td>
+                    <td><img src="webroot/img/<?= h($artist->image) ?>" width="50" height="50"></td>
+                    <td class="actions">
+                        <?= $this->Html->link(__('Edit'), ['action' => 'edit', $artist->id]) ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
                     <th><?= $this->Paginator->sort('title') ?></th>
                     <th><?= $this->Paginator->sort('text') ?></th>
                     <th class="actions"><?= __('Actions') ?></th>
@@ -32,14 +55,5 @@
             </tbody>
         </table>
     </div>
-    <div class="paginator">
-        <ul class="pagination">
-            <?= $this->Paginator->first('<< ' . __('first')) ?>
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
-            <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
-            <?= $this->Paginator->last(__('last') . ' >>') ?>
-        </ul>
-        <p><?= $this->Paginator->counter(__('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')) ?></p>
-    </div>
+
 </div>

@@ -13,16 +13,20 @@
     </aside>
     <div class="column-responsive column-80">
         <div class="artists form content">
-            <?= $this->Form->create($artist) ?>
+            <?= $this->Form->create($artist,['type'=>'file']) ?>
             <fieldset>
                 <legend><?= __('Edit Artist') ?></legend>
                 <?php
+                    //echo $this->Form->control('id');
                     echo $this->Form->control('name');
-                    echo $this->Form->control('image_file',['type'=>'file','class'=>'form-control']);
+                    echo $this->Form->control('image_file',['type'=>'file', 'class' => 'form-control']);
+                    //debug($_POST);
+
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>
             <?= $this->Form->end() ?>
+
         </div>
     </div>
 </div>

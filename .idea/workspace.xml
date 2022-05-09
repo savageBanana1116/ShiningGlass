@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b1819f3-35b0-4125-91e8-d4a45f76a1ab" name="Changes" comment="Pull from dev cPanel and pushed to git for local development">
+    <list default="true" id="8b1819f3-35b0-4125-91e8-d4a45f76a1ab" name="Changes" comment="added content management system&#10;added abouts page&#10;added artists page">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_05_2022_9_22_pm_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_05_2022_9_22_pm__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database_Schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Database_Schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/AboutsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/src/Controller/AboutsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/ArtistsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/src/Controller/ArtistsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Abouts/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Abouts/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Artists/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Artists/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Artists/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Artists/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Artists/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Artists/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,11 +30,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/ShiningGlass/config/app_local.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ShiningGlass/templates/Artworks/add.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ShiningGlass/templates/Artworks/edit.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ShiningGlass/templates/Artworks/index.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ShiningGlass/templates/Artworks/view.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ShiningGlass/config/app_local.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -134,15 +144,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\team18-app_fit3047\ShiningGlass\templates" />
-      <recent name="C:\xampp\htdocs\team18-app_fit3047\ShiningGlass\webroot\img\artwork-img" />
-      <recent name="C:\xampp\htdocs\team18-app_fit3047\ShiningGlass\webroot\img" />
-    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -154,18 +156,9 @@
       <updated>1649487549387</updated>
       <workItem from="1649487554593" duration="18397000" />
       <workItem from="1649559050036" duration="6133000" />
-      <workItem from="1649570479284" duration="18101000" />
-      <workItem from="1649643981107" duration="1857000" />
-      <workItem from="1649681621531" duration="915000" />
-      <workItem from="1649830833139" duration="330000" />
-      <workItem from="1650943943524" duration="1109000" />
-      <workItem from="1650970095904" duration="109000" />
-      <workItem from="1651109997682" duration="167000" />
-      <workItem from="1651110264931" duration="451000" />
-      <workItem from="1651110734914" duration="155000" />
-      <workItem from="1651111092229" duration="613000" />
-      <workItem from="1651398704137" duration="33000" />
-      <workItem from="1651398856153" duration="143000" />
+      <workItem from="1651917343750" duration="6874000" />
+      <workItem from="1651982937723" duration="8485000" />
+      <workItem from="1652062810471" duration="7320000" />
     </task>
     <task id="LOCAL-00001" summary="About page changes 1.0">
       <created>1649507887922</created>
@@ -181,49 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649561662963</updated>
     </task>
-    <task id="LOCAL-00003" summary="Gallery Page updated with pulling from back-end">
-      <created>1649587623389</created>
+    <task id="LOCAL-00003" summary="added content management system&#10;added abouts page&#10;added artists page">
+      <created>1651993469758</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1649587623389</updated>
+      <updated>1651993469758</updated>
     </task>
-    <task id="LOCAL-00004" summary="Update Gallery page and layout template">
-      <created>1649592651883</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1649592651883</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Removal of edit button from individual view page">
-      <created>1649644188619</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1649644188619</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Edit Page fixed">
-      <created>1649644881348</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1649644881348</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Pull from dev cPanel and pushed to git for local development">
-      <created>1651110519042</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1651110519042</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Pull from dev cPanel and pushed to git for local development">
-      <created>1651111771050</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1651111771050</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,15 +197,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="About page changes 1.0" />
     <MESSAGE value="changes to view page of artworks:&#10; - on delete display name and id" />
-    <MESSAGE value="Gallery Page updated with pulling from back-end" />
-    <MESSAGE value="Update Gallery page and layout template" />
-    <MESSAGE value="Removal of edit button from individual view page" />
-    <MESSAGE value="Edit Page fixed" />
-    <MESSAGE value="Pull from dev cPanel and pushed to git for local development" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pull from dev cPanel and pushed to git for local development" />
+    <MESSAGE value="added content management system&#10;added abouts page&#10;added artists page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added content management system&#10;added abouts page&#10;added artists page" />
   </component>
 </project>
