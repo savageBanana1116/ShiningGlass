@@ -79,6 +79,49 @@ class ArtworksController extends AppController
                     $image->moveTo($targetPath);
 
                 $artwork->image = 'artwork-img/' . $name;
+
+
+                $image2 = $this->request->getData('image_file2');
+                $name2 = $image2->getClientFilename();
+                if (!is_dir(WWW_ROOT . 'img' . DS . 'artwork-img'))
+                    mkdir(WWW_ROOT . 'img' . DS . 'artwork-img', 0775);
+                $targetPath2 = WWW_ROOT . 'img' . DS . 'artwork-img' . DS . $name2;
+                if ($name2)
+                    $image2->moveTo($targetPath2);
+                $artwork->image2 = 'artwork-img/' . $name2;
+
+
+                $image3 = $this->request->getData('image_file3');
+                $name3 = $image3->getClientFilename();
+                if (!is_dir(WWW_ROOT . 'img' . DS . 'artwork-img'))
+                    mkdir(WWW_ROOT . 'img' . DS . 'artwork-img', 0775);
+                $targetPath3 = WWW_ROOT . 'img' . DS . 'artwork-img' . DS . $name3;
+                if ($name3)
+                    $image3->moveTo($targetPath3);
+                $artwork->image3 = 'artwork-img/' . $name3;
+
+
+                $image4 = $this->request->getData('image_file4');
+                $name4 = $image4->getClientFilename();
+                if (!is_dir(WWW_ROOT . 'img' . DS . 'artwork-img'))
+                    mkdir(WWW_ROOT . 'img' . DS . 'artwork-img', 0775);
+                $targetPath4 = WWW_ROOT . 'img' . DS . 'artwork-img' . DS . $name4;
+                if ($name4)
+                    $image4->moveTo($targetPath4);
+                $artwork->image4 = 'artwork-img/' . $name4;
+
+                $image5 = $this->request->getData('image_file5');
+                $name5 = $image5->getClientFilename();
+                if (!is_dir(WWW_ROOT . 'img' . DS . 'artwork-img'))
+                    mkdir(WWW_ROOT . 'img' . DS . 'artwork-img', 0775);
+                $targetPath5 = WWW_ROOT . 'img' . DS . 'artwork-img' . DS . $name5;
+                if ($name5)
+                    $image5->moveTo($targetPath5);
+                $artwork->image5 = 'artwork-img/' . $name5;
+
+
+
+
             }
 
             if ($this->Artworks->save($artwork)) {

@@ -105,6 +105,7 @@ class ArtworksTable extends Table
             ->maxLength('image', 255)
             ->allowEmptyFile('image');
 
+
         return $validator;
     }
 

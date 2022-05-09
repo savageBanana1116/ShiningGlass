@@ -2,7 +2,7 @@
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Artwork $artwork
- *  * @var \Cake\Collection\CollectionInterface|string[] $categories
+ * @var \Cake\Collection\CollectionInterface|string[] $categories
  *  * @var \App\Model\Entity\Artwork[]|\Cake\Collection\CollectionInterface $artworks
 
  */
@@ -42,6 +42,7 @@
 </div>
  <div class="drop">
 
+
      <?= $this->Form->create(null,['type'=>'get'])?>
      <?= $this->Form->control('categories_id', ['options' => $categories, 'class' => 'form-control']);;?>
      <?= $this->Form->submit('Filter')?>
@@ -78,10 +79,10 @@
                                     <div class="row gx-4 gx-lg-5 align-items-center my-5">
                                         <div class="col-lg-7"><?= $this->Html->image($artwork->image, ['style' => 'max-height: 900px; max-width: 400px']) ?>
                                             <div style="max-width: 900px; margin-top: 15px";>
-                                                <?= $this->Html->image($artwork->image, ['style' => 'max-height: 150px; max-width: 150px']) ?>
-                                                <?= $this->Html->image($artwork->image, ['style' => 'max-height: 150px; max-width: 150px']) ?>
-                                                <?= $this->Html->image($artwork->image, ['style' => 'max-height: 150px; max-width: 150px']) ?>
-                                                <?= $this->Html->image($artwork->image, ['style' => 'max-height: 150px; max-width: 150px']) ?>
+                                                <?= $this->Html->image($artwork->image2, ['style' => 'max-height: 150px; max-width: 150px']) ?>
+                                                <?= $this->Html->image($artwork->image3, ['style' => 'max-height: 150px; max-width: 150px']) ?>
+                                                <?= $this->Html->image($artwork->image4, ['style' => 'max-height: 150px; max-width: 150px']) ?>
+                                                <?= $this->Html->image($artwork->image5, ['style' => 'max-height: 150px; max-width: 150px']) ?>
                                         </div>
                                         </div>
 

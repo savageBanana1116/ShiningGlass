@@ -22,7 +22,7 @@
                 </tr>
                 <tr>
                     <th><?= __('Image') ?></th>
-                    <td><img src="webroot/img/WIN_20220312_16_33_21_Pro.jpg ?>"</td>
+                    <td><img src="webroot/img/<?h($artist->image) ?>"</td>
                 </tr>
             </table>
         </div>

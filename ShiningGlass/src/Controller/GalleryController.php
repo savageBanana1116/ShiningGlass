@@ -8,12 +8,15 @@ use Cake\Auth\DefaultPasswordHasher;
  * Gallery Controller
  *
  * @property \App\Model\Table\ArtworksTable $Artworks
+ *  * @property \App\Model\Table\CategoriesTable $Categories
  * @method \App\Model\Entity\Artwork[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
  */
 
 class GalleryController extends AppController{
     public function index()
     {
+
+
         $categories = $this->fetchTable('categories')->find();
         $this->set(compact('categories'));
         // $this->fetchTable('Articles')->find()->all();

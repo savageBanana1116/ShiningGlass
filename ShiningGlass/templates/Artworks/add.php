@@ -36,6 +36,12 @@
                     echo  '<span id="textHelpBlock" class="form-text text-muted">Select a category if relevant to the Artwork, if not leave blank.</span>';
                     echo $this->Form->control('image_file',['type'=>'file', 'class' => 'form-control', 'required' => 'required']);
                     echo  '<span id="textHelpBlock" class="form-text text-muted">Upload the image of your artwork</span>';
+                echo $this->Form->control('image_file2',['type'=>'file', 'class' => 'form-control', 'required' => 'required']);
+                echo $this->Form->control('image_file3',['type'=>'file', 'class' => 'form-control', 'required' => 'required']);
+                echo $this->Form->control('image_file4',['type'=>'file', 'class' => 'form-control', 'required' => 'required']);
+                echo $this->Form->control('image_file5',['type'=>'file', 'class' => 'form-control', 'required' => 'required']);
+                echo  '<span id="textHelpBlock" class="form-text text-muted">Upload the Minor images of your artwork</span>';
+
                 ?>
 
             </fieldset>
