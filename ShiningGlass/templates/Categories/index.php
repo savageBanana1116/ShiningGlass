@@ -5,24 +5,38 @@
  */
 ?>
 <div class="categories index content">
+
     <?= $this->Html->css('styles.css') ?>
-    <?= $this->element('nav')?>
-    <?= $this->Html->link(__('New Category'), ['action' => 'add'], ['class' => 'button float-right']) ?>
-    <h3><?= __('Categories') ?></h3>
+    <?= $this->element('nav') ?>
+
+    <aside class="column">
+        <div class="side-nav">
+            <h3><?= __('Categories') ?></h3>
+            <nav class="nav justify-content-center nav-pills nav-fill" style="padding: 5px">
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item" style="padding: 5px">
+                        <a>
+                            <?= $this->Html->link(__('New Category'), ['action' => 'add'], ['class' => 'nav-item nav-link active btn btn-primary']) ?>
+                        </a>
+                    </li>
+            </nav>
+        </div>
+    </aside>
+
     <div class="table-responsive">
         <table>
             <thead>
-                <tr>
-                    <th><?= $this->Paginator->sort('name') ?></th>
-                    <th><?= $this->Paginator->sort('description') ?></th>
-                    <th><?= $this->Paginator->sort('create_date') ?></th>
-                    <th class="actions"><?= __('Actions') ?></th>
-                </tr>
+            <tr>
+                <th><?= $this->Paginator->sort('name') ?></th>
+                <th><?= $this->Paginator->sort('description') ?></th>
+                <th><?= $this->Paginator->sort('create_date') ?></th>
+                <th class="actions"><?= __('Actions') ?></th>
+            </tr>
             </thead>
             <tbody>
-                <?php foreach ($categories as $category): ?>
+            <?php foreach ($categories as $category): ?>
                 <tr>
-                    
+
                     <td><?= h($category->name) ?></td>
                     <td><?= h($category->description) ?></td>
                     <td><?= h($category->create_date) ?></td>
@@ -32,7 +46,7 @@
                         <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $category->id], ['confirm' => __('Are you sure you want to delete # {0}?', $category->id)]) ?>
                     </td>
                 </tr>
-                <?php endforeach; ?>
+            <?php endforeach; ?>
             </tbody>
         </table>
     </div>
@@ -47,3 +61,8 @@
         <p><?= $this->Paginator->counter(__('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')) ?></p>
     </div>
 </div>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
