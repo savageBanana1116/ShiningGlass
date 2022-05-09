@@ -10,6 +10,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        form {
+            padding: 15px;
+            background: #fff;
+            display: none;
+        }
+    </style>
+
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta name="description" content=""/>
@@ -22,6 +30,7 @@
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Core theme CSS (includes Bootstrap)-->
 
     <?= $this->Html->css('styles.css') ?>
@@ -100,7 +109,61 @@
                                             <hr>
                                             <br>
 
-                                            <a class="btn btn-primary text-center" href="#!">Order Form Coming Soon</a>
+                                            <script>
+                                                $(document).ready(function() {
+                                                    $("#formButton-<?php echo $i; // Displaying the increment ?>").click(function(){
+                                                        $("#form-<?php echo $i; // Displaying the increment ?>").toggle();
+                                                    });
+                                                });
+                                            </script>
+                                            <button type="button" id="formButton-<?php echo $i; // Displaying the increment ?>">Open Order Form</button>
+
+                                            <form id="form-<?php echo $i; // Displaying the increment ?>">
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <label for="inputEmail4">Email</label>
+                                                            <input class="form-control" id="inputEmail4" placeholder="Email">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="inputPassword4">Password</label>
+                                                            <input class="form-control" id="inputPassword4" placeholder="Password">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputAddress">Address</label>
+                                                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputAddress2">Address 2</label>
+                                                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <label for="inputCity">City</label>
+                                                            <input type="text" class="form-control" id="inputCity">
+                                                        </div>
+                                                        <div class="form-group col-md-4">
+                                                            <label for="inputState">State</label>
+                                                            <select id="inputState" class="form-control">
+                                                                <option selected>Choose...</option>
+                                                                <option>...</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-md-2">
+                                                            <label for="inputZip">Zip</label>
+                                                            <input type="text" class="form-control" id="inputZip">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                            <label class="form-check-label" for="gridCheck">
+                                                                Check me out
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                                </form>
                                         </div>
                                     </div>
                                 </div>

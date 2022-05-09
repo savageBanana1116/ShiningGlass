@@ -7,4 +7,9 @@ class AdminPortalController extends AppController{
         $this->viewBuilder()->setLayout('ajax');
     }
 
+    public function beforeFilter(\Cake\Event\EventInterface $event)
+    {
+        parent::beforeFilter($event);
+        $this->Authentication->addUnauthenticatedActions([]);
+    }
 }

@@ -5,17 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b1819f3-35b0-4125-91e8-d4a45f76a1ab" name="Changes" comment="added content management system&#10;added abouts page&#10;added artists page">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_05_2022_9_22_pm_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_05_2022_9_22_pm__Changes_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShiningGlass/templates/Pages/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_05_2022_3_38_pm__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_05_2022_3_38_pm__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/team18-app_fit3047.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/team18-app_fit3047.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database_Schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Database_Schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/src/Application.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/AboutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/src/Controller/AboutController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/AboutsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/src/Controller/AboutsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/ArtistsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/src/Controller/ArtistsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Abouts/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Abouts/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Artists/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Artists/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Artists/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Artists/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Artists/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Artists/view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/AdminPortalController.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/src/Controller/AdminPortalController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/src/Controller/AppController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/src/Controller/BlogController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/src/Controller/ContactController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/GalleryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/src/Controller/GalleryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/src/Controller/LandingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/src/Controller/LandingController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/AdminPortal/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/AdminPortal/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Admins/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Admins/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Artworks/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Categories/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Categories/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/Gallery/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/Gallery/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/templates/element/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/templates/element/nav.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShiningGlass/webroot/css/sb-admin-2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/ShiningGlass/webroot/css/sb-admin-2.min.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,41 +45,79 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ShiningGlass/config/app_local.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ShiningGlass/templates/Artworks/add.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ShiningGlass/templates/Artworks/edit.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ShiningGlass/templates/Artworks/index.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ShiningGlass/templates/Artworks/view.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ShiningGlass/config/app_local.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/filesystem" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/finder" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/polyfill-ctype" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/polyfill-intl-grapheme" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/polyfill-intl-normalizer" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/polyfill-mbstring" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/polyfill-php73" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/polyfill-php80" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/polyfill-php81" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/process" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/service-contracts" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/string" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/theseer/tokenizer" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/doctrine/instantiator" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/slevomat/coding-standard" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/robmorgan/phinx" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/sebastian/cli-parser" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/sebastian/code-unit" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/sebastian/code-unit-reverse-lookup" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/phpstan/phpdoc-parser" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/ShiningGlass/vendor/composer" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/laminas/laminas-httphandlerrunner" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/laminas/laminas-diactoros" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/cakephp/twig-view" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/cakephp/plugin-installer" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/cakephp/migrations" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/cakephp/debug_kit" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/cakephp/chronos" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/cakephp/cakephp-codesniffer" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/cakephp/cakephp" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/cakephp/bake" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/league/container" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/jasny/twig-extensions" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/brick/varexporter" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/twig/markdown-extra" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/slevomat/coding-standard" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/robmorgan/phinx" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/psr/http-server-middleware" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/psr/http-server-handler" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/ShiningGlass/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/psr/http-factory" />
       <path value="$PROJECT_DIR$/ShiningGlass/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/psr/http-client" />
       <path value="$PROJECT_DIR$/ShiningGlass/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/psr/container" />
       <path value="$PROJECT_DIR$/ShiningGlass/vendor/sebastian/exporter" />
       <path value="$PROJECT_DIR$/ShiningGlass/vendor/sebastian/global-state" />
       <path value="$PROJECT_DIR$/ShiningGlass/vendor/sebastian/lines-of-code" />
@@ -78,55 +131,19 @@
       <path value="$PROJECT_DIR$/ShiningGlass/vendor/webmozart/assert" />
       <path value="$PROJECT_DIR$/ShiningGlass/vendor/dealerdirect/phpcodesniffer-composer-installer" />
       <path value="$PROJECT_DIR$/ShiningGlass/vendor/josegonzalez/dotenv" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/filesystem" />
       <path value="$PROJECT_DIR$/ShiningGlass/vendor/mobiledetect/mobiledetectlib" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/justinrainbow/json-schema" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/phpdocumentor/reflection-common" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/phpdocumentor/reflection-docblock" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/phpdocumentor/type-resolver" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/m1/env" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/psr/container" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/psr/http-client" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/psr/http-factory" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/psr/http-message" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/psr/http-server-handler" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/psr/http-server-middleware" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/psr/log" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/psr/simple-cache" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/seld/jsonlint" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/seld/phar-utils" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/twig/markdown-extra" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/twig/twig" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/brick/varexporter" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/jasny/twig-extensions" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/jdorn/sql-formatter" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/nikic/php-parser" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/react/promise" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/league/container" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/cakephp/bake" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/cakephp/cakephp" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/cakephp/cakephp-codesniffer" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/cakephp/chronos" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/cakephp/debug_kit" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/cakephp/migrations" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/cakephp/plugin-installer" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/cakephp/twig-view" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/laminas/laminas-diactoros" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/laminas/laminas-httphandlerrunner" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/laminas/laminas-zendframework-bridge" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/myclabs/deep-copy" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/phar-io/manifest" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/phar-io/version" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/phpspec/prophecy" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/phpstan/phpdoc-parser" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/phpunit/php-code-coverage" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/phpunit/php-file-iterator" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/phpunit/php-invoker" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/phpunit/php-text-template" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/phpunit/php-timer" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/phpunit/phpunit" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/config" />
-      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/console" />
       <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/m1/env" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/cakephp/authentication" />
+      <path value="$PROJECT_DIR$/ShiningGlass/vendor/cakephp/authorization" />
     </include_path>
   </component>
   <component name="ProjectId" id="27YCHA207rZfbnvgJ2WTF5YwC7R" />
@@ -145,6 +162,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\team18-app_fit3047\ShiningGlass\templates\Pages" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -197,7 +219,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="About page changes 1.0" />
