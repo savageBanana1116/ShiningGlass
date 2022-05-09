@@ -8,14 +8,23 @@
 
 
 <style>
-    img{
-       float: left;
-       width: 500px;
-        height: 500px;
+
+    .artworkscontainer {
+
+        display: flex;
     }
-    .artworkscontainer{
+    .textContainer{
         font-size: 30px;
+        width: 50%;
     }
+    .imageContainer{
+        float: left;
+        width: 500px;
+        height:500px;
+        margin: 5px;
+        width: 50%;
+    }
+
 
 </style>
 <div class="related">
@@ -30,9 +39,20 @@
 </div>
 <hr>
 <br>
+<div class="artworkscontainer">
 
-    <div class="artworkscontainer">
-<?= $this->Html->image($artwork->image, ['class' => 'image']) ?>
+
+    <div class="imageContainer">
+              <?= $this->Html->image($artwork->image, ['style' => 'max-height: 500px; max-width: 500px']) ?>
+
+              <?= $this->Html->image($artwork->image2, ['style' => 'max-height: 150px; max-width: 150px']) ?>
+              <?= $this->Html->image($artwork->image3, ['style' => 'max-height: 150px; max-width: 150px']) ?>
+              <?= $this->Html->image($artwork->image4, ['style' => 'max-height: 150px; max-width: 150px']) ?>
+              <?= $this->Html->image($artwork->image5, ['style' => 'max-height: 150px; max-width: 150px']) ?>
+
+    </div>
+
+    <div class="textContainer">
                     <?=__('Name: ') ?>
                     <?= h($artwork->name)?>
 
@@ -53,12 +73,15 @@
 
         <p>For enquiries about this item please contact us at Lisa@shiningglass.com.au </p>
     </div>
-    <?php if (!empty($artwork->categories)) : ?>
-            <div class="related">
+</div>
+
+
+     <?php if (!empty($artwork->categories)) : ?>
+    <div class="related"">
                 <h4><?= __('Related Categories') ?></h4>
 
                 <div class="table-responsive">
-                    <table>
+                    <table >
                         <tr>
                             <th><?= __('Name') ?></th>
                             <th><?= __('Description') ?></th>
@@ -83,7 +106,7 @@
                 </div>
                 <?php endif; ?>
             </div>
-            <div class="related">
+                <div class="related">
                 <?php if (!empty($artwork->artwork_images)) : ?>
                 <h4><?= __('Related Artwork Images') ?></h4>
 
@@ -111,6 +134,7 @@
                 </div>
                 <?php endif; ?>
             </div>
+
 
 
 
