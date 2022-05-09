@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 08, 2022 at 08:59 AM
+-- Generation Time: May 09, 2022 at 07:45 AM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.8
 
@@ -72,7 +72,7 @@ CREATE TABLE `artists` (
 --
 
 INSERT INTO `artists` (`id`, `name`, `image`) VALUES
-(2, 'Sam Smith', 'artist-img/WIN_20220312_16_33_21_Pro.jpg');
+(2, 'Sam Smith', 'artist-img/patato.png');
 
 -- --------------------------------------------------------
 
@@ -89,23 +89,27 @@ CREATE TABLE `artworks` (
                             `create_date` datetime NOT NULL,
                             `order_id` int(11) DEFAULT NULL,
                             `image` varchar(255) DEFAULT 'No image',
-                            `name` varchar(255) NOT NULL
+                            `name` varchar(255) NOT NULL,
+                            `image2` varchar(255) DEFAULT NULL,
+                            `image3` varchar(255) DEFAULT NULL,
+                            `image4` varchar(255) DEFAULT NULL,
+                            `image5` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `artworks`
 --
 
-INSERT INTO `artworks` (`id`, `price`, `weight`, `size`, `descriptions`, `create_date`, `order_id`, `image`, `name`) VALUES
-(9, 1, 1, '1', '1', '2022-04-09 20:48:44', NULL, 'cake.icon.png', 'hive'),
-(10, 1, 1, '1', '1', '2022-04-09 20:48:44', NULL, 'cake.icon.png', 'blue'),
-(11, 1, 1, '1', '1', '2022-04-09 21:39:12', NULL, 'cake.icon.png', 'paint'),
-(12, 1, 1, '1', '1', '2022-04-09 21:39:12', NULL, 'cake.icon.png', 'pineapple'),
-(13, 1, 1, '1', '1', '2022-04-09 21:43:42', NULL, 'cake.icon.png', 'yello'),
-(14, 1, 1, '1', '1', '2022-04-09 21:43:42', NULL, 'cake.icon.png', 'leaf'),
-(20, 1, 1, '1', '11', '2022-04-10 12:46:26', NULL, 'No image', '1'),
-(21, 1, 1, '1', '1', '2022-04-10 12:47:51', NULL, 'No image1', 'my artworks'),
-(22, 1, 1, '1', '1', '2022-04-09 20:48:44', NULL, 'cake.icon.png', 'edge');
+INSERT INTO `artworks` (`id`, `price`, `weight`, `size`, `descriptions`, `create_date`, `order_id`, `image`, `name`, `image2`, `image3`, `image4`, `image5`) VALUES
+(9, 1, 1, '1', '1', '2022-04-09 20:48:44', NULL, 'cake.icon.png', 'hive', NULL, NULL, NULL, NULL),
+(10, 1, 1, '1', '1', '2022-04-09 20:48:44', NULL, 'cake.icon.png', 'blue', NULL, NULL, NULL, NULL),
+(11, 1, 1, '1', '1', '2022-04-09 21:39:12', NULL, 'cake.icon.png', 'paint', NULL, NULL, NULL, NULL),
+(12, 1, 1, '1', '1', '2022-04-09 21:39:12', NULL, 'cake.icon.png', 'pineapple', NULL, NULL, NULL, NULL),
+(13, 1, 1, '1', '1', '2022-04-09 21:43:42', NULL, 'cake.icon.png', 'yello', NULL, NULL, NULL, NULL),
+(14, 1, 1, '1', '1', '2022-04-09 21:43:42', NULL, 'cake.icon.png', 'leaf', NULL, NULL, NULL, NULL),
+(20, 1, 1, '1', '11', '2022-04-10 12:46:26', NULL, 'No image', '1', NULL, NULL, NULL, NULL),
+(21, 1, 1, '1', '1', '2022-04-10 12:47:51', NULL, 'No image1', 'my artworks', NULL, NULL, NULL, NULL),
+(22, 1, 1, '1', '1', '2022-04-09 20:48:44', NULL, 'cake.icon.png', 'edge', NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -292,7 +296,7 @@ ALTER TABLE `admins`
 -- AUTO_INCREMENT for table `artists`
 --
 ALTER TABLE `artists`
-    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `artworks`
