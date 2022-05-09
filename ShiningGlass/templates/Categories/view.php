@@ -4,6 +4,11 @@
  * @var \App\Model\Entity\Category $category
  */
 ?>
+
+<?= $this->Html->css('styles.css') ?>
+<?= $this->element('nav') ?>
+<?= $this->Html->css('cake.css') ?>
+
 <div class="row">
     <aside class="column">
         <div class="side-nav">
@@ -41,10 +46,11 @@
             </nav>
         </div>
     </aside>
-    <div class="column-responsive column-80">
+
+    <div class="table-responsive" style="padding-top:10px;">
         <div class="categories view content">
             <h3><?= h($category->name) ?></h3>
-            <table>
+            <table class="table table-bordered">
                 <tr>
                     <th><?= __('Name') ?></th>
                     <td><?= $this->Number->format($category->name) ?></td>

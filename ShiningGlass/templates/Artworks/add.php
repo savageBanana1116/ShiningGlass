@@ -6,11 +6,24 @@
  * @var \Cake\Collection\CollectionInterface|string[] $categories
  */
 ?>
+
+<?= $this->Html->css('styles.css') ?>
+<?= $this->element('nav') ?>
+<?= $this->Html->css('cake.css') ?>
+
 <div class="row">
     <aside class="column">
         <div class="side-nav">
-            <h4 class="heading"><?= __('Actions') ?></h4>
-            <?= $this->Html->link(__('List Artworks'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
+            <nav class="nav justify-content-center nav-pills nav-fill" style="padding: 5px">
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item" style="padding: 5px">
+                        <a>
+                            <?= $this->Html->link(__('List Artworks'),
+                                ['action' => 'index'],
+                                ['class' => 'nav-item nav-link active']) ?>
+                        </a>
+                    </li>
+            </nav>
         </div>
     </aside>
     <div class="column-responsive column-80" align="left">

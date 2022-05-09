@@ -20,12 +20,13 @@
                             <?= $this->Html->link(__('New Category'), ['action' => 'add'], ['class' => 'nav-item nav-link active btn btn-primary']) ?>
                         </a>
                     </li>
+                </ul>
             </nav>
         </div>
     </aside>
 
-    <div class="table-responsive">
-        <table>
+    <div class="table-responsive" style="padding-top: 10px;">
+        <table class="table table-bordered">
             <thead>
             <tr>
                 <th><?= $this->Paginator->sort('name') ?></th>
@@ -37,14 +38,17 @@
             <tbody>
             <?php foreach ($categories as $category): ?>
                 <tr>
-
                     <td><?= h($category->name) ?></td>
                     <td><?= h($category->description) ?></td>
                     <td><?= h($category->create_date) ?></td>
                     <td class="actions">
-                        <?= $this->Html->link(__('View'), ['action' => 'view', $category->id]) ?>
-                        <?= $this->Html->link(__('Edit'), ['action' => 'edit', $category->id]) ?>
-                        <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $category->id], ['confirm' => __('Are you sure you want to delete # {0}?', $category->id)]) ?>
+                        <?= $this->Html->link(__('View'),
+                            ['action' => 'view', $category->id]) ?>
+                        <?= $this->Html->link(__('Edit'),
+                            ['action' => 'edit', $category->id]) ?>
+                        <?= $this->Form->postLink(__('Delete'),
+                            ['action' => 'delete', $category->id],
+                            ['confirm' => __('Are you sure you want to delete # {0}?', $category->id)]) ?>
                     </td>
                 </tr>
             <?php endforeach; ?>

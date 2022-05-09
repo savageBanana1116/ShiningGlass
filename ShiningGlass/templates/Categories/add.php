@@ -5,6 +5,11 @@
  * @var \Cake\Collection\CollectionInterface|string[] $artworks
  */
 ?>
+
+<?= $this->Html->css('styles.css') ?>
+<?= $this->element('nav') ?>
+<?= $this->Html->css('cake.css') ?>
+
 <div class="row">
     <aside class="column">
         <div class="side-nav">
@@ -28,14 +33,14 @@
                 <?php
                     echo $this->Form->control('name', ['type' => 'text', 'class' => 'form-control', 'placeholder' => 'Enter Category Name', 'required' => 'required', 'maxlength' => '30']);
                     echo  '<span id="textHelpBlock" class="form-text text-muted">Max 30 characters</span>';
-
                     echo $this->Form->control('description', ['type' => 'textarea', 'class' => 'form-control', 'placeholder' => 'Enter Category Description', 'required' => 'required']);
                     echo  '<span id="textHelpBlock" class="form-text text-muted">Max 255 characters</span>';
                     echo $this->Form->control('create_date', ['class' => 'form-control', 'required' => 'required']);
                     echo  '<span id="textHelpBlock" class="form-text text-muted">Enter the date that the category was created</span>';
                 ?>
-            </fieldset<br>
-            <?= $this->Form->button(__('Submit')) ?>
+            </fieldset>
+            <br>
+            <?= $this->Form->button(__('Submit'), ['class' => 'btn-success'] ) ?>
             <?= $this->Form->end() ?>
         </div>
     </div>

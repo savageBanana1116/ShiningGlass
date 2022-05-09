@@ -5,6 +5,11 @@
  * @var string[]|\Cake\Collection\CollectionInterface $artworks
  */
 ?>
+
+<?= $this->Html->css('styles.css') ?>
+<?= $this->element('nav') ?>
+<?= $this->Html->css('cake.css') ?>
+
 <div class="row">
     <aside class="column">
         <div class="side-nav">

@@ -6,18 +6,33 @@
  * @var string[]|\Cake\Collection\CollectionInterface $categories
  */
 ?>
+
+<?= $this->Html->css('styles.css') ?>
+<?= $this->element('nav') ?>
+<?= $this->Html->css('cake.css') ?>
+
 <div class="row">
     <aside class="column">
         <div class="side-nav">
-            <h2 class="heading"><?= __('Actions') ?></h2>
-            <?= $this->Form->button(
-                __('Delete Artwork'),
-                ['action' => 'delete', $artwork->id],
-                ['confirm' => __('Are you sure you want to delete {0}?', $artwork->name), 'class' => 'side-nav-item']
-            ) ?>
-            <br>
-            <br>
-            <?= $this->Html->link(__('Back to Artworks List View'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
+            <nav class="nav justify-content-center nav-pills nav-fill" style="padding: 5px">
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item" style="padding: 5px">
+                        <a>
+                            <?= $this->Form->postLink(__('Delete'),
+                                ['action' => 'delete', $artwork->id],
+                                ['confirm' => __('Are you sure you want to delete # {0}?', $artwork->id),
+                                    'class' => 'nav-item nav-link active btn-danger']
+                            ) ?>
+                        </a>
+                    </li>
+                    <li class="nav-item" style="padding: 5px">
+                        <a>
+                            <?= $this->Html->link(__('List Artwork'),
+                                ['action' => 'index'],
+                                ['class' => 'nav-item nav-link active']) ?>
+                        </a>
+                    </li>
+            </nav>
         </div>
     </aside>
     <div class="column-responsive column-80" align="left">

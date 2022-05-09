@@ -8,41 +8,62 @@
     img {
         width: 100%;
         height: 100%;
-        padding: 10px;
+        max-width: 150px;
+        max-height: 150px;
+        padding: 5px;
     }
+
     .grid-container {
         display: grid;
-        column-gap: 50px;
+        column-gap: 10px;
     }
 </style>
-<?= $this->Html->link(__('New Artwork'), ['action' => 'add'], ['class' => 'button float-right']) ?>
-<div class="grid-container">
-            <?php foreach ($artworks as $artwork): ?>
 
+<?= $this->Html->css('styles.css') ?>
+<?= $this->element('nav') ?>
+<?= $this->Html->css('cake.css') ?>
 
-                <div class="grid-item"><?= $this->Html->image($artwork->image, ['class' => 'image']) ?><br><?= $this->Html->link(__($artwork->name), ['action' => 'view', $artwork->id]) ?></div>
-
-                <!--                        <div class="grid-item">2</div>-->
-                <!--                        <div class="grid-item">3</div>-->
-                <!--                        <div class="grid-item">4</div>-->
-                <!--                        <div class="grid-item">5</div>-->
-                <!--                        <div class="grid-item">6</div>-->
-                <!--                        <div class="grid-item">7</div>-->
-                <!--                        <div class="grid-item">8</div>-->
-                <!--                        <div class="grid-item">9</div>-->
-            <?php endforeach; ?>
+<div class="artworks-index-content">
+    <aside class="column">
+        <div class="side-nav">
+            <h3><?= __('Artworks') ?></h3>
+            <nav class="nav justify-content-center nav-pills nav-fill" style="padding: 5px">
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item" style="padding: 5px">
+                        <a>
+                            <?= $this->Html->link(__('New Artwork'), ['action' => 'add'], ['class' => 'nav-item nav-link active btn btn-primary']) ?>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <!--            </tbody>-->
-        <!--        </table>-->
-        <!--    </div>-->
-        <div class="paginator">
-            <ul class="pagination">
-                <?= $this->Paginator->first('<< ' . __('first')) ?>
-                <?= $this->Paginator->prev('< ' . __('previous')) ?>
-                <?= $this->Paginator->numbers() ?>
-                <?= $this->Paginator->next(__('next') . ' >') ?>
-                <?= $this->Paginator->last(__('last') . ' >>') ?>
-            </ul>
-            <p><?= $this->Paginator->counter(__('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')) ?></p>
-        </div>
+    </aside>
+
+    <div class="grid-container">
+        <?php foreach ($artworks as $artwork): ?>
+            <div class="grid-item">
+                <?= $this->Html->image($artwork->image,
+                    ['class' => 'image'])
+                ?>
+                <br>
+                <?= $this->Html->link(__($artwork->name),
+                    ['action' => 'view', $artwork->id])
+                ?>
+            </div>
+        <?php endforeach; ?>
     </div>
+
+    <div class="paginator" style="justify-content: center">
+        <ul class="pagination">
+            <?= $this->Paginator->first('<< ' . __('first')) ?>
+            <?= $this->Paginator->prev('< ' . __('previous')) ?>
+            <?= $this->Paginator->numbers() ?>
+            <?= $this->Paginator->next(__('next') . ' >') ?>
+            <?= $this->Paginator->last(__('last') . ' >>') ?>
+        </ul>
+        <p><?= $this->Paginator->counter(__('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')) ?></p>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
