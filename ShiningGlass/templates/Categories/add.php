@@ -25,8 +25,8 @@
             </nav>
         </div>
     </aside>
-    <div class="column-responsive column-80" align="left">
-        <div class="categories form content">
+    <div class="column-responsive column-80" align="center">
+        <div class="categories form content" style="max-width: 50%;" align="left">
             <?= $this->Form->create($category) ?>
             <fieldset>
                 <legend><?= __('Add Category') ?></legend>

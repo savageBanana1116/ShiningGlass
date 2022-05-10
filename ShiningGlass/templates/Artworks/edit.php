@@ -8,7 +8,6 @@
 ?>
 
 <?= $this->Html->css('styles.css') ?>
-<?= $this->element('nav') ?>
 <?= $this->Html->css('cake.css') ?>
 
 <div class="row">
@@ -41,26 +40,58 @@
             <fieldset>
                 <legend><?= __('Edit Artwork') ?></legend>
                 <?php
-                    echo $this->Form->control('name', ['type' => 'text', 'class' => 'form-control']) ;
-                    echo $this->Form->control('price', ['type' => 'text', 'class' => 'form-control']);
-                    echo $this->Form->control('weight', ['type' => 'text', 'class' => 'form-control']);
-                    echo $this->Form->control('size',['type' => 'text', 'class' => 'form-control']);
-                    echo $this->Form->control('descriptions', ['type' => 'textarea', 'class' => 'form-control']);
-                    echo $this->Form->control('create_date', ['class' => 'form-control']);
-                    // echo $this->Form->control('order_id', ['options' => $orders, 'empty' => true]);
-                    echo $this->Form->control('image_file',['type'=>'file', 'class' => 'form-control']);
-                    echo $this->Form->control('categories._ids', ['options' => $categories, 'type' => 'select', 'class' => 'form-control']);
+                echo '<div class="form-row">';
+                echo '<div class="form-group col-md-3">';
+                echo $this->Form->control('name', ['type' => 'text', 'class' => 'form-control']);
+                echo '</div>';
+                echo '<div class="form-group col-md-3">';
+                echo $this->Form->control('price', ['type' => 'text', 'class' => 'form-control']);
+                echo '</div>';
+                echo '<div class="form-group col-md-3">';
+                echo $this->Form->control('weight', ['type' => 'text', 'class' => 'form-control']);
+                echo '</div>';
+                echo '<div class="form-group col-md-3">';
+                echo $this->Form->control('size', ['type' => 'text', 'class' => 'form-control']);
+                echo '</div>';
+                echo '</div>';
+                echo $this->Form->control('descriptions', ['type' => 'textarea', 'class' => 'form-control']);
+                echo '<div class="form-row">';
+                echo '<div class="form-group col-md-6">';
+                echo $this->Form->control('create_date', ['class' => 'form-control']);
+                echo '</div>';
+                echo '<div class="form-group col-md-6">';
+                echo $this->Form->control('categories._ids', ['options' => $categories, 'type' => 'select', 'class' => 'form-control']);
+                echo '</div>';
+                echo '</div>';
+                echo '<div class="form-row">';
+                echo '<div class="form-group col-md-3">';
+                echo $this->Form->control('image_file', ['type' => 'file', 'class' => 'form-control']);
+                echo '</div>';
+                echo '<div class="form-group col-md-3">';
+                echo $this->Form->control('image_file2',['type'=>'file', 'class' => 'form-control']);
+                echo '</div>';
+                echo '<div class="form-group col-md-3">';
+                echo $this->Form->control('image_file3',['type'=>'file', 'class' => 'form-control']);
+                echo '</div>';
+                echo '<div class="form-group col-md-3">';
+                echo $this->Form->control('image_file4',['type'=>'file', 'class' => 'form-control']);
+                echo '</div>';
+                echo '<div class="form-group col-md-3">';
+                echo $this->Form->control('image_file5',['type'=>'file', 'class' => 'form-control']);
+                echo '</div>';
+                echo '</div>';
+
                 ?>
             </fieldset>
             <br>
-            <?= $this->Form->button(__('Submit', ['class' => 'btn btn-primary', 'float' => 'right'])) ?>
+            <?= $this->Form->button(__('Submit'), ['class' => 'btn-success'] ) ?>
             <?= $this->Form->end() ?>
         </div>
     </div>
     <br>
-    </div>
+</div>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </div>

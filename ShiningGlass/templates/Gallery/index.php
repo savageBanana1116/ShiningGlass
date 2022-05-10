@@ -122,7 +122,7 @@
                                                         });
                                                     });
                                                 </script>
-                                                <button type="button"
+                                                <button type="button" class="btn btn-primary"
                                                         id="formButton-<?php echo $i; // Displaying the increment ?>">
                                                     Open Order Form
                                                 </button>
@@ -168,16 +168,17 @@
                                                             <input type="number" class="form-control" id="inputZip">
                                                         </div>
                                                     </div>
-                                                    <div class="form-group">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="gridCheck">
-                                                                Confirm Details
-                                                            </label>
-                                                            <input class="form-check-input" type="checkbox"
-                                                                   id="gridCheck">
-                                                        </div>
-                                                    </div>
-                                                    <button type="submit" class="btn btn-primary">Submit Order Details</button>
+<!--                                                    <div class="form-group">-->
+<!--                                                        <div class="form-check">-->
+<!--                                                            <label class="form-check-label" for="gridCheck">-->
+<!--                                                                Confirm Details-->
+<!--                                                            </label>-->
+<!--                                                            <input class="form-check-input" type="checkbox"-->
+<!--                                                                   id="gridCheck">-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+                                                    <br>
+                                                    <button type="submit" class="btn btn-success">Submit Order Details</button>
                                                 </form>
                                             </div>
                                         </div>

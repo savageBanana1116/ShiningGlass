@@ -6,7 +6,6 @@
 ?>
 
 <?= $this->Html->css('styles.css') ?>
-<?= $this->element('nav') ?>
 <?= $this->Html->css('cake.css') ?>
 
 <div class="row">
