@@ -38,19 +38,47 @@
         </div>
     </aside>
 
-    <div class="grid-container">
+    <div class="table-responsive" style="padding-top: 10px;">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th><?= $this->Paginator->sort('name') ?></th>
+            <th><?= $this->Paginator->sort('price') ?></th>
+            <th><?= $this->Paginator->sort('weight') ?></th>
+            <th><?= $this->Paginator->sort('size') ?></th>
+            <th><?= $this->Paginator->sort('description') ?></th>
+            <th><?= $this->Paginator->sort('create_date') ?></th>
+            <th><?= $this->Paginator->sort('image') ?></th>
+            <th class="actions"><?= __('Actions') ?></th>
+        </tr>
+        </thead>
+        <tbody>
         <?php foreach ($artworks as $artwork): ?>
-            <div class="grid-item">
-                <?= $this->Html->image($artwork->image,
-                    ['class' => 'image'])
-                ?>
-                <br>
-                <?= $this->Html->link(__($artwork->name),
-                    ['action' => 'view', $artwork->id])
-                ?>
-            </div>
+            <tr>
+                <td><?= h($artwork->name) ?></td>
+                <td><?= h($artwork->price) ?></td>
+                <td><?= h($artwork->weight) ?></td>
+                <td><?= h($artwork->size) ?></td>
+                <td><?= h($artwork->descriptions) ?></td>
+                <td><?= h($artwork->create_date) ?></td>
+                <td><?= $this->Html->image($artwork->image,
+                        ['class' => 'image', 'style' => 'max-width:300px; max-height:300px;']) ?>
+                </td>
+
+
+                <td class="actions">
+                    <?= $this->Html->link(__('View'),
+                        ['action' => 'view', $artwork->id]) ?>
+                    <?= $this->Html->link(__('Edit'),
+                        ['action' => 'edit', $artwork->id]) ?>
+                    <?= $this->Form->postLink(__('Delete'),
+                        ['action' => 'delete', $artwork->id],
+                        ['confirm' => __('Are you sure you want to delete # {0}?', $artwork->id)]) ?>
+                </td>
+            </tr>
         <?php endforeach; ?>
-    </div>
+        </tbody>
+    </table>
 
     <div class="paginator" style="justify-content: center">
         <ul class="pagination">
