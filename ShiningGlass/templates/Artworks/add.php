@@ -38,55 +38,53 @@
                 echo '<span id="textHelpBlock" class="form-text text-muted">Max 30 characters</span>';
                 echo '</div>';
                 echo '<div class="form-group col-md-3">';
-                echo $this->Form->control('price', ['type' => 'text', 'class' => 'form-control', 'placeholder' => 'Enter Artwork Price (No Dollar Sign)', 'maxlength' => '7', 'required' => 'required']);
-                echo '<span id="textHelpBlock" class="form-text text-muted">Max 7 characters</span>';
+                echo $this->Form->control('price', ['type' => 'decimal', 'class' => 'form-control', 'placeholder' => 'Enter Price', 'maxlength' => '10', 'required' => 'required']);
+                echo '<span id="textHelpBlock" class="form-text text-muted">Max 10 characters</span>';
                 echo '</div>';
                 echo '<div class="form-group col-md-3">';
-                echo $this->Form->control('weight', ['type' => 'text', 'class' => 'form-control', 'placeholder' => 'Enter Artwork Weight (In Kg)', 'maxlength' => '7', 'required' => 'required']);
-                echo '<span id="textHelpBlock" class="form-text text-muted">Max 7 characters</span>';
+                echo $this->Form->control('weight', ['type' => 'decimal', 'class' => 'form-control', 'placeholder' => 'Enter Weight (Kg)', 'maxlength' => '15', 'required' => 'required']);
+                echo '<span id="textHelpBlock" class="form-text text-muted">Max 15 characters</span>';
                 echo '</div>';
                 echo '<div class="form-group col-md-3">';
-                echo $this->Form->control('size', ['type' => 'text', 'class' => 'form-control', 'placeholder' => 'Enter Artwork Size (In CM as Width * Height)', 'maxlength' => '7', 'required' => 'required']);
-                echo '<span id="textHelpBlock" class="form-text text-muted">Max 7 characters</span>';
+                echo $this->Form->control('size', ['type' => 'text', 'class' => 'form-control', 'placeholder' => 'Enter Size (W x H)', 'maxlength' => '15', 'required' => 'required']);
+                echo '<span id="textHelpBlock" class="form-text text-muted">Max 15 characters</span>';
                 echo '</div>';
                 echo '</div>';
                 echo '<div class="form-row">';
                 echo '<div class="form-group col-md-6">';
-                echo $this->Form->control('descriptions', ['type' => 'textarea', 'class' => 'form-control', 'placeholder' => 'Enter a short description about the artwork.', 'required' => 'required']);
+                echo $this->Form->control('descriptions', ['type' => 'textarea', 'class' => 'form-control', 'placeholder' => 'Enter a short description about the artwork.', 'maxlength' => '255', 'required' => 'required']);
                 echo '<span id="textHelpBlock" class="form-text text-muted">Maximum 255 characters</span>';
                 echo '</div>';
                 echo '<div class="form-group col-md-6">';
                 echo $this->Form->control('categories._ids', ['options' => $categories, 'class' => 'form-control']);
-                echo '<span id="textHelpBlock" class="form-text text-muted">Select a category if relevant to the Artwork, if not leave blank.</span>';
+                echo '<span id="textHelpBlock" class="form-text text-muted">Select a category if relevant to the Artwork, if not leave unselected.</span>';
                 echo '</div>';
                 echo '</div>';
                 echo $this->Form->control('create_date', ['class' => 'form-control', 'required' => 'required']);
-                echo '<span id="textHelpBlock" class="form-text text-muted">Please select a date</span>';
+                echo '<span id="textHelpBlock" class="form-text text-muted">Please select a date & time</span>';
                 echo '<div class="form-row">';
                 echo '<div class="form-group col-md-3">';
-                echo $this->Form->control('image_file', ['type' => 'file', 'class' => 'form-control', 'required' => 'required']);
+                echo $this->Form->control('image_file', ['type' => 'file', 'accept'=>'image/*',  'class' => 'form-control', 'required' => 'required']);
                 echo '<span id="textHelpBlock" class="form-text text-muted">Upload the image of your artwork</span>';
                 echo '</div>';
                 echo '<div class="form-group col-md-3">';
-                echo $this->Form->control('image_file2', ['type' => 'file', 'class' => 'form-control', 'required' => 'required']);
+                echo $this->Form->control('image_file2', ['type' => 'file', 'accept'=>'image/*',  'class' => 'form-control']);
                 echo '<span id="textHelpBlock" class="form-text text-muted">Upload alternative angle of your artwork</span>';
                 echo '</div>';
                 echo '<div class="form-group col-md-3">';
-                echo $this->Form->control('image_file3', ['type' => 'file', 'class' => 'form-control', 'required' => 'required']);
+                echo $this->Form->control('image_file3', ['type' => 'file', 'accept'=>'image/*',  'class' => 'form-control']);
                 echo '<span id="textHelpBlock" class="form-text text-muted">Upload alternative angle of your artwork</span>';
                 echo '</div>';
                 echo '<div class="form-group col-md-3">';
-                echo $this->Form->control('image_file4', ['type' => 'file', 'class' => 'form-control', 'required' => 'required']);
+                echo $this->Form->control('image_file4', ['type' => 'file', 'accept'=>'image/*',  'class' => 'form-control']);
                 echo '<span id="textHelpBlock" class="form-text text-muted">Upload alternative angle of your artwork</span>';
                 echo '</div>';
                 echo '<div class="form-group col-md-3">';
-                echo $this->Form->control('image_file5', ['type' => 'file', 'class' => 'form-control', 'required' => 'required']);
+                echo $this->Form->control('image_file5', ['type' => 'file', 'accept'=>'image/*', 'class' => 'form-control']);
                 echo '<span id="textHelpBlock" class="form-text text-muted">Upload alternative angle of your artwork</span>';
                 echo '</div>';
                 echo '</div>';
-
                 ?>
-
             </fieldset>
             <br>
             <?= $this->Form->button(__('Submit'), ['class' => 'btn-success'] ) ?>

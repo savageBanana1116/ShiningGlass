@@ -42,19 +42,19 @@
                 <?php
                 echo '<div class="form-row">';
                 echo '<div class="form-group col-md-3">';
-                echo $this->Form->control('name', ['type' => 'text', 'class' => 'form-control']);
+                echo $this->Form->control('name', ['type' => 'text', 'class' => 'form-control', 'maxlength' => '30']);
                 echo '</div>';
                 echo '<div class="form-group col-md-3">';
-                echo $this->Form->control('price', ['type' => 'text', 'class' => 'form-control']);
+                echo $this->Form->control('price', ['type' => 'decimal', 'class' => 'form-control', 'maxlength' => '10']);
                 echo '</div>';
                 echo '<div class="form-group col-md-3">';
-                echo $this->Form->control('weight', ['type' => 'text', 'class' => 'form-control']);
+                echo $this->Form->control('weight', ['type' => 'decimal', 'class' => 'form-control' , 'maxlength' => '15']);
                 echo '</div>';
                 echo '<div class="form-group col-md-3">';
                 echo $this->Form->control('size', ['type' => 'text', 'class' => 'form-control']);
                 echo '</div>';
                 echo '</div>';
-                echo $this->Form->control('descriptions', ['type' => 'textarea', 'class' => 'form-control']);
+                echo $this->Form->control('descriptions', ['type' => 'textarea', 'class' => 'form-control', 'maxlength' => '255']);
                 echo '<div class="form-row">';
                 echo '<div class="form-group col-md-6">';
                 echo $this->Form->control('create_date', ['class' => 'form-control']);
@@ -65,19 +65,19 @@
                 echo '</div>';
                 echo '<div class="form-row">';
                 echo '<div class="form-group col-md-3">';
-                echo $this->Form->control('image_file', ['type' => 'file', 'class' => 'form-control']);
+                echo $this->Form->control('image_file', ['type' => 'file', 'accept'=>'image/*',  'class' => 'form-control']);
                 echo '</div>';
                 echo '<div class="form-group col-md-3">';
-                echo $this->Form->control('image_file2',['type'=>'file', 'class' => 'form-control']);
+                echo $this->Form->control('image_file2',['type' => 'file', 'accept'=>'image/*',  'class' => 'form-control']);
                 echo '</div>';
                 echo '<div class="form-group col-md-3">';
-                echo $this->Form->control('image_file3',['type'=>'file', 'class' => 'form-control']);
+                echo $this->Form->control('image_file3',['type' => 'file', 'accept'=>'image/*',  'class' => 'form-control']);
                 echo '</div>';
                 echo '<div class="form-group col-md-3">';
-                echo $this->Form->control('image_file4',['type'=>'file', 'class' => 'form-control']);
+                echo $this->Form->control('image_file4',['type' => 'file', 'accept'=>'image/*',  'class' => 'form-control']);
                 echo '</div>';
                 echo '<div class="form-group col-md-3">';
-                echo $this->Form->control('image_file5',['type'=>'file', 'class' => 'form-control']);
+                echo $this->Form->control('image_file5',['type' => 'file', 'accept'=>'image/*',  'class' => 'form-control']);
                 echo '</div>';
                 echo '</div>';
 
