@@ -150,17 +150,6 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="card-body">
-                                <div class="card bg-gradient-primary text-white shadow"
-                                     onclick="location.href='customers#';" style="cursor: pointer;">
-                                    <div class="card-body">
-                                        <a class="text-white" href="customers#">Customer Management System (Coming Soon)</a>
-                                        <div class="text-white-50 small">Can be used to add, view and remove customers
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
 
                     </div>

@@ -5,10 +5,15 @@
  * @var \App\Model\Entity\About[]|\Cake\Collection\CollectionInterface $artists
  */
 ?>
+
+<?= $this->Html->css('styles.css') ?>
+<?= $this->element('nav') ?>
+<?= $this->Html->css('cake.css') ?>
+
 <div class="abouts index content">
     <h3><?= __('Content Management - About Page') ?></h3>
-    <div class="table-responsive">
-        <table>
+    <div class="table-responsive" style="padding-top: 10px;">
+        <table class="table table-bordered">
             <thead>
             <tr>
                 <th><?= $this->Paginator->sort('name') ?></th>
@@ -19,11 +24,10 @@
             <tbody>
             <?php foreach ($artists as $artist): ?>
                 <tr>
-
                     <td><?= h($artist->name) ?></td>
                     <td><img src="webroot/img/<?= h($artist->image) ?>" width="50" height="50"></td>
-                    <td class="actions">
-                        <?= $this->Html->link(__('Edit'), ['action' => 'edit', $artist->id]) ?>
+                    <td class="actions" >
+                        <?= $this->Html->link(__('Edit'), ['controller' => 'Artists', 'action' => 'edit', $artist->id]) ?>
                     </td>
                 </tr>
             <?php endforeach; ?>
@@ -31,7 +35,7 @@
         </table>
     </div>
     <div class="table-responsive">
-        <table>
+        <table class="table table-bordered">
             <thead>
                 <tr>
                     <th><?= $this->Paginator->sort('title') ?></th>
@@ -42,14 +46,9 @@
             <tbody>
                 <?php foreach ($abouts as $about): ?>
                 <tr>
-                    <td><?= $this->Number->format($about->id) ?></td>
                     <td><?= h($about->title) ?></td>
                     <td><?= h($about->text) ?></td>
-                    <td class="actions">
-                        <!--// $this->Html->link(__('View'), ['action' => 'view', $about->id]) -->
-                        <?= $this->Html->link(__('Edit'), ['action' => 'edit', $about->id]) ?>
-                        <!--// $this->Form->postLink(__('Delete'), ['action' => 'delete', $about->id], ['confirm' => __('Are you sure you want to delete # {0}?', $about->id)])-->
-                    </td>
+                    <td class="actions"><?= $this->Html->link(__('Edit'), ['action' => 'edit', $about->id]) ?></td>
                 </tr>
                 <?php endforeach; ?>
             </tbody>
@@ -57,3 +56,4 @@
     </div>
 
 </div>
+

@@ -4,10 +4,15 @@
  * @var \App\Model\Entity\Artist[]|\Cake\Collection\CollectionInterface $artists
  */
 ?>
+
+<?= $this->Html->css('styles.css') ?>
+<?= $this->element('nav') ?>
+<?= $this->Html->css('cake.css') ?>
+
 <div class="artists index content">
     <h3><?= __('Artists') ?></h3>
-    <div class="table-responsive">
-        <table>
+    <div class="table-responsive" style="padding-top: 10px;">
+        <table class="table table-bordered">
             <thead>
                 <tr>
                     <th><?= $this->Paginator->sort('name') ?></th>
@@ -29,5 +34,9 @@
             </tbody>
         </table>
     </div>
-
 </div>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
