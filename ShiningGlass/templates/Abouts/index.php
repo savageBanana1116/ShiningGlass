@@ -17,7 +17,7 @@
             <thead>
             <tr>
                 <th><?= $this->Paginator->sort('name') ?></th>
-                <th><?= $this->Paginator->sort('image') ?></th>
+                <th class="actions"><?= __('Image') ?></th>
                 <th class="actions"><?= __('Actions') ?></th>
             </tr>
             </thead>
