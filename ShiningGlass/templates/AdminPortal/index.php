@@ -104,7 +104,7 @@
                                 <div class="card bg-gradient-primary text-white shadow"
                                      onclick="location.href='categories#';" style="cursor: pointer;">
                                     <div class="card-body">
-                                        <a class="text-white" href="categories#">Categories Management System (Coming Soon)</a>
+                                        <a class="text-white" href="categories#">Categories Management System</a>
                                         <div class="text-white-50 small">Can be used to add, view and remove
                                             categories
                                         </div>
@@ -134,10 +134,10 @@
                             </div>
                             <div class="card-body">
                                 <div class="card bg-gradient-primary text-white shadow"
-                                     onclick="location.href='artists#';" style="cursor: pointer;">
+                                     onclick="location.href='orders#';" style="cursor: pointer;">
                                     <div class="card-body">
-                                        <a class="text-white" href="abouts#">Blog Page Content Management System</a>
-                                        <div class="text-white-50 small">Use this to edit the content displayed on the Blog Page
+                                        <a class="text-white" href="orders#">Order Form Enquiry Details</a>
+                                        <div class="text-white-50 small">Use this to view all active customer enquiries
                                         </div>
                                     </div>
                                 </div>
