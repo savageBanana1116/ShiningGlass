@@ -42,7 +42,7 @@ class GalleryController extends AppController{
         parent::beforeFilter($event);
         // Configure the login action to not require authentication, preventing
         // the infinite redirect loop issue
-        $this->Authentication->addUnauthenticatedActions(['index']);
+        $this->Authentication->addUnauthenticatedActions(['index', 'add']);
     }
 
 

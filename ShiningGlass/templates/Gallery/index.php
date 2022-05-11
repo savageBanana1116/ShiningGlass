@@ -2,6 +2,7 @@
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Artwork $artwork
+ * @var \App\Model\Entity\Enquiry $enquiry
  * @var \Cake\Collection\CollectionInterface|string[] $categories
  *  * @var \App\Model\Entity\Artwork[]|\Cake\Collection\CollectionInterface $artworks
  */
@@ -13,7 +14,7 @@
         form {
             padding: 15px;
             background: #fff;
-
+            display:none;
         }
     </style>
 
@@ -50,6 +51,7 @@
     style="padding-top: 30px; background-color: #d5d8db ;font-size: 20px ;text-align: center ; padding-bottom: 30px ; font-weight: bold; width:100%;">
     The Artworks of Sam Smith
 </div>
+<?= $this->Flash->render() ?>
 <div class="filter">
 
     <?= $this->Form->create(null, ['type' => 'get']) ?>
@@ -127,59 +129,41 @@
                                                     Open Order Form
                                                 </button>
 
-                                                <form id="form-<?php echo $i; // Displaying the increment ?>">
-                                                    <div class="form-row">
-                                                        <div class="form-group">
-                                                            <label for="inputFullName">Full name</label>
-                                                            <input class="form-control" id="inputFullName"
-                                                                   placeholder="Fullname">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="inputEmail">Email</label>
-                                                            <input type="text" class="form-control" id="inputEmail"
-                                                                   placeholder="Email">
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="inputAddress">Address</label>
-                                                        <input class="form-control" id="inputAddress"
-                                                               placeholder="Address">
-                                                    </div>
-                                                    <div class="form-row">
-                                                        <div class="form-group">
-                                                            <label for="inputCity">City</label>
-                                                            <input type="text" class="form-control" id="inputCity"
-                                                                   placeholder="City">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="inputState">State</label>
-                                                            <select id="inputState" class="form-control">
-                                                                <option>ACT</option>
-                                                                <option>NA</option>
-                                                                <option>VIC</option>
-                                                                <option>WA</option>
-                                                                <option>QLD</option>
-                                                                <option>SA</option>
-                                                                <option>TAS</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="inputZip">Zip</label>
-                                                            <input type="number" class="form-control" id="inputZip">
-                                                        </div>
-                                                    </div>
-<!--                                                    <div class="form-group">-->
-<!--                                                        <div class="form-check">-->
-<!--                                                            <label class="form-check-label" for="gridCheck">-->
-<!--                                                                Confirm Details-->
-<!--                                                            </label>-->
-<!--                                                            <input class="form-check-input" type="checkbox"-->
-<!--                                                                   id="gridCheck">-->
+
+                                                    <?= $this->Form->create(null, ['id' => "form-$i", 'url' => ['controller' => 'Enquiries','action' => 'add']]); ?>
+                                                    <fieldset>
+                                                        <legend><?= __('Send new enquiry') ?></legend>
+                                                        <?php
+                                                        echo $this->Form->control('full_name', ['label' => 'Your full name', 'class' => 'form-control']);
+                                                        echo $this->Form->control('email', ['label' => 'Your email address', 'class' => 'form-control']);
+                                                        echo $this->Form->control('body', ['label' => 'Any enquiries', 'rows' => 5, 'class' => 'form-control']);
+                                                        ?>
+                                                    </fieldset>
+                                                <br>
+                                                    <?= $this->Form->button(__('Send enquiry'), ['class' => 'btn btn-success']) ?>
+                                                    <?= $this->Form->end() ?>
+
+<!--                                                    <div class="form-row">-->
+<!--                                                        <div class="form-group">-->
+<!--                                                            <label for="full_name">Full name</label>-->
+<!--                                                            <input class="form-control" id="full_name"-->
+<!--                                                                   placeholder="Full Name">-->
+<!--                                                        </div>-->
+<!--                                                        <div class="form-group">-->
+<!--                                                            <label for="email">Email</label>-->
+<!--                                                            <input type="email" class="form-control" id="email"-->
+<!--                                                                   placeholder="Email">-->
 <!--                                                        </div>-->
 <!--                                                    </div>-->
-                                                    <br>
-                                                    <button type="submit" class="btn btn-success" onclick="myFunction()">Submit Order Details</button>
-                                                </form>
+<!--                                                    <div class="form-group">-->
+<!--                                                        <label for="body">Address</label>-->
+<!--                                                        <input type ="textarea" class="form-control" id="body"-->
+<!--                                                               placeholder="Address">-->
+<!--                                                    </div>-->
+<!--                                                    <br>-->
+<!--                                                    <button type="submit" class="btn btn-success" onclick="myFunction()">Submit Order Details</button>-->
+
+<!--                                                </form>-->
                                             </div>
                                         </div>
                                     </div>

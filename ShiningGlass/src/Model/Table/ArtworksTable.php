@@ -105,6 +105,26 @@ class ArtworksTable extends Table
             ->maxLength('image', 255)
             ->allowEmptyFile('image');
 
+        $validator
+            ->scalar('image2')
+            ->maxLength('image2', 255)
+            ->allowEmptyFile('image2');
+
+        $validator
+            ->scalar('image3')
+            ->maxLength('image3', 255)
+            ->allowEmptyFile('image3');
+
+        $validator
+            ->scalar('image4')
+            ->maxLength('image4', 255)
+            ->allowEmptyFile('image4');
+
+        $validator
+            ->scalar('image5')
+            ->maxLength('image5', 255)
+            ->allowEmptyFile('image5');
+
 
         return $validator;
     }
