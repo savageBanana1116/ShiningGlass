@@ -79,7 +79,6 @@ $artist = $artistController->getArtistName(2);
 </body>
 <br>
 <?= $this->element('footer');
-echo $artist->image;
 ?>
 
 <!-- Bootstrap core JS-->
@@ -93,3 +92,6 @@ echo $artist->image;
 <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 </html>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
