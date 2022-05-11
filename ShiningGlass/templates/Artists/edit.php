@@ -32,13 +32,13 @@
                 <legend><?= __('Edit Artist') ?></legend>
                 <?php
                 //echo $this->Form->control('id');
-                echo $this->Form->control('name', ['type' => 'text', 'class' => 'form-control', 'maxlength' => '64', 'required' => 'required']);
+                echo $this->Form->control('name', ['type' => 'text', 'class' => 'form-control','placeholder' => 'Enter Artist Name', 'maxlength' => '64', 'required' => 'required']);
                 echo '<span id="textHelpBlock" class="form-text text-muted">Max 64 characters</span>';
-                echo $this->Form->control('image_file', ['type' => 'file', 'class' => 'form-control', 'accept'=>'image/*']);
+                echo $this->Form->control('image_file', ['type' => 'file', 'class' => 'form-control','accept'=>'image/*']);
                 echo '<span id="textHelpBlock" class="form-text text-muted">Please upload an image file only (jpg/png)</span>';
                 //debug($_POST);
                 ?>
-                <h10 style="color: darkgrey"><?php echo "current image: "; echo $artist->image?></h10>
+                <h10 style="color: darkgrey"><?php echo "Current image: "; echo $artist->image?></h10>
             </fieldset>
             <br>
             <?= $this->Form->button(__('Submit'), ['class' => 'btn-success']) ?>

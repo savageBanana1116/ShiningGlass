@@ -31,9 +31,9 @@
             <fieldset>
                 <legend><?= __('Edit About') ?></legend>
                 <?php
-                echo $this->Form->control('title', ['type' => 'text', 'class' => 'form-control', 'maxlength' => '50', 'required' => 'required']);
+                echo $this->Form->control('title', ['type' => 'text', 'class' => 'form-control','placeholder' => 'Enter Field Name', 'maxlength' => '50', 'required' => 'required']);
                 echo '<span id="textHelpBlock" class="form-text text-muted">Max 50 characters</span>';
-                echo $this->Form->control('text', ['type' => 'textarea', 'class' => 'form-control', 'maxlength' => '500', 'required' => 'required']);
+                echo $this->Form->control('text', ['type' => 'textarea', 'class' => 'form-control', 'maxlength' => '500','placeholder' => 'Enter Field Information','required' => 'required']);
                 echo '<span id="textHelpBlock" class="form-text text-muted">Max 500 characters</span>';
                 ?>
             </fieldset>
