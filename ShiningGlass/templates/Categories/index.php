@@ -7,7 +7,7 @@
 <div class="categories index content">
 
     <?= $this->Html->css('styles.css') ?>
-    <?= $this->element('nav') ?>
+
     <?= $this->Html->css('cake.css') ?>
 
     <aside class="column">
