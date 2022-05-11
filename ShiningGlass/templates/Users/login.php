@@ -2,23 +2,22 @@
 <div class="row">
         <div class="d-flex justify-content-center h-200" style="padding-top: 20px">
             <div class="card">
+                <?= $this->Flash->render(); ?>
                 <div class="card-header">
                     <h3>Admin Login</h3>
                 </div>
                 <div class="card-body">
-                    <form>
+                    <?= $this->Form->create() ?>
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                <span class="input-group-text"><i class="fas fa-user" style="padding-right: 10px"></i> <?= $this->Form->control('email', ['required' => 'true', 'class' => 'form-control']) ?></span>
                             </div>
-                            <input type="text" class="form-control" placeholder="username">
 
                         </div>
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                <span class="input-group-text"><i class="fas fa-key" style="padding-right: 10px"></i><?= $this->Form->control('password', ['required' => 'true', 'class' => 'form-control']) ?></span>
                             </div>
-                            <input type="password" class="form-control" placeholder="password">
                         </div>
                         <div>
                             <?= $this->Form->submit(__('Login'), ['class' => 'btn btn-success']); ?>
@@ -42,18 +41,6 @@
             </div>
     </div>
 
-    <div class="column-responsive column-80" align="center">
-            <div class="users form" style = "width: 50%">
-                <?= $this->Flash->render() ?>
-                <h3>Admin Login</h3>
-                <?= $this->Form->create() ?>
-                <fieldset>
-                    <legend><?= __('Please enter your username and password') ?></legend>
-                    <?= $this->Form->control('email', ['required' => true]) ?>
-                    <?= $this->Form->control('password', ['required' => true]) ?>
-                </fieldset>
-            </div>
-    </div>
 </div>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
