@@ -46,9 +46,9 @@
             <th><?= $this->Paginator->sort('price') ?></th>
             <th><?= $this->Paginator->sort('weight') ?></th>
             <th><?= $this->Paginator->sort('size') ?></th>
-            <th><?= $this->Paginator->sort('description') ?></th>
+            <th class="actions"><?= __('Description') ?></th>
             <th><?= $this->Paginator->sort('create_date') ?></th>
-            <th><?= $this->Paginator->sort('image') ?></th>
+            <th class="actions"><?= __('Image') ?></th>
             <th class="actions"><?= __('Actions') ?></th>
         </tr>
         </thead>
