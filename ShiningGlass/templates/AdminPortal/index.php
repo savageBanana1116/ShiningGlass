@@ -134,9 +134,9 @@
                             </div>
                             <div class="card-body">
                                 <div class="card bg-gradient-primary text-white shadow"
-                                     onclick="location.href='orders#';" style="cursor: pointer;">
+                                     onclick="location.href='enquiries#';" style="cursor: pointer;">
                                     <div class="card-body">
-                                        <a class="text-white" href="orders#">Order Form Enquiry Details</a>
+                                        <a class="text-white" href="enquiries#">Enquiry Details</a>
                                         <div class="text-white-50 small">Use this to view all active customer enquiries
                                         </div>
                                     </div>

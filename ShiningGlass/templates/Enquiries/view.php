@@ -4,20 +4,36 @@
  * @var \App\Model\Entity\Enquiry $enquiry
  */
 ?>
+
+<?= $this->Html->css('styles.css') ?>
+<?= $this->Html->css('cake.css') ?>
+
 <div class="row">
     <aside class="column">
         <div class="side-nav">
-            <h4 class="heading"><?= __('Actions') ?></h4>
-            <?= $this->Html->link(__('Edit Enquiry'), ['action' => 'edit', $enquiry->id], ['class' => 'side-nav-item']) ?>
-            <?= $this->Form->postLink(__('Delete Enquiry'), ['action' => 'delete', $enquiry->id], ['confirm' => __('Are you sure you want to delete # {0}?', $enquiry->id), 'class' => 'side-nav-item']) ?>
-            <?= $this->Html->link(__('List Enquiries'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
-            <?= $this->Html->link(__('New Enquiry'), ['action' => 'add'], ['class' => 'side-nav-item']) ?>
+            <nav class="nav justify-content-center nav-pills nav-fill" style="padding: 5px">
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item" style="padding: 5px">
+                        <a>
+            <?= $this->Form->postLink(__('Delete Enquiry'), ['action' => 'delete', $enquiry->id], ['class' => 'nav-item nav-link active btn-danger', 'confirm' => __('Are you sure you want to delete # {0}?', $enquiry->id)]) ?>
+                        </a>
+                    </li>
+                    <li class="nav-item" style="padding: 5px">
+                        <a>
+            <?= $this->Html->link(__('List Enquiries'), ['action' => 'index'], ['class' => 'nav-item nav-link active']) ?>
+                        </a>
+                    </li>
+                    <li class="nav-item" style="padding: 5px">
+                        <a>
+            <?= $this->Html->link(__('New Enquiry'), ['action' => 'add'], ['class' => 'nav-item nav-link active']) ?>
+                        </a>
+                    </li>
         </div>
     </aside>
-    <div class="column-responsive column-80">
-        <div class="enquiries view content">
+    <div id="enquiriesInfo" class="table-responsive" style="padding-top:10px;">
+        <div class="enquiriesInfo view content">
             <h3><?= h($enquiry->id) ?></h3>
-            <table>
+            <table class="table table-bordered">
                 <tr>
                     <th><?= __('Full Name') ?></th>
                     <td><?= h($enquiry->full_name) ?></td>
@@ -38,13 +54,11 @@
                     <th><?= __('Email Sent') ?></th>
                     <td><?= $enquiry->email_sent ? __('Yes') : __('No'); ?></td>
                 </tr>
+                <tr>
+                    <th><?= __('Body') ?></th>
+                    <td><?= $this->Text->autoParagraph(h($enquiry->body)); ?></td>
+                </tr>
             </table>
-            <div class="text">
-                <strong><?= __('Body') ?></strong>
-                <blockquote>
-                    <?= $this->Text->autoParagraph(h($enquiry->body)); ?>
-                </blockquote>
-            </div>
         </div>
     </div>
 </div>

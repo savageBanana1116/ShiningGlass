@@ -4,11 +4,25 @@
  * @var \App\Model\Entity\Enquiry[]|\Cake\Collection\CollectionInterface $enquiries
  */
 ?>
+<?= $this->Html->css('styles.css') ?>
+<?= $this->Html->css('cake.css') ?>
+
 <div class="enquiries index content">
-    <?= $this->Html->link(__('New Enquiry'), ['action' => 'add'], ['class' => 'button float-right']) ?>
-    <h3><?= __('Enquiries') ?></h3>
-    <div class="table-responsive">
-        <table>
+    <aside class="column">
+        <div class="side-nav">
+            <h3><?= __('Enquiries') ?></h3>
+            <nav class="nav justify-content-center nav-pills nav-fill" style="padding: 5px">
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item" style="padding: 5px"><a>
+                            <?= $this->Html->link(__('New Enquiry'), ['action' => 'add'], ['class' => 'nav-item nav-link active btn btn-primary']) ?>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <div class="table-responsive" style="padding-top: 10px;">
+        <table class="table table-bordered">
             <thead>
             <tr>
                 <th><?= $this->Paginator->sort('full_name', 'Name') ?></th>
