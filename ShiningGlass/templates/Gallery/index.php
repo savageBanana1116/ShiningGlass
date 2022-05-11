@@ -13,7 +13,7 @@
         form {
             padding: 15px;
             background: #fff;
-            display: none;
+
         }
     </style>
 
@@ -50,13 +50,13 @@
     style="padding-top: 30px; background-color: #d5d8db ;font-size: 20px ;text-align: center ; padding-bottom: 30px ; font-weight: bold; width:100%;">
     The Artworks of Sam Smith
 </div>
-<div class="drop">
-
+<div class="filter">
 
     <?= $this->Form->create(null, ['type' => 'get']) ?>
     <?= $this->Form->control('categories_id', ['options' => $categories, 'class' => 'form-control']);; ?>
     <?= $this->Form->submit('Filter') ?>
     <?= $this->Form->end() ?>
+
 
 
 </div>
@@ -178,7 +178,7 @@
 <!--                                                        </div>-->
 <!--                                                    </div>-->
                                                     <br>
-                                                    <button type="submit" class="btn btn-success">Submit Order Details</button>
+                                                    <button type="submit" class="btn btn-success" onclick="myFunction()">Submit Order Details</button>
                                                 </form>
                                             </div>
                                         </div>
@@ -207,6 +207,11 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
 <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
+<script>
+    function myFunction() {
+        confirm("Form uploaded! A Shinning Glass staff will contact you soon.");
+    }
+</script>
 </body>
 </html>
 
