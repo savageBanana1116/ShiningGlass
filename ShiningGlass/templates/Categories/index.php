@@ -30,7 +30,7 @@
             <thead>
             <tr>
                 <th><?= $this->Paginator->sort('name') ?></th>
-                <th><?= $this->Paginator->sort('description') ?></th>
+                <th class="actions"><?= __('Description') ?></th>
                 <th><?= $this->Paginator->sort('create_date') ?></th>
                 <th class="actions"><?= __('Actions') ?></th>
             </tr>
