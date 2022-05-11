@@ -33,7 +33,7 @@
                 <?php
                     echo $this->Form->control('name', ['type' => 'text', 'class' => 'form-control', 'placeholder' => 'Enter Category Name', 'required' => 'required', 'maxlength' => '30']);
                     echo  '<span id="textHelpBlock" class="form-text text-muted">Max 30 characters</span>';
-                    echo $this->Form->control('description', ['type' => 'textarea', 'class' => 'form-control', 'placeholder' => 'Enter Category Description', 'required' => 'required']);
+                    echo $this->Form->control('description', ['type' => 'textarea', 'class' => 'form-control', 'placeholder' => 'Enter Category Description', 'required' => 'required', 'maxlength' => '255']);
                     echo  '<span id="textHelpBlock" class="form-text text-muted">Max 255 characters</span>';
                     echo $this->Form->control('create_date', ['class' => 'form-control', 'required' => 'required']);
                     echo  '<span id="textHelpBlock" class="form-text text-muted">Enter the date that the category was created</span>';

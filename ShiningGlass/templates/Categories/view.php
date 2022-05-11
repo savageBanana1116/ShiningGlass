@@ -24,7 +24,7 @@
                         <a>
                             <?= $this->Form->postLink(__('Delete Category'),
                                 ['action' => 'delete', $category->id],
-                                ['confirm' => __('Are you sure you want to delete # {0}?', $category->id),
+                                ['confirm' => __('Are you sure you want to delete {0}?', $category->name),
                                     'class' => 'nav-item nav-link active btn-danger']) ?>
                         </a>
                     </li>
@@ -52,15 +52,11 @@
             <table class="table table-bordered">
                 <tr>
                     <th><?= __('Name') ?></th>
-                    <td><?= $this->Number->format($category->name) ?></td>
+                    <td><?= h($category->name) ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Description') ?></th>
-                    <td><?= $this->Number->format($category->description) ?></td>
-                </tr>
-                <tr>
-                    <th><?= __('Id') ?></th>
-                    <td><?= $this->Number->format($category->id) ?></td>
+                    <td><?= h($category->description) ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Create Date') ?></th>

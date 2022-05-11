@@ -19,7 +19,7 @@
                         <a>
                             <?= $this->Form->postLink(__('Delete'),
                                 ['action' => 'delete', $category->id],
-                                ['confirm' => __('Are you sure you want to delete # {0}?', $category->id),
+                                ['confirm' => __('Are you sure you want to delete {0}?', $category->name),
                                     'class' => 'nav-item nav-link active btn-danger']
                             ) ?>
                         </a>
@@ -40,9 +40,10 @@
             <fieldset>
                 <legend><?= __('Edit Category') ?></legend>
                 <?php
-                echo $this->Form->control('name', ['type' => 'text', 'class' => 'form-control']);
-                echo $this->Form->control('description', ['type' => 'textarea', 'class' => 'form-control']);
-                echo $this->Form->control('create_date', ['class' => 'form-control']);
+                echo $this->Form->control('name', ['type' => 'text', 'class' => 'form-control', 'required' => 'required', 'maxlength' => '30']);
+                echo  '<span id="textHelpBlock" class="form-text text-muted">Max 30 characters</span>';
+                echo $this->Form->control('description', ['type' => 'textarea', 'class' => 'form-control', 'required' => 'required', 'maxlength' => '255']);
+                echo  '<span id="textHelpBlock" class="form-text text-muted">Max 255 characters</span>';
                 ?>
             </fieldset>
             <br>

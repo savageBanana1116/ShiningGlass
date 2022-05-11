@@ -48,7 +48,7 @@
                             ['action' => 'edit', $category->id]) ?>
                         <?= $this->Form->postLink(__('Delete'),
                             ['action' => 'delete', $category->id],
-                            ['confirm' => __('Are you sure you want to delete # {0}?', $category->id)]) ?>
+                            ['confirm' => __('Are you sure you want to delete {0}?', $category->name)]) ?>
                     </td>
                 </tr>
             <?php endforeach; ?>
