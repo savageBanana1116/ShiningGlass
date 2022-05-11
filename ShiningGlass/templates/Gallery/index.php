@@ -89,9 +89,9 @@
                                                 aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <div class="row gx-4 gx-lg-5 align-items-center my-5">
+                                        <div class="row align-items-center">
                                             <div
-                                                class="col-lg-7"><?= $this->Html->image($artwork->image, ['style' => 'max-height: 900px; max-width: 400px']) ?>
+                                                class="col"><?= $this->Html->image($artwork->image, ['style' => 'max-height: 900px; max-width: 400px']) ?>
                                                 <div style="max-width: 900px; margin-top: 15px">
                                                     <?= $this->Html->image($artwork->image2, ['style' => 'max-height: 150px; max-width: 150px']) ?>
                                                     <?= $this->Html->image($artwork->image3, ['style' => 'max-height: 150px; max-width: 150px']) ?>
@@ -101,7 +101,7 @@
                                             </div>
 
 
-                                            <div class="col-lg-4">
+                                            <div class="col">
                                                 <h1 class="font-weight-light"><?= h($artwork->name) ?></h1>
                                                 <h4>$<?= h($artwork->price) ?></h4>
                                                 <hr>
