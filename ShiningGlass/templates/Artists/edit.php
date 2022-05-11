@@ -25,21 +25,23 @@
             </nav>
         </div>
     </aside>
-    <div class="column-responsive column-80" align="left" >
+    <div class="column-responsive column-80" align="left">
         <div class="artists form content">
-            <?= $this->Form->create($artist,['type'=>'file']) ?>
+            <?= $this->Form->create($artist, ['type' => 'file']) ?>
             <fieldset>
                 <legend><?= __('Edit Artist') ?></legend>
                 <?php
-                    //echo $this->Form->control('id');
-                    echo $this->Form->control('name', ['type' => 'text', 'class' => 'form-control']);
-                    echo $this->Form->control('image_file',['type'=>'file', 'class' => 'form-control']);
-                    //debug($_POST);
+                //echo $this->Form->control('id');
+                echo $this->Form->control('name', ['type' => 'text', 'class' => 'form-control', 'maxlength' => '64', 'required' => 'required']);
+                echo '<span id="textHelpBlock" class="form-text text-muted">Max 64 characters</span>';
+                echo $this->Form->control('image_file', ['type' => 'file', 'class' => 'form-control', 'accept'=>'image/*']);
+                echo '<span id="textHelpBlock" class="form-text text-muted">Please upload an image file only (jpg/png)</span>';
+                //debug($_POST);
 
                 ?>
             </fieldset>
             <br>
-            <?= $this->Form->button(__('Submit'), ['class' => 'btn-success'] ) ?>
+            <?= $this->Form->button(__('Submit'), ['class' => 'btn-success']) ?>
             <?= $this->Form->end() ?>
 
         </div>
