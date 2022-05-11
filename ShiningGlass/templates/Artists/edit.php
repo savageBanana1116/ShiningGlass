@@ -38,7 +38,10 @@
                 echo '<span id="textHelpBlock" class="form-text text-muted">Please upload an image file only (jpg/png)</span>';
                 //debug($_POST);
                 ?>
-                <h10 style="color: darkgrey"><?php echo "Current image: "; echo $artist->image?></h10>
+                <h10 style="color: darkgrey"><?php echo "Current image: ";
+                $imageNoPath = $artist->image;
+                echo substr($imageNoPath,"11")
+                //echo $artist->image?></h10>
             </fieldset>
             <br>
             <?= $this->Form->button(__('Submit'), ['class' => 'btn-success']) ?>
