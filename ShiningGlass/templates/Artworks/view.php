@@ -56,6 +56,14 @@
                     <td><?= h($artwork->name) ?></td>
                 </tr>
                 <tr>
+                    <th><?= __('Price: $') ?></th>
+                    <td><?= $this->Number->format($artwork->price) ?></td>
+                </tr>
+                <tr>
+                    <th><?= __('Weight: ') //   ?></th>
+                    <td><?= $this->Number->format($artwork->weight) ?></td>
+                </tr>
+                <tr>
                     <th><?= __('Size: ') ?></th>
                     <td><?= h($artwork->size) ?></td>
                 </tr>
@@ -64,12 +72,8 @@
                     <td><?= h($artwork->descriptions) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Price: $') ?></th>
-                    <td><?= $this->Number->format($artwork->price) ?></td>
-                </tr>
-                <tr>
-                    <th><?= __('Weight: ') //   ?></th>
-                    <td><?= $this->Number->format($artwork->weight) ?></td>
+                    <th><?= __('Create Date: ') ?></th>
+                    <td><?= h($artwork->create_date) ?></td>
                 </tr>
             </table>
         </div>
