@@ -45,51 +45,12 @@
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
                     <!-- Nav Item - User Information -->
-                    <li class="nav-item dropdown no-arrow" data-toggle="modal" data-target="#orangeModalSubscription">
-                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span data-toggle="modal" data-target="#orangeModalSubscription" style="padding-right: 10px">SIGN IN</span>
-                        </a>
+                    <li class="nav-item dropdown no-arrow" >
+                        <a href="users/logout" role="button" class="nav-link dropdown-toggle" onclick="return confirm('Are you sure you want to log out?');">Logout</a>
                     </li>
                 </ul>
 
-                <div class="modal fade" id="orangeModalSubscription" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                     aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <!--Content-->
-                        <div class="modal-content">
-                            <!--Header-->
-                            <div class="modal-header text-center" style="background-color: #333333">
-                                <h4 class="modal-title text-white w-100 font-weight-bold py-2">ADMIN LOGIN</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true" class="white-text">&times;</span>
-                                </button>
-                            </div>
 
-                            <!--Body-->
-                            <div class="modal-body">
-                                <form>
-                                    <!-- Email input -->
-                                    <div class="form-outline mb-3">
-                                        <label class="form-label">Email address</label>
-                                        <input type="email" id="form3Example3" class="form-control form-control-md"
-                                               placeholder="Enter a valid email address" />
-                                    </div>
-                                    <!-- Password input -->
-                                    <div class="form-outline mb-3">
-                                        <label class="form-label">Password</label>
-                                        <label for="form3Example3"></label><input type="password" id="form3Example3" class="form-control form-control-md"
-                                                                                  placeholder="Enter a valid password" />
-                                    </div>
-                            </div>
-                            <!--Footer-->
-                            <div class="modal-footer justify-content-center">
-                                <button type="button" class="btn btn-success">Login</button>
-                            </div>
-                        </div>
-                        <!--/.Content-->
-                    </div>
-                </div>
             </nav>
             <!-- End of Topbar -->
 
