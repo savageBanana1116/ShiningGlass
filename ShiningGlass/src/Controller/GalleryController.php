@@ -17,23 +17,35 @@ class GalleryController extends AppController{
     {
 
 
-        $categories = $this->fetchTable('categories')->find();
+        $categories = $this->fetchTable('categories')->find('list');
         $this->set(compact('categories'));
         // $this->fetchTable('Articles')->find()->all();
 
         // $artworks = $this->paginate($this->Artworks);
         // $this->set(compact('artworks'));
-        $category_id= $this->request->getData('category_id');
-        if(!empty($searchTerm_id)){
-            $query  = $this->fetchTable('Categories')->get($category_id,['contain'=>['Artworks']]);
-            $Artworks = $this->paginate($query);
-            $this->set('results',$Artworks);
+        $category_id= $this->request->getQuery('category_id');
 
-        }else{
-            $query = $this->fetchTable('Artworks')->find();
-            $Artworks = $this->paginate($query);
-            $this->set('results',$Artworks);
+
+        // If no cateogry id setup, load aa artworks, otherwise load the artworks related to category id
+        $artworks = $this->fetchTable('Artworks')->find();
+        if (!empty($category_id)) {
+            $artworks = $this->fetchTable('Categories')->get($category_id, ['contain' => ['Artworks']])->artworks;
         }
+        $this->set('results', $artworks);
+
+
+
+       //$category_id= 8;
+       //if(!empty($searchTerm_id)){
+       //    $query  = $this->fetchTable('Categories')->get($category_id,['contain'=>['Artworks']]);
+       //    $Artworks = $this->paginate($query);
+       //    $this->set('results',$Artworks);
+
+       //}else{
+       //    $query = $this->fetchTable('Artworks')->find();
+       //    $Artworks = $this->paginate($query);
+       //    $this->set('results',$Artworks);
+       //}
 
 
     }

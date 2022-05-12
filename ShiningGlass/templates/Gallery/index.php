@@ -14,7 +14,7 @@
         form {
             padding: 15px;
             background: #fff;
-            display:none;
+
         }
     </style>
 
@@ -55,8 +55,8 @@
 <div class="filter">
 
     <?= $this->Form->create(null, ['type' => 'get']) ?>
-    <?= $this->Form->control('categories_id', ['options' => $categories, 'class' => 'form-control']);; ?>
-    <?= $this->Form->submit('Filter') ?>
+    <?= $this->Form->control('category_id', ['options' => $categories, 'class' => 'form-control', 'empty' => '[Show all artworks]', 'value' => $this->request->getQuery('category_id', "")]); ?>
+    <?= $this->Form->submit('Filter',['style'=>'margin-top: 10px','class'=>'btn btn-primary']) ?>
     <?= $this->Form->end() ?>
 
 
