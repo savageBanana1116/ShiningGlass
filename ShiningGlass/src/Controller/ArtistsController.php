@@ -106,29 +106,41 @@ class ArtistsController extends AppController
         $artist = $this->Artists->get($id, [
             'contain' => [],
         ]);
+
+        $currentImageName = $artist->image;
+
         if ($this->request->is(['patch', 'post', 'put'])) {
             $artist = $this->Artists->patchEntity($artist, $this->request->getData());
 
-            if(!$artist->getErrors) {
-                $image = $this->request->getData('image_file');
+            $imgName = $this->request->getData('image_file')->getClientFilename();
 
-                $name = $image->getClientFilename();
+            if (!empty($imgName)) {
+                // do a file upload ONLY if the user picked an image during edit
 
-                if (!is_dir(WWW_ROOT . 'img' . DS . 'artist-img'))
-                    mkdir(WWW_ROOT . 'img' . DS . 'artist-img', 0775);
+                //upload image code------------------------------
 
-                $targetPath = WWW_ROOT . 'img' . DS . 'artist-img' . DS . $name;
+                if (!$artist->getErrors) {
+                    $image = $this->request->getData('image_file');
 
-                if ($name)
-                    $image->moveTo($targetPath);
+                    $name = $image->getClientFilename();
 
-                $artist->image = 'artist-img/' . $name;
+                    $targetPath = WWW_ROOT . 'img' . DS . 'artist-img' . DS . $name;
+
+                    if ($name)
+                        $image->moveTo($targetPath);
+
+                    $artist->image = 'artist-img/' . $name;
+                }
+                //end upload image code----------------------------
+            } else {
+                // assign the already existing image name
+                $artist->image = $currentImageName;
             }
 
             if ($this->Artists->save($artist)) {
                 $this->Flash->success(__('The artist has been saved.'));
 
-                //return $this->redirect(['action' => 'index']);
+                return $this->redirect(['controller' => 'abouts', 'action' => 'index']);
             }
             $this->Flash->error(__('The artist could not be saved. Please, try again.'));
         }

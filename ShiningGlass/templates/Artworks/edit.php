@@ -36,7 +36,7 @@
     </aside>
     <div class="column-responsive column-80" align="left">
         <div class="artworks form content">
-            <?= $this->Form->create($artwork) ?>
+            <?= $this->Form->create($artwork, ['enctype' => 'multipart/form-data']) ?>
             <fieldset>
                 <legend><?= __('Edit Artwork') ?></legend>
                 <?php

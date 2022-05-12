@@ -27,7 +27,7 @@
     </aside>
     <div class="column-responsive column-80" align="left">
         <div class="artists form content">
-            <?= $this->Form->create($artist, ['type' => 'file']) ?>
+            <?= $this->Form->create($artist, ['enctype' => 'multipart/form-data']) ?>
             <fieldset>
                 <legend><?= __('Edit Artist') ?></legend>
                 <?php

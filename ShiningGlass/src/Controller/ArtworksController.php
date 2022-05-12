@@ -65,7 +65,49 @@ class ArtworksController extends AppController
 //            move_uploaded_file($tmp_name,$fileDestination);
 //
 //            $artwork->image=$tmp_name;
-            if(!$artwork->getErrors) {
+            if (!$artwork->getErrors) {
+
+//                $fileobject = $this->request->getData('image_file');
+//                $destination = 'img/artwork-img/' . $fileobject->getClientFilename();
+//
+//// Existing files with the same name will be replaced.
+//                $fileobject->moveTo($destination);
+//                $artwork->image = 'artwork-img/' . $fileobject->getClientFileName();
+//
+//                //Image 2
+//
+//                $fileobject = $this->request->getData('image_file2');
+//                $destination = 'img/artwork-img/' . $fileobject->getClientFilename();
+//
+//// Existing files with the same name will be replaced.
+//                $fileobject->moveTo($destination);
+//                $artwork->image2 = 'artwork-img/' . $fileobject->getClientFileName();
+//
+//                // Image 3
+//
+//                $fileobject = $this->request->getData('image_file3');
+//                $destination = 'img/artwork-img/' . $fileobject->getClientFilename();
+//
+//// Existing files with the same name will be replaced.
+//                $fileobject->moveTo($destination);
+//                $artwork->image3 = 'artwork-img/' . $fileobject->getClientFileName();
+//
+//                // Image 4
+//                $fileobject = $this->request->getData('image_file4');
+//                $destination = 'img/artwork-img/' . $fileobject->getClientFilename();
+//
+//// Existing files with the same name will be replaced.
+//                $fileobject->moveTo($destination);
+//                $artwork->image4 = 'artwork-img/' . $fileobject->getClientFileName();
+//
+//                // Image 5
+//                $fileobject = $this->request->getData('image_file5');
+//                $destination = 'img/artwork-img/' . $fileobject->getClientFilename();
+//
+//// Existing files with the same name will be replaced.
+//                $fileobject->moveTo($destination);
+//                $artwork->image5 = 'artwork-img/' . $fileobject->getClientFileName();
+
                 $image = $this->request->getData('image_file');
 
                 $name = $image->getClientFilename();
@@ -120,8 +162,6 @@ class ArtworksController extends AppController
                 $artwork->image5 = 'artwork-img/' . $name5;
 
 
-
-
             }
 
             if ($this->Artworks->save($artwork)) {
@@ -148,8 +188,144 @@ class ArtworksController extends AppController
         $artwork = $this->Artworks->get($id, [
             'contain' => ['Categories'],
         ]);
+
+        $currentImageName = $artwork->image;
+
         if ($this->request->is(['patch', 'post', 'put'])) {
             $artwork = $this->Artworks->patchEntity($artwork, $this->request->getData());
+
+            $imgName = $this->request->getData('image_file')->getClientFilename();
+
+            if (!empty($imgName)) {
+                // do a file upload ONLY if the user picked an image during edit
+
+                //upload image code------------------------------
+
+                if (!$artwork->getErrors) {
+                    $image = $this->request->getData('image_file');
+
+                    $name = $image->getClientFilename();
+
+                    $targetPath = WWW_ROOT . 'img' . DS . 'artwork-img' . DS . $name;
+
+                    if ($name)
+                        $image->moveTo($targetPath);
+
+                    $artwork->image = 'artwork-img/' . $name;
+                }
+                //end upload image code----------------------------
+            } else {
+                // assign the already existing image name
+                $artwork->image = $currentImageName;
+            }
+// image 2
+            $currentImageName2 = $artwork->image2;
+            $imgName2 = $this->request->getData('image_file2')->getClientFilename();
+
+            if (!empty($imgName2)) {
+                // do a file upload ONLY if the user picked an image during edit
+
+                //upload image code------------------------------
+
+                if (!$artwork->getErrors) {
+                    $image2 = $this->request->getData('image_file2');
+
+                    $name = $image2->getClientFilename();
+
+                    $targetPath = WWW_ROOT . 'img/artwork-img/' . DS . $name;
+
+                    if ($name)
+                        $image2->moveTo($targetPath);
+
+                    $artwork->image2 = 'artwork-img/' . $name;
+                }
+                //end upload image code----------------------------
+            } else {
+                // assign the already existing image name
+                $artwork->image2 = $currentImageName2;
+            }
+// Image 3
+            $currentImageName3 = $artwork->image3;
+            $imgName3 = $this->request->getData('image_file3')->getClientFilename();
+
+            if (!empty($imgName3)) {
+                // do a file upload ONLY if the user picked an image during edit
+
+                //upload image code------------------------------
+
+                if (!$artwork->getErrors) {
+                    $image3 = $this->request->getData('image_file3');
+
+                    $name = $image3->getClientFilename();
+
+                    $targetPath = WWW_ROOT . 'img/artwork-img/' . DS . $name;
+
+                    if ($name)
+                        $image3->moveTo($targetPath);
+
+                    $artwork->image3 = 'artwork-img/' . $name;
+                }
+                //end upload image code----------------------------
+            } else {
+                // assign the already existing image name
+                $artwork->image3 = $currentImageName3;
+            }
+
+            // Image 4
+            $currentImageName4 = $artwork->image4;
+            $imgName4 = $this->request->getData('image_file4')->getClientFilename();
+
+            if (!empty($imgName4)) {
+                // do a file upload ONLY if the user picked an image during edit
+
+                //upload image code------------------------------
+
+                if (!$artwork->getErrors) {
+                    $image4 = $this->request->getData('image_file4');
+
+                    $name = $image4->getClientFilename();
+
+                    $targetPath = WWW_ROOT . 'img/artwork-img/' . DS . $name;
+
+                    if ($name)
+                        $image4->moveTo($targetPath);
+
+                    $artwork->image4 = 'artwork-img/' . $name;
+                }
+                //end upload image code----------------------------
+            } else {
+                // assign the already existing image name
+                $artwork->image4 = $currentImageName4;
+            }
+
+// Image 5
+            $currentImageName5 = $artwork->image5;
+            $imgName5 = $this->request->getData('image_file5')->getClientFilename();
+
+            if (!empty($imgName5)) {
+                // do a file upload ONLY if the user picked an image during edit
+
+                //upload image code------------------------------
+
+                if (!$artwork->getErrors) {
+                    $image5 = $this->request->getData('image_file5');
+
+                    $name = $image5->getClientFilename();
+
+                    $targetPath = WWW_ROOT . 'img/artwork-img/' . DS . $name;
+
+                    if ($name)
+                        $image5->moveTo($targetPath);
+
+                    $artwork->image5 = 'artwork-img/' . $name;
+                }
+                //end upload image code----------------------------
+            } else {
+                // assign the already existing image name
+                $artwork->image5 = $currentImageName5;
+            }
+
+
             if ($this->Artworks->save($artwork)) {
                 $this->Flash->success(__('The artwork has been saved.'));
 

@@ -138,7 +138,7 @@ class UsersController extends AppController
         if ($result->isValid()) {
             $this->Authentication->logout();
             $this->Flash->success(__('You have successfully been logged out'));
-            return $this->redirect(['controller' => 'Users', 'action' => 'login']);
+            return $this->redirect(['controller' => 'AdminPortal', 'action' => 'index']);
         }
     }
 }
