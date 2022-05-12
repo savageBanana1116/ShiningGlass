@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b1819f3-35b0-4125-91e8-d4a45f76a1ab" name="Changes" comment="Added functioning login page with password hashing - working on implementation of modal login" />
+    <list default="true" id="8b1819f3-35b0-4125-91e8-d4a45f76a1ab" name="Changes" comment="Fixed issue with edit artwork with multiple artworks, fixed override in artists controller">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,19 +131,28 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../macthon2022_FoodMag_TBC" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ShiningGlass/templates/email/text" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\team18-app_fit3047\ShiningGlass\templates\email\text" />
+      <recent name="C:\xampp\htdocs\team18-app_fit3047\ShiningGlass\templates\email\html" />
+      <recent name="C:\xampp\htdocs\team18-app_fit3047\ShiningGlass\templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\team18-app_fit3047\ShiningGlass\templates\Pages" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Kharg\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="8b1819f3-35b0-4125-91e8-d4a45f76a1ab" name="Changes" comment="" />
@@ -154,6 +165,9 @@
       <workItem from="1651917343750" duration="6874000" />
       <workItem from="1651982937723" duration="8485000" />
       <workItem from="1652062810471" duration="7320000" />
+      <workItem from="1652158108307" duration="21914000" />
+      <workItem from="1652260703528" duration="21203000" />
+      <workItem from="1652315510504" duration="473000" />
     </task>
     <task id="LOCAL-00001" summary="About page changes 1.0">
       <created>1649507887922</created>
@@ -183,7 +197,91 @@
       <option name="project" value="LOCAL" />
       <updated>1652081549734</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Commented out modal form to ensure that login page works while testing other functions">
+      <created>1652082199635</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1652082199635</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fixed formatting of Add and Edit Artwork pages.">
+      <created>1652163566183</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1652163566183</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Updated display of artworks index page from admin back end to ben more concise an detail-oriented">
+      <created>1652164306023</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1652164306023</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added logout button to admin portal with confirmation and flash when successful logout occurs">
+      <created>1652244016777</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1652244016777</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Validation for editing of about and artists page - setting of character limits and requirements of entering data as well as only accepting images">
+      <created>1652245116711</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1652245116711</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Validation for add and edit pages for categories implemented. Added confirmation of deletion to include name rather than id. Fixed view page to show proper data">
+      <created>1652245708552</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1652245708552</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fixed CSS for login portal">
+      <created>1652263765174</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1652263765174</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Updated nav bar">
+      <created>1652264108135</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1652264108135</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Completed Enquiries section within the gallery page - sends email and logs enquiry">
+      <created>1652283471119</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1652283471119</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Fixing of the view and index page of enquiries to be more user friendly">
+      <created>1652284461059</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1652284461059</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Fix white bar on landing page">
+      <created>1652311135753</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1652311135753</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Fixed issue with edit artwork with multiple artworks, fixed override in artists controller">
+      <created>1652315408397</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1652315408397</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +303,18 @@
     <MESSAGE value="changes to view page of artworks:&#10; - on delete display name and id" />
     <MESSAGE value="added content management system&#10;added abouts page&#10;added artists page" />
     <MESSAGE value="Added functioning login page with password hashing - working on implementation of modal login" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added functioning login page with password hashing - working on implementation of modal login" />
+    <MESSAGE value="Commented out modal form to ensure that login page works while testing other functions" />
+    <MESSAGE value="Fixed formatting of Add and Edit Artwork pages." />
+    <MESSAGE value="Updated display of artworks index page from admin back end to ben more concise an detail-oriented" />
+    <MESSAGE value="Added logout button to admin portal with confirmation and flash when successful logout occurs" />
+    <MESSAGE value="Validation for editing of about and artists page - setting of character limits and requirements of entering data as well as only accepting images" />
+    <MESSAGE value="Validation for add and edit pages for categories implemented. Added confirmation of deletion to include name rather than id. Fixed view page to show proper data" />
+    <MESSAGE value="Fixed CSS for login portal" />
+    <MESSAGE value="Updated nav bar" />
+    <MESSAGE value="Completed Enquiries section within the gallery page - sends email and logs enquiry" />
+    <MESSAGE value="Fixing of the view and index page of enquiries to be more user friendly" />
+    <MESSAGE value="Fix white bar on landing page" />
+    <MESSAGE value="Fixed issue with edit artwork with multiple artworks, fixed override in artists controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed issue with edit artwork with multiple artworks, fixed override in artists controller" />
   </component>
 </project>
