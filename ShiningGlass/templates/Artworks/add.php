@@ -38,15 +38,15 @@
                 echo '<span id="textHelpBlock" class="form-text text-muted">Max 30 characters</span>';
                 echo '</div>';
                 echo '<div class="form-group col-md-3">';
-                echo $this->Form->control('price', ['type' => 'decimal', 'class' => 'form-control', 'placeholder' => 'Enter Price', 'maxlength' => '10', 'required' => 'required']);
+                echo $this->Form->control('price', ['type' => 'number', 'class' => 'form-control', 'placeholder' => 'Enter Price', 'min' => '1', 'max' => '99999', 'required' => 'required']);
                 echo '<span id="textHelpBlock" class="form-text text-muted">Max 10 characters (Numbers only)</span>';
                 echo '</div>';
                 echo '<div class="form-group col-md-3">';
-                echo $this->Form->control('weight', ['type' => 'decimal', 'class' => 'form-control', 'placeholder' => 'Enter Weight (Kg)', 'maxlength' => '5', 'required' => 'required']);
+                echo $this->Form->control('weight', ['type' => 'number', 'class' => 'form-control', 'placeholder' => 'Enter Weight (Kg)', 'min' => '1', 'max' => '99999', 'maxlength' => '5', 'required' => 'required']);
                 echo '<span id="textHelpBlock" class="form-text text-muted">Max 5 characters (Numbers only)</span>';
                 echo '</div>';
                 echo '<div class="form-group col-md-3">';
-                echo $this->Form->control('size', ['type' => 'text', 'class' => 'form-control', 'placeholder' => 'Enter Size (W x H)', 'maxlength' => '5', 'required' => 'required']);
+                echo $this->Form->control('size', ['type' => 'number', 'class' => 'form-control', 'placeholder' => 'Enter Size (W x H)', 'min' => '1', 'max' => '99999', 'maxlength' => '5', 'required' => 'required']);
                 echo '<span id="textHelpBlock" class="form-text text-muted">Max 5 characters (Numbers only)</span>';
                 echo '</div>';
                 echo '</div>';

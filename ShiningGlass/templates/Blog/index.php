@@ -36,9 +36,7 @@
                      alt="..."/>
                 <div class="card-body">
                     <h5 class="card-title">Newest Artwork Released</h5>
-                    <p class="card-text">After a small hiatus Sam is back with his latest amazing art piece!</p>
-                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >Read
-                        More</a>
+                    <p class="card-text">After a small hiatus Sam is back with his latest amazing art piece! This piece was inspired by Sam's time living along the beaches of Noosa. Find out more about this piece on the Gallery Page</p>
                 </div>
             </div>
         </div>
@@ -73,24 +71,7 @@
 <!--    </div>-->
 <!--</div>-->
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Newest Artwork Released</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                This piece was inspired by Sam's time living along the beaches of Noosa. Find out more about this piece on the Gallery Page
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-</div>
+
 <?= $this->element('footer') ?>
 
 <!-- Bootstrap core JS-->
