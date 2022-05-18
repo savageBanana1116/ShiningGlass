@@ -86,7 +86,7 @@
                         <!-- Project Card Example -->
                         <div class="card shadow mb-4" style="width: 50%; margin-left: 40%;">
                             <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary"> Back-end Management Systems</h6>
+                                <h6 class="m-0 font-weight-bold text-primary"> Artworks and Collections Management Systems</h6>
                             </div>
 
                             <div class="card-body">
@@ -120,7 +120,7 @@
                         <!-- Approach -->
                         <div class="card shadow mb-4" style="width: 50%; margin-left:10%">
                             <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">Content Management System</h6>
+                                <h6 class="m-0 font-weight-bold text-primary">Website Content Management System</h6>
                             </div>
                             <div class="card-body">
                                 <div class="card bg-gradient-primary text-white shadow"
@@ -136,7 +136,7 @@
                                 <div class="card bg-gradient-primary text-white shadow"
                                      onclick="location.href='enquiries#';" style="cursor: pointer;">
                                     <div class="card-body">
-                                        <a class="text-white" href="enquiries#">Order Form Requests</a>
+                                        <a class="text-white" href="enquiries#">Artwork Enquiries From Customers</a>
                                         <div class="text-white-50 small">Use this to view all active customer enquiries
                                         </div>
                                     </div>

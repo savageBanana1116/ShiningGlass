@@ -10,7 +10,7 @@
 <div class="enquiries index content">
     <aside class="column">
         <div class="side-nav">
-            <h3><?= __('Order Form Requests') ?></h3>
+            <h3><?= __('Artwork Enquiries From Customers') ?></h3>
             <nav class="nav justify-content-center nav-pills nav-fill" style="padding: 5px">
                 <ul class="nav nav-pills nav-fill">
                     <li class="nav-item" style="padding: 5px"><a>
