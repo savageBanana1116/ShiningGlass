@@ -39,7 +39,13 @@ $artist = $artistController->getArtistName(2);
     style="padding-top: 30px; background-color: #d5d8db ;font-size: 20px ;text-align: center ; padding-bottom: 30px ; font-weight: bold">
     <?=$title4 ->title?>
 </div>
-
+<style>
+    .card-img-top{
+        width: 100%;
+        height: 18.5vw;
+        object-fit: cover;
+    }
+</style>
 
 <!--Image -->
 <div class="container">
