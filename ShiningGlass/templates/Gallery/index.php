@@ -34,19 +34,9 @@
     <!-- Core theme CSS (includes Bootstrap)-->
 
     <?= $this->Html->css('styles.css') ?>
+    <?= $this->Html->css('cake.css') ?>
 </head>
 <body id="page-top">
-<!-- Navigation-->
-<!--    <select style="width: 250px;margin-top: 10px" id="category_id" name="category_id">-->
-<!---->
-<!--        <option > --Select a category to filter--</option>-->
-<!--        --><?php //foreach ($result as $categories) { ?>
-<!--        <option value="--><?php //$categories->category_id?><!--">-->
-<?php //echo $categories->name?><!--</option>-->
-<!---->
-<!--        --><?php //} ?>
-<!--        --><?php //$category_id = $_POST['category_id']?>
-<!--    </select>-->
 <div
     style="padding-top: 30px; background-color: #d5d8db ;font-size: 20px ;text-align: center ; padding-bottom: 30px ; font-weight: bold; width:100%;">
     The Artworks of Sam Smith
@@ -63,18 +53,21 @@
 
 
 </div>
+<br>
+<br>
+
 
 <div class="container">
 
-    <div class="row" style="margin-top: 60px">
+    <div class="row">
 
 
         <?php $i = 1; ?>
         <?php foreach ($results as $artwork): ?>
 
-                <div class="card card shadow mb-4 col-sm-3">
-                    <?= $this->Html->image($artwork->image, ['class' => 'card-img-top', 'width' => '400px', 'height' => '250px']) ?>
+                <div class="card card shadow mb-4 col-sm-3" >
                     <div class="card-body">
+                        <?= $this->Html->image($artwork->image, ['class' => 'card-img-top', 'height' => '50%']) ?>
                         <h5 class="card-title"><?= h($artwork->name) ?></h5>
                         <p class="card-text">$<?= h($artwork->price) ?></p>
                         <!--                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Read-->

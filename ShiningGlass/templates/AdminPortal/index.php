@@ -35,7 +35,7 @@
 
             <!-- Topbar -->
             <nav class="navbar navbar-expand navbar-dark bg-gradient-dark topbar mb-4 static-top shadow">
-                <h1 class="text-white"><strong>SHINING GLASS ADMIN PORTAL</strong></h1>
+                <h1 class="text-white">Shining Glass Admin Portal</h1>
 
                 <!-- Sidebar Toggle (Topbar) -->
                 <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -63,7 +63,7 @@
                     <div class="card bg-gradient-dark text-white shadow" >
                         <div class="card-body "
                              onclick="location.href='index.php#';" style="cursor: pointer;">
-                            <a class="text-white" href="index.php">Client Side-View</a>
+                            <a class="text-white" href="index.php">Navigate back to main website</a>
                             <div class="text-white-50 small">Currently used to navigate back to the
                                 client-side landing (home) page
                             </div>
