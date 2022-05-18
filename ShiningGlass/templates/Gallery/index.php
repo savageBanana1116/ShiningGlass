@@ -55,8 +55,9 @@
 <div class="filter">
 
     <?= $this->Form->create(null, ['type' => 'get']) ?>
-    <?= $this->Form->control('category_id', ['options' => $categories, 'class' => 'form-control', 'empty' => '[Show all artworks]', 'value' => $this->request->getQuery('category_id', "")]); ?>
-    <?= $this->Form->submit('Filter',['style'=>'margin-top: 10px','class'=>'btn btn-primary']) ?>
+    <?= $this->Form->label('Filter Through Categories',null, ['style' => 'float:left; font-size:20px']); ?>
+    <?= $this->Form->control('category_id', ['label'=>'','options' => $categories, 'class' => 'form-control','style'=>' text-align: left; width: 30%;margin-top:10px', 'empty' => '[Show all artworks]', 'value' => $this->request->getQuery('category_id', "")]); ?>
+    <?= $this->Form->submit('Filter',['style'=>'margin-top: 10px;  float: left;','class'=>'btn btn-primary']) ?>
     <?= $this->Form->end() ?>
 
 
@@ -64,11 +65,14 @@
 </div>
 
 <div class="container">
+
     <div class="row" style="margin-top: 60px">
+
+
         <?php $i = 1; ?>
         <?php foreach ($results as $artwork): ?>
-            <div class="col">
-                <div class="card card shadow mb-4">
+
+                <div class="card card shadow mb-4 col-sm-3">
                     <?= $this->Html->image($artwork->image, ['class' => 'card-img-top', 'width' => '400px', 'height' => '250px']) ?>
                     <div class="card-body">
                         <h5 class="card-title"><?= h($artwork->name) ?></h5>
@@ -117,31 +121,33 @@
                                                 <hr>
                                                 <br>
 
-                                                <script>
-                                                    $(document).ready(function () {
-                                                        $("#formButton-<?php echo $i; // Displaying the increment ?>").click(function () {
-                                                            $("#form-<?php echo $i; // Displaying the increment ?>").toggle();
-                                                        });
-                                                    });
-                                                </script>
-                                                <button type="button" class="btn btn-primary"
-                                                        id="formButton-<?php echo $i; // Displaying the increment ?>">
+
+                                                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                                                     Open Order Form
-                                                </button>
+                                                </a>
+
 
 
                                                     <?= $this->Form->create(null, ['id' => "form-$i", 'url' => ['controller' => 'Enquiries','action' => 'add']]); ?>
-                                                    <fieldset>
-                                                        <legend><?= __('Send new enquiry') ?></legend>
-                                                        <?php
-                                                        echo $this->Form->control('full_name', ['label' => 'Your full name', 'class' => 'form-control']);
-                                                        echo $this->Form->control('email', ['label' => 'Your email address', 'class' => 'form-control']);
-                                                        echo $this->Form->control('body', ['label' => 'Any enquiries', 'rows' => 5, 'class' => 'form-control']);
-                                                        ?>
-                                                    </fieldset>
-                                                <br>
-                                                    <?= $this->Form->button(__('Send enquiry'), ['class' => 'btn btn-success']) ?>
-                                                    <?= $this->Form->end() ?>
+                                                <div class="collapse" id="collapseExample">
+                                                    <div class="card card-body">
+                                                        <fieldset>
+                                                            <legend><?= __('Send new enquiry') ?></legend>
+                                                            <?php
+                                                            echo $this->Form->label('Your full name',null, ['style' => 'float:left;margin-bottom:10px;margin-top:10px']);
+                                                            echo $this->Form->control('full_name', ['label' => '', 'class' => 'form-control']);
+                                                            echo $this->Form->label('Your email address',null, ['style' => 'float:left;margin-bottom:10px;margin-top:10px']);
+                                                            echo $this->Form->control('email', ['label' => '', 'class' => 'form-control']);
+                                                            echo $this->Form->label('Any enquiries',null, ['style' => 'float:left;margin-bottom:10px;margin-top:10px']);
+                                                            echo $this->Form->control('body', ['label' => '', 'rows' => 5, 'class' => 'form-control']);
+                                                            ?>
+                                                        </fieldset>
+                                                        <br>
+                                                        <?= $this->Form->button(__('Send enquiry'), ['class' => 'btn btn-success']) ?>
+                                                        <?= $this->Form->end() ?>
+                                                    </div>
+                                                </div>
+
 
 <!--                                                    <div class="form-row">-->
 <!--                                                        <div class="form-group">-->
@@ -172,11 +178,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
+
             <?php $i++; ?>
 
         <?php endforeach; ?>
     </div>
+
 </div>
 </div>
 <br>

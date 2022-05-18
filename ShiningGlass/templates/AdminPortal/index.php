@@ -58,10 +58,10 @@
             <div class="container-fluid">
 
                 <!-- Page Heading -->
-                <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h3 mb-0 text-gray-800">Admin Dashboard</h1>
-                    <div class="card bg-gradient-dark text-white shadow">
-                        <div class="card-body"
+                <div class="d-sm-flex align-items-center justify-content-between mb-4" style="margin-right: 5%">
+                    <h1 class="h3 mb-0 text-gray-800" style="margin-left: 15%">Admin Dashboard</h1>
+                    <div class="card bg-gradient-dark text-white shadow" >
+                        <div class="card-body "
                              onclick="location.href='index.php#';" style="cursor: pointer;">
                             <a class="text-white" href="index.php">Client Side-View</a>
                             <div class="text-white-50 small">Currently used to navigate back to the
@@ -78,13 +78,13 @@
                 <div class="row"></div>
 
                 <!-- Content Row -->
-                <div class="row">
+                <div class="row" style="margin-top: 50px">
 
                     <!-- Content Column -->
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" >
 
                         <!-- Project Card Example -->
-                        <div class="card shadow mb-4">
+                        <div class="card shadow mb-4" style="width: 50%; margin-left: 40%;">
                             <div class="card-header py-3">
                                 <h6 class="m-0 font-weight-bold text-primary"> Back-end Management Systems</h6>
                             </div>
@@ -118,7 +118,7 @@
                     <div class="col-lg-6">
 
                         <!-- Approach -->
-                        <div class="card shadow mb-4">
+                        <div class="card shadow mb-4" style="width: 50%; margin-left:10%">
                             <div class="card-header py-3">
                                 <h6 class="m-0 font-weight-bold text-primary">Content Management System</h6>
                             </div>
@@ -136,7 +136,7 @@
                                 <div class="card bg-gradient-primary text-white shadow"
                                      onclick="location.href='enquiries#';" style="cursor: pointer;">
                                     <div class="card-body">
-                                        <a class="text-white" href="enquiries#">Order Form Details</a>
+                                        <a class="text-white" href="enquiries#">Order Form Requests</a>
                                         <div class="text-white-50 small">Use this to view all active customer enquiries
                                         </div>
                                     </div>

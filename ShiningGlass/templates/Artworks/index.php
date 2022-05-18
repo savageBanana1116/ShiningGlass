@@ -73,7 +73,7 @@
                         ['action' => 'edit', $artwork->id]) ?>
                     <?= $this->Form->postLink(__('Delete'),
                         ['action' => 'delete', $artwork->id],
-                        ['confirm' => __('Are you sure you want to delete # {0}?', $artwork->id)]) ?>
+                        ['confirm' => __('Are you sure you want to delete  {0}?', $artwork->name)]) ?>
                 </td>
             </tr>
         <?php endforeach; ?>

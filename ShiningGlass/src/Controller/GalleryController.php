@@ -17,7 +17,7 @@ class GalleryController extends AppController{
     {
 
 
-        $categories = $this->fetchTable('categories')->find('list');
+        $categories = $this->fetchTable('Categories')->find('list');
         $this->set(compact('categories'));
         // $this->fetchTable('Articles')->find()->all();
 
@@ -26,7 +26,7 @@ class GalleryController extends AppController{
         $category_id= $this->request->getQuery('category_id');
 
 
-        // If no cateogry id setup, load aa artworks, otherwise load the artworks related to category id
+        // If no category id setup, load all artworks, otherwise load the artworks related to category id
         $artworks = $this->fetchTable('Artworks')->find();
         if (!empty($category_id)) {
             $artworks = $this->fetchTable('Categories')->get($category_id, ['contain' => ['Artworks']])->artworks;
