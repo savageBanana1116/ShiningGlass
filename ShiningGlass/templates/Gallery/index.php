@@ -135,11 +135,11 @@
                                                             <legend><?= __('Send new enquiry') ?></legend>
                                                             <?php
                                                             echo $this->Form->label('Your full name',null, ['style' => 'float:left;margin-bottom:10px;margin-top:10px']);
-                                                            echo $this->Form->control('full_name', ['label' => '', 'class' => 'form-control']);
+                                                            echo $this->Form->control('full_name', ['label' => '', 'class' => 'form-control', 'maxlength' => '30', 'required' => 'true']);
                                                             echo $this->Form->label('Your email address',null, ['style' => 'float:left;margin-bottom:10px;margin-top:10px']);
-                                                            echo $this->Form->control('email', ['label' => '', 'class' => 'form-control']);
+                                                            echo $this->Form->control('email', ['label' => '', 'class' => 'form-control', 'maxlength' => '30', 'required' => 'true']);
                                                             echo $this->Form->label('Any enquiries',null, ['style' => 'float:left;margin-bottom:10px;margin-top:10px']);
-                                                            echo $this->Form->control('body', ['label' => '', 'rows' => 5, 'class' => 'form-control']);
+                                                            echo $this->Form->control('body', ['label' => '', 'rows' => 5, 'class' => 'form-control', 'maxlength' => '255', 'required' => 'true']);
                                                             ?>
                                                         </fieldset>
                                                         <br>
