@@ -35,7 +35,7 @@
         <div class="carousel-item active">
             <img class="d-block w-100" src="assets/img/img_1.jpg" alt="First slide" align="centre">
             <div class="carousel-caption">
-                <h1 style="text-shadow: 0px 0px 8px #000000; font-size: 50px">WELCOME TO SHINING GLASS</h1>
+                <h1 style="text-shadow: 0px 0px 8px #000000; font-size: 65px">WELCOME TO SHINING GLASS</h1>
                 <p style="text-shadow: 0px 0px 8px #000000;">Victoria's Finest Glass Artworks hand created by award winner Sam Smith</p>
                 <div class="slider-btn">
                     <button class="btn btn-primary" onclick="window.location.href='gallery'" style="text-shadow: 0px 0px 4px #000000;">Enter The Gallery</button>
@@ -45,7 +45,7 @@
         <div class="carousel-item">
             <img class="d-block w-100" src="assets/img/video-loop-still.jpg" alt="Second slide">
             <div class="carousel-caption">
-                <h1 style="text-shadow: 0px 0px 8px #000000;">WELCOME TO SHINING GLASS</h1>
+                <h1 style="text-shadow: 0px 0px 8px #000000;font-size: 65px">WELCOME TO SHINING GLASS</h1>
                 <p style="text-shadow: 0px 0px 8px #000000;">Victoria's Finest Glass Artworks hand created by award winner Sam Smith</p>
                 <div class="slider-btn">
                     <button class="btn btn-primary" onclick="window.location.href='gallery'" style="text-shadow: 0px 0px 4px #000000;">Enter The Gallery</button>
@@ -55,7 +55,7 @@
         <div class="carousel-item">
             <img class="d-block w-100" src="assets/img/machine-glass-blowing-rona-glass-3.jpg" alt="Third slide">
             <div class="carousel-caption">
-                <h1 style="text-shadow: 0px 0px 8px #000000;">WELCOME TO SHINING GLASS</h1>
+                <h1 style="text-shadow: 0px 0px 8px #000000;font-size: 65px">WELCOME TO SHINING GLASS</h1>
                 <p style="text-shadow: 0px 0px 8px #000000;">Victoria's Finest Glass Artworks hand created by award winner Sam Smith</p>
                 <div class="slider-btn">
                     <button class="btn btn-primary" onclick="window.location.href='gallery'" style="text-shadow: 0px 0px 4px #000000;">Enter The Gallery</button>

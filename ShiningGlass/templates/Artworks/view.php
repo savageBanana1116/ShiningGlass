@@ -25,7 +25,7 @@
                         <a>
                             <?= $this->Form->postLink(__('Delete Artwork'),
                                 ['action' => 'delete', $artwork->id],
-                                ['confirm' => __('Are you sure you want to delete # {0}?', $artwork->id),
+                                ['confirm' => __('Are you sure you want to delete  {0}?', $artwork->name),
                                     'class' => 'nav-item nav-link active btn-danger']) ?>
                         </a>
                     </li>
