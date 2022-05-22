@@ -50,6 +50,3 @@ File and Class Name Conventions
   - img Directory: Contains all the images uploaded to the website.
 
 ***For more information about CakePhp: https://book.cakephp.org/4/en/intro/conventions.html***
-
-
-
