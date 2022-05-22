@@ -46,7 +46,6 @@
             <th><?= $this->Paginator->sort('price') ?></th>
             <th><?= $this->Paginator->sort('weight') ?></th>
             <th><?= $this->Paginator->sort('size') ?></th>
-            <th class="actions"><?= __('Description') ?></th>
             <th><?= $this->Paginator->sort('create_date') ?></th>
             <th class="actions"><?= __('Image') ?></th>
             <th class="actions"><?= __('Actions') ?></th>
@@ -59,7 +58,6 @@
                 <td><?= h($artwork->price) ?></td>
                 <td><?= h($artwork->weight) ?></td>
                 <td><?= h($artwork->size) ?></td>
-                <td><?= h($artwork->descriptions) ?></td>
                 <td><?= h($artwork->create_date) ?></td>
                 <td><?= $this->Html->image($artwork->image,
                         ['class' => 'image', 'style' => 'max-width:300px; max-height:300px;']) ?>
@@ -73,7 +71,7 @@
                         ['action' => 'edit', $artwork->id]) ?>
                     <?= $this->Form->postLink(__('Delete'),
                         ['action' => 'delete', $artwork->id],
-                        ['confirm' => __('Are you sure you want to delete # {0}?', $artwork->id)]) ?>
+                        ['confirm' => __('Are you sure you want to delete  {0}?', $artwork->name)]) ?>
                 </td>
             </tr>
         <?php endforeach; ?>

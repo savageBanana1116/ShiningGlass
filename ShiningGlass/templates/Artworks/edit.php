@@ -19,7 +19,7 @@
                         <a>
                             <?= $this->Form->postLink(__('Delete'),
                                 ['action' => 'delete', $artwork->id],
-                                ['confirm' => __('Are you sure you want to delete # {0}?', $artwork->id),
+                                ['confirm' => __('Are you sure you want to delete {0}?', $artwork->name),
                                     'class' => 'nav-item nav-link active btn-danger']
                             ) ?>
                         </a>
@@ -45,24 +45,16 @@
                 echo $this->Form->control('name', ['type' => 'text', 'class' => 'form-control', 'maxlength' => '30']);
                 echo '</div>';
                 echo '<div class="form-group col-md-3">';
-                echo $this->Form->control('price', ['type' => 'decimal', 'class' => 'form-control', 'maxlength' => '10']);
+                echo $this->Form->control('price', ['type' => 'number', 'min' => '1', 'max' => '99999', 'class' => 'form-control', 'maxlength' => '5']);
                 echo '</div>';
                 echo '<div class="form-group col-md-3">';
-                echo $this->Form->control('weight', ['type' => 'decimal', 'class' => 'form-control' , 'maxlength' => '15']);
+                echo $this->Form->control('weight', ['type' => 'number', 'min' => '1', 'max' => '99999', 'class' => 'form-control' , 'maxlength' => '5']);
                 echo '</div>';
                 echo '<div class="form-group col-md-3">';
-                echo $this->Form->control('size', ['type' => 'text', 'class' => 'form-control']);
+                echo $this->Form->control('size', ['type' => 'number', 'min' => '1', 'max' => '99999', 'class' => 'form-control']);
                 echo '</div>';
                 echo '</div>';
                 echo $this->Form->control('descriptions', ['type' => 'textarea', 'class' => 'form-control', 'maxlength' => '255']);
-                echo '<div class="form-row">';
-                echo '<div class="form-group col-md-6">';
-                echo $this->Form->control('create_date', ['class' => 'form-control']);
-                echo '</div>';
-                echo '<div class="form-group col-md-6">';
-                echo $this->Form->control('categories._ids', ['options' => $categories, 'type' => 'select', 'class' => 'form-control']);
-                echo '</div>';
-                echo '</div>';
                 echo '<div class="form-row">';
                 echo '<div class="form-group col-md-3">';
                 echo $this->Form->control('image_file', ['type' => 'file', 'accept'=>'image/*',  'class' => 'form-control']);
@@ -84,7 +76,8 @@
                 ?>
             </fieldset>
             <br>
-            <?= $this->Form->button(__('Submit'), ['class' => 'btn-success'] ) ?>
+            <?= $this->Form->button(__('Submit'), ['class' => 'btn btn-success', 'style' => 'float:right;'] ) ?>
+            <br>
             <?= $this->Form->end() ?>
         </div>
     </div>

@@ -14,7 +14,7 @@
         form {
             padding: 15px;
             background: #fff;
-            display:none;
+
         }
     </style>
 
@@ -34,19 +34,9 @@
     <!-- Core theme CSS (includes Bootstrap)-->
 
     <?= $this->Html->css('styles.css') ?>
+    <?= $this->Html->css('cake.css') ?>
 </head>
 <body id="page-top">
-<!-- Navigation-->
-<!--    <select style="width: 250px;margin-top: 10px" id="category_id" name="category_id">-->
-<!---->
-<!--        <option > --Select a category to filter--</option>-->
-<!--        --><?php //foreach ($result as $categories) { ?>
-<!--        <option value="--><?php //$categories->category_id?><!--">-->
-<?php //echo $categories->name?><!--</option>-->
-<!---->
-<!--        --><?php //} ?>
-<!--        --><?php //$category_id = $_POST['category_id']?>
-<!--    </select>-->
 <div
     style="padding-top: 30px; background-color: #d5d8db ;font-size: 20px ;text-align: center ; padding-bottom: 30px ; font-weight: bold; width:100%;">
     The Artworks of Sam Smith
@@ -55,22 +45,29 @@
 <div class="filter">
 
     <?= $this->Form->create(null, ['type' => 'get']) ?>
-    <?= $this->Form->control('categories_id', ['options' => $categories, 'class' => 'form-control']);; ?>
-    <?= $this->Form->submit('Filter') ?>
+    <?= $this->Form->label('Filter Through Categories',null, ['style' => 'float:left; font-size:20px']); ?>
+    <?= $this->Form->control('category_id', ['label'=>'','options' => $categories, 'class' => 'form-control','style'=>' text-align: left; width: 30%;margin-top:10px', 'empty' => '[Show all artworks]', 'value' => $this->request->getQuery('category_id', "")]); ?>
+    <?= $this->Form->submit('Filter',['style'=>'margin-top: 10px;  float: left;','class'=>'btn btn-primary']) ?>
     <?= $this->Form->end() ?>
 
 
 
 </div>
+<br>
+<br>
+
 
 <div class="container">
-    <div class="row" style="margin-top: 60px">
+
+    <div class="row">
+
+
         <?php $i = 1; ?>
         <?php foreach ($results as $artwork): ?>
-            <div class="col">
-                <div class="card card shadow mb-4">
-                    <?= $this->Html->image($artwork->image, ['class' => 'card-img-top', 'width' => '400px', 'height' => '250px']) ?>
+
+                <div class="card card shadow mb-4 col-sm-3" >
                     <div class="card-body">
+                        <?= $this->Html->image($artwork->image, ['class' => 'card-img-top', 'height' => '50%']) ?>
                         <h5 class="card-title"><?= h($artwork->name) ?></h5>
                         <p class="card-text">$<?= h($artwork->price) ?></p>
                         <!--                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Read-->
@@ -117,31 +114,33 @@
                                                 <hr>
                                                 <br>
 
-                                                <script>
-                                                    $(document).ready(function () {
-                                                        $("#formButton-<?php echo $i; // Displaying the increment ?>").click(function () {
-                                                            $("#form-<?php echo $i; // Displaying the increment ?>").toggle();
-                                                        });
-                                                    });
-                                                </script>
-                                                <button type="button" class="btn btn-primary"
-                                                        id="formButton-<?php echo $i; // Displaying the increment ?>">
+
+                                                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                                                     Open Order Form
-                                                </button>
+                                                </a>
+
 
 
                                                     <?= $this->Form->create(null, ['id' => "form-$i", 'url' => ['controller' => 'Enquiries','action' => 'add']]); ?>
-                                                    <fieldset>
-                                                        <legend><?= __('Send new enquiry') ?></legend>
-                                                        <?php
-                                                        echo $this->Form->control('full_name', ['label' => 'Your full name', 'class' => 'form-control']);
-                                                        echo $this->Form->control('email', ['label' => 'Your email address', 'class' => 'form-control']);
-                                                        echo $this->Form->control('body', ['label' => 'Any enquiries', 'rows' => 5, 'class' => 'form-control']);
-                                                        ?>
-                                                    </fieldset>
-                                                <br>
-                                                    <?= $this->Form->button(__('Send enquiry'), ['class' => 'btn btn-success']) ?>
-                                                    <?= $this->Form->end() ?>
+                                                <div class="collapse" id="collapseExample">
+                                                    <div class="card card-body">
+                                                        <fieldset>
+                                                            <legend><?= __('Send new enquiry') ?></legend>
+                                                            <?php
+                                                            echo $this->Form->label('Your full name',null, ['style' => 'float:left;margin-bottom:10px;margin-top:10px']);
+                                                            echo $this->Form->control('full_name', ['label' => '', 'class' => 'form-control', 'maxlength' => '30', 'required' => 'true']);
+                                                            echo $this->Form->label('Your email address',null, ['style' => 'float:left;margin-bottom:10px;margin-top:10px']);
+                                                            echo $this->Form->control('email', ['label' => '', 'class' => 'form-control', 'maxlength' => '30', 'required' => 'true']);
+                                                            echo $this->Form->label('Any enquiries',null, ['style' => 'float:left;margin-bottom:10px;margin-top:10px']);
+                                                            echo $this->Form->control('body', ['label' => '', 'rows' => 5, 'class' => 'form-control', 'maxlength' => '255', 'required' => 'true']);
+                                                            ?>
+                                                        </fieldset>
+                                                        <br>
+                                                        <?= $this->Form->button(__('Send enquiry'), ['class' => 'btn btn-success']) ?>
+                                                        <?= $this->Form->end() ?>
+                                                    </div>
+                                                </div>
+
 
 <!--                                                    <div class="form-row">-->
 <!--                                                        <div class="form-group">-->
@@ -172,11 +171,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
+
             <?php $i++; ?>
 
         <?php endforeach; ?>
     </div>
+
 </div>
 </div>
 <br>

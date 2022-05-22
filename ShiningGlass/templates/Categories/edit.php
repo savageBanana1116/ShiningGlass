@@ -47,7 +47,8 @@
                 ?>
             </fieldset>
             <br>
-            <?= $this->Form->button(__('Submit'), ['class' => 'btn-success'] ) ?>
+            <?= $this->Form->button(__('Submit'), ['class' => 'btn btn-success', 'style' => 'float:right;'] ) ?>
+            <br>
             <?= $this->Form->end() ?>
         </div>
     </div>

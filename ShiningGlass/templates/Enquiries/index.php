@@ -10,7 +10,7 @@
 <div class="enquiries index content">
     <aside class="column">
         <div class="side-nav">
-            <h3><?= __('Order Form Details') ?></h3>
+            <h3><?= __('Artwork Enquiries From Customers') ?></h3>
             <nav class="nav justify-content-center nav-pills nav-fill" style="padding: 5px">
                 <ul class="nav nav-pills nav-fill">
                     <li class="nav-item" style="padding: 5px"><a>
@@ -28,7 +28,7 @@
                 <th><?= $this->Paginator->sort('full_name', 'Name') ?></th>
                 <th><?= $this->Paginator->sort('email', 'Email Address') ?></th>
                 <th><?= $this->Paginator->sort('created', 'Added on') ?></th>
-                <th><?= $this->Paginator->sort('email_sent', 'Sent?') ?></th>
+                <th><?= $this->Paginator->sort('email_sent', 'Email Sent to Admin Successfully') ?></th>
                 <th class="actions"><?= __('Actions') ?></th>
             </tr>
             </thead>
@@ -41,7 +41,7 @@
                     <td><?= $enquiry->email_sent ? __('Yes') : __('No') ?></td>
                     <td class="actions">
                         <?= $this->Html->link(__('View'), ['action' => 'view', $enquiry->id]) ?>
-                        <?= $this->Html->link(__('Mark as sent'), ['action' => 'mark', $enquiry->id]) ?>
+                        <?= $this->Html->link(__('Mark as sent to admin folder'), ['action' => 'mark', $enquiry->id]) ?>
                         <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $enquiry->id], ['confirm' => __('Are you sure you want to delete # {0}?', $enquiry->id)]) ?>
                     </td>
                 </tr>

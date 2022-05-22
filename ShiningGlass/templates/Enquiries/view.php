@@ -32,8 +32,9 @@
     </aside>
     <div id="enquiriesInfo" class="table-responsive" style="padding-top:10px;">
         <div class="enquiriesInfo view content">
-            <h3><?= h($enquiry->id) ?></h3>
-            <table class="table table-bordered">
+            <h3>Enquiry From <?= h($enquiry->full_name) ?></h3>
+            <br>
+            <table class="table table-bordered" style="text-align: left">
                 <tr>
                     <th><?= __('Full Name') ?></th>
                     <td><?= h($enquiry->full_name) ?></td>
@@ -43,15 +44,11 @@
                     <td><?= h($enquiry->email) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Id') ?></th>
-                    <td><?= $this->Number->format($enquiry->id) ?></td>
-                </tr>
-                <tr>
-                    <th><?= __('Created') ?></th>
+                    <th><?= __('Enquiry Created') ?></th>
                     <td><?= h($enquiry->created) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Email Sent') ?></th>
+                    <th><?= __('Email Sent to Admin Folder') ?></th>
                     <td><?= $enquiry->email_sent ? __('Yes') : __('No'); ?></td>
                 </tr>
                 <tr>
@@ -62,3 +59,6 @@
         </div>
     </div>
 </div>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
