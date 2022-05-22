@@ -42,7 +42,7 @@
                     <td class="actions">
                         <?= $this->Html->link(__('View'), ['action' => 'view', $enquiry->id]) ?>
                         <?= $this->Html->link(__('Mark as sent to admin folder'), ['action' => 'mark', $enquiry->id]) ?>
-                        <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $enquiry->id], ['confirm' => __('Are you sure you want to delete # {0}?', $enquiry->id)]) ?>
+                        <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $enquiry->id], ['confirm' => __('Are you sure you want to delete enquiry from {0}?', $enquiry->full_name)]) ?>
                     </td>
                 </tr>
             <?php endforeach; ?>

@@ -42,7 +42,7 @@
                 <?php
                 echo '<div class="form-row">';
                 echo '<div class="form-group col-md-3">';
-                echo $this->Form->control('name', ['type' => 'text', 'class' => 'form-control', 'maxlength' => '30']);
+                echo $this->Form->control('name', ['type' => 'text', 'class' => 'form-control', 'maxlength' => '30', 'required' => 'true']);
                 echo '</div>';
                 echo '<div class="form-group col-md-3">';
                 echo $this->Form->control('price', ['type' => 'number', 'min' => '1', 'max' => '99999', 'class' => 'form-control', 'maxlength' => '5']);

@@ -6,8 +6,9 @@
         background-color: white;
     }
 </style>
-<hr>
+
 <footer class="footer py-4" id="ft-1">
+    <hr>
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-4 text-lg-start">Copyright &copy; Shining Glass</div>

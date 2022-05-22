@@ -26,7 +26,7 @@
                         </li>
                     <li class="nav-item" style="padding: 5px">
                         <a>
-                            <?= $this->Html->link(__('List Categories'),
+                            <?= $this->Html->link(__('List Collection'),
                                 ['action' => 'index'],
                                 ['class' => 'nav-item nav-link active']) ?>
                         </a>
@@ -38,7 +38,7 @@
         <div class="categories form content">
             <?= $this->Form->create($category) ?>
             <fieldset>
-                <legend><?= __('Edit Category') ?></legend>
+                <legend><?= __('Edit Collection') ?></legend>
                 <?php
                 echo $this->Form->control('name', ['type' => 'text', 'class' => 'form-control', 'required' => 'required', 'maxlength' => '30']);
                 echo  '<span id="textHelpBlock" class="form-text text-muted">Max 30 characters</span>';

@@ -43,15 +43,11 @@
 </div>
 <?= $this->Flash->render() ?>
 <div class="filter">
-
     <?= $this->Form->create(null, ['type' => 'get']) ?>
-    <?= $this->Form->label('Filter Through Categories',null, ['style' => 'float:left; font-size:20px']); ?>
+    <?= $this->Form->label('Filter Through Collections',null, ['style' => 'float:left; font-size:20px']); ?>
     <?= $this->Form->control('category_id', ['label'=>'','options' => $categories, 'class' => 'form-control','style'=>' text-align: left; width: 30%;margin-top:10px', 'empty' => '[Show all artworks]', 'value' => $this->request->getQuery('category_id', "")]); ?>
-    <?= $this->Form->submit('Filter',['style'=>'margin-top: 10px;  float: left;','class'=>'btn btn-primary']) ?>
+    <?= $this->Form->submit('Filter',['style'=>'margin-top: 20px;  float: left;','class'=>'btn btn-primary']) ?>
     <?= $this->Form->end() ?>
-
-
-
 </div>
 <br>
 <br>
@@ -65,7 +61,7 @@
         <?php $i = 1; ?>
         <?php foreach ($results as $artwork): ?>
 
-                <div class="card card shadow mb-4 col-sm-3" >
+                <div class="card card shadow mb-4 col-sm-3">
                     <div class="card-body">
                         <?= $this->Html->image($artwork->image, ['class' => 'card-img-top', 'height' => '50%']) ?>
                         <h5 class="card-title"><?= h($artwork->name) ?></h5>
@@ -130,7 +126,7 @@
                                                             echo $this->Form->label('Your full name',null, ['style' => 'float:left;margin-bottom:10px;margin-top:10px']);
                                                             echo $this->Form->control('full_name', ['label' => '', 'class' => 'form-control', 'maxlength' => '30', 'required' => 'true']);
                                                             echo $this->Form->label('Your email address',null, ['style' => 'float:left;margin-bottom:10px;margin-top:10px']);
-                                                            echo $this->Form->control('email', ['label' => '', 'class' => 'form-control', 'maxlength' => '30', 'required' => 'true']);
+                                                            echo $this->Form->control('email', ['type' => 'email','pattern'=>'[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$','title'=>'Invalid email address', 'label' => '', 'class' => 'form-control', 'maxlength' => '30', 'required' => 'true']);
                                                             echo $this->Form->label('Any enquiries',null, ['style' => 'float:left;margin-bottom:10px;margin-top:10px']);
                                                             echo $this->Form->control('body', ['label' => '', 'rows' => 5, 'class' => 'form-control', 'maxlength' => '255', 'required' => 'true']);
                                                             ?>

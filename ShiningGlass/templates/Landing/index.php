@@ -27,7 +27,6 @@
     }
 </style>
 
-<!--<div style="padding-top: 30px; background-color: #d5d8db ;font-size: 20px ;text-align: center ; padding-bottom: 30px ;  font-weight: bold"> Shining Glass as the shining stars in the sky</div>-->
 <!-- slider-->
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <ol class="carousel-indicators">

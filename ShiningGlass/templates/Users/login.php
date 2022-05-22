@@ -35,8 +35,6 @@
                                 alert("Please contact administrator at Administration@ShiningGlass.com for further assistance");
                             }
                         </script>
-                        <br>
-                        <?= $this->Html->link("Add User (Removed on live)", ['action' => 'add']) ?>
                     </div>
                 </div>
             </div>

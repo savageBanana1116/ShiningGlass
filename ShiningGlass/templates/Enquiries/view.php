@@ -15,7 +15,7 @@
                 <ul class="nav nav-pills nav-fill">
                     <li class="nav-item" style="padding: 5px">
                         <a>
-            <?= $this->Form->postLink(__('Delete Enquiry'), ['action' => 'delete', $enquiry->id], ['class' => 'nav-item nav-link active btn-danger', 'confirm' => __('Are you sure you want to delete # {0}?', $enquiry->id)]) ?>
+            <?= $this->Form->postLink(__('Delete Enquiry'), ['action' => 'delete', $enquiry->id], ['class' => 'nav-item nav-link active btn-danger', 'confirm' => __('Are you sure you want to delete enquiry from {0}?', $enquiry->full_name)]) ?>
                         </a>
                     </li>
                     <li class="nav-item" style="padding: 5px">
@@ -23,11 +23,11 @@
             <?= $this->Html->link(__('List Enquiries'), ['action' => 'index'], ['class' => 'nav-item nav-link active']) ?>
                         </a>
                     </li>
-                    <li class="nav-item" style="padding: 5px">
-                        <a>
-            <?= $this->Html->link(__('New Enquiry'), ['action' => 'add'], ['class' => 'nav-item nav-link active']) ?>
-                        </a>
-                    </li>
+            <!--        <li class="nav-item" style="padding: 5px">-->
+            <!--            <a>-->
+            <!--<?= $this->Html->link(__('New Enquiry'), ['action' => 'add'], ['class' => 'nav-item nav-link active']) ?>-->
+            <!--            </a>-->
+            <!--        </li>-->
         </div>
     </aside>
     <div id="enquiriesInfo" class="table-responsive" style="padding-top:10px;">

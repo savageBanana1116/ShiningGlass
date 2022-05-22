@@ -15,14 +15,14 @@
                 <ul class="nav nav-pills nav-fill">
                     <li class="nav-item" style="padding: 5px">
                         <a>
-                            <?= $this->Html->link(__('Edit Category'),
+                            <?= $this->Html->link(__('Edit Collection'),
                                 ['action' => 'edit', $category->id],
                                 ['class' => 'nav-item nav-link active']) ?>
                         </a>
                     </li>
                     <li class="nav-item" style="padding: 5px">
                         <a>
-                            <?= $this->Form->postLink(__('Delete Category'),
+                            <?= $this->Form->postLink(__('Delete Collection'),
                                 ['action' => 'delete', $category->id],
                                 ['confirm' => __('Are you sure you want to delete {0}?', $category->name),
                                     'class' => 'nav-item nav-link active btn-danger']) ?>
@@ -30,14 +30,14 @@
                     </li>
                     <li class="nav-item" style="padding: 5px">
                         <a>
-                            <?= $this->Html->link(__('List Categories'),
+                            <?= $this->Html->link(__('List Collection'),
                                 ['action' => 'index'],
                                 ['class' => 'nav-item nav-link active']) ?>
                         </a>
                     </li>
                     <li class="nav-item" style="padding: 5px">
                         <a>
-                            <?= $this->Html->link(__('New Category'),
+                            <?= $this->Html->link(__('New Collection'),
                                 ['action' => 'add'],
                                 ['class' => 'nav-item nav-link active']) ?>
                         </a>

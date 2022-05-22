@@ -5,13 +5,29 @@
  */
 ?>
 <div class="users index content">
-    <?= $this->Html->link(__('New User'), ['action' => 'add'], ['class' => 'button float-right']) ?>
-    <h3><?= __('Users') ?></h3>
+    <?= $this->Html->css('styles.css') ?>
+
+    <?= $this->Html->css('cake.css') ?>
+
+    <aside class="column">
+        <div class="side-nav">
+            <h3><?= __('Users') ?></h3>
+            <nav class="nav justify-content-center nav-pills nav-fill" style="padding: 5px">
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item" style="padding: 5px">
+                        <a>
+                            <?=  $this->Html->link(__('New User'), ['action' => 'add'],  ['class' => 'nav-item nav-link active btn btn-primary']) ?>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
     <div class="table-responsive">
-        <table>
+        <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th><?= $this->Paginator->sort('id') ?></th>
+
                     <th><?= $this->Paginator->sort('email') ?></th>
                     <th class="actions"><?= __('Actions') ?></th>
                 </tr>
@@ -19,11 +35,11 @@
             <tbody>
                 <?php foreach ($users as $user): ?>
                 <tr>
-                    <td><?= $this->Number->format($user->id) ?></td>
+
                     <td><?= h($user->email) ?></td>
                     <td class="actions">
-                        <?= $this->Html->link(__('View'), ['action' => 'view', $user->id]) ?>
-                        <?= $this->Html->link(__('Edit'), ['action' => 'edit', $user->id]) ?>
+                        
+                     
                         <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $user->id], ['confirm' => __('Are you sure you want to delete # {0}?', $user->id)]) ?>
                     </td>
                 </tr>

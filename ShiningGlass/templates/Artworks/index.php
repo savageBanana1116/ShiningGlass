@@ -55,8 +55,8 @@
         <?php foreach ($artworks as $artwork): ?>
             <tr>
                 <td><?= h($artwork->name) ?></td>
-                <td><?= h($artwork->price) ?></td>
-                <td><?= h($artwork->weight) ?></td>
+                <td>$<?= h($artwork->price) ?></td>
+                <td><?= h($artwork->weight) ?>kg</td>
                 <td><?= h($artwork->size) ?></td>
                 <td><?= h($artwork->create_date) ?></td>
                 <td><?= $this->Html->image($artwork->image,

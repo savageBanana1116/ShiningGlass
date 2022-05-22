@@ -108,36 +108,33 @@
         </div>
     </div>
 
-
+    <div id="artworkImages" class="table-responsive" style="padding-top:10px;">
+        <div class="artworkImages view content">
     <?php if (!empty($artwork->categories)) : ?>
         <div class="related"">
         <h4><?= __('Related Categories') ?></h4>
 
         <div class="table-responsive">
-            <table>
+            <table class="table table-bordered">
                 <tr>
                     <th><?= __('Name') ?></th>
-                    <th><?= __('Description') ?></th>
-                    <th><?= __('Create Date') ?></th>
-                    <th><?= __('Id') ?></th>
                     <th class="actions"><?= __('Actions') ?></th>
                 </tr>
                 <?php foreach ($artwork->categories as $categories) : ?>
                     <tr>
                         <td><?= h($categories->name) ?></td>
-                        <td><?= h($categories->description) ?></td>
-                        <td><?= h($categories->create_date) ?></td>
-                        <td><?= h($categories->id) ?></td>
                         <td class="actions">
                             <?= $this->Html->link(__('View'), ['controller' => 'Categories', 'action' => 'view', $categories->id]) ?>
                             <?= $this->Html->link(__('Edit'), ['controller' => 'Categories', 'action' => 'edit', $categories->id]) ?>
-                            <?= $this->Form->postLink(__('Delete'), ['controller' => 'Categories', 'action' => 'delete', $categories->id], ['confirm' => __('Are you sure you want to delete # {0}?', $categories->id)]) ?>
+                            <?= $this->Form->postLink(__('Delete'), ['controller' => 'Categories', 'action' => 'delete', $categories->id], ['confirm' => __('Are you sure you want to delete {0}?', $categories->name)]) ?>
                         </td>
                     </tr>
                 <?php endforeach; ?>
             </table>
         </div>
     <?php endif; ?>
+</div>
+</div>
 </div>
 <div class="related">
     <?php if (!empty($artwork->artwork_images)) : ?>

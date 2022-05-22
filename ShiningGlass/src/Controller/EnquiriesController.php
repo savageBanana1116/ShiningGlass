@@ -84,6 +84,7 @@ class EnquiriesController extends AppController {
                 return $this->redirect(['controller' => 'Gallery','action' => 'index']);
             }
             $this->Flash->error(__('The enquiry could not be saved. Please, try again.'));
+            return $this->redirect(['controller' => 'Gallery','action' => 'index']);
         }
         $this->set(compact('enquiry'));
     }

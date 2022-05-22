@@ -42,7 +42,7 @@ $artist = $artistController->getArtistName(2);
 <style>
     .card-img-top{
         width: 100%;
-        height: 18.5vw;
+        height: 100%;
         object-fit: cover;
     }
 </style>

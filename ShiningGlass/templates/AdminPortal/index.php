@@ -91,10 +91,10 @@
 
                             <div class="card-body">
                                 <div class="card bg-gradient-primary text-white shadow"
-                                     onclick="location.href='artworks#';" style="cursor: pointer;">
+                                     onclick="location.href='categories#';" style="cursor: pointer;">
                                     <div class="card-body">
-                                        <a class="text-white" href="artworks#">Artwork Management System</a>
-                                        <div class="text-white-50 small">Can be used to add, view and remove artworks
+                                        <a class="text-white" href="categories#">Collection Management System</a>
+                                        <div class="text-white-50 small">Can be used to add, view and remove collections
                                         </div>
                                     </div>
                                 </div>
@@ -102,11 +102,11 @@
 
                             <div class="card-body">
                                 <div class="card bg-gradient-primary text-white shadow"
-                                     onclick="location.href='categories#';" style="cursor: pointer;">
+                                     onclick="location.href='artworks#';" style="cursor: pointer;">
                                     <div class="card-body">
-                                        <a class="text-white" href="categories#">Categories Management System</a>
+                                        <a class="text-white" href="artworks#">Artwork Management System</a>
                                         <div class="text-white-50 small">Can be used to add, view and remove
-                                            categories
+                                            artworks
                                         </div>
                                     </div>
                                 </div>

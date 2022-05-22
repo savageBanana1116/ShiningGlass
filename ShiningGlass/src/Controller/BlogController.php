@@ -4,7 +4,7 @@ namespace App\Controller;
 class BlogController extends AppController{
     public function index()
     {
-        $this->viewBuilder()->setLayout('ajax');
+        $this->viewBuilder()->setLayout('default');
     }
 
     public function beforeFilter(\Cake\Event\EventInterface $event)

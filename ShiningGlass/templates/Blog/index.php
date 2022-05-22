@@ -20,8 +20,8 @@
 
 <body id="page-top">
 <!-- Navigation-->
-<?= $this->element('nav') ?>
-<div style="padding-top: 80px; background-color: #272a2e"></div>
+
+
 <div
     style="padding-top: 30px; background-color: #d5d8db ;font-size: 20px ;text-align: center ; padding-bottom: 30px ; font-weight: bold">
     Stay up to date on Sam Smith and Shining Glass News
@@ -72,7 +72,7 @@
 <!--</div>-->
 
 
-<?= $this->element('footer') ?>
+
 
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
