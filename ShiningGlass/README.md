@@ -1,53 +1,55 @@
-# CakePHP Application Skeleton
+# **Shining Class**
+*ReadMe file for the Shining Class Website*<br/>
+*This file will guide you through the convention and structure of the repository*
 
-![Build Status](https://github.com/cakephp/app/actions/workflows/ci.yml/badge.svg?branch=master)
-[![Total Downloads](https://img.shields.io/packagist/dt/cakephp/app.svg?style=flat-square)](https://packagist.org/packages/cakephp/app)
-[![PHPStan](https://img.shields.io/badge/PHPStan-level%207-brightgreen.svg?style=flat-square)](https://github.com/phpstan/phpstan)
+**Section 1:** _Conventions_<br/>
+***CakePhp Conventions***
 
-A skeleton for creating applications with [CakePHP](https://cakephp.org) 4.x.
+File and Class Name Conventions
+  - The Controller class LatestArticlesController would be found in a file named LatestArticlesController.php
 
-The framework source code can be found here: [cakephp/cakephp](https://github.com/cakephp/cakephp).
+  - The Table class OptionValuesTable would be found in a file named OptionValuesTable.php.
 
-## Installation
+  - The Entity class OptionValue would be found in a file named OptionValue.php.
 
-1. Download [Composer](https://getcomposer.org/doc/00-intro.md) or update `composer self-update`.
-2. Run `php composer.phar create-project --prefer-dist cakephp/app [app_name]`.
+  - The View class SuperSimpleView would be found in a file named SuperSimpleView.php
 
-If Composer is installed globally, run
+  - The Helper class BestEverHelper would be found in a file named BestEverHelper.php
 
-```bash
-composer create-project --prefer-dist cakephp/app
-```
 
-In case you want to use a custom app dir name (e.g. `/myapp/`):
+- Database Conventions
 
-```bash
-composer create-project --prefer-dist cakephp/app myapp
-```
+   - Table names should be plural and underscored.
 
-You can now either use your machine's webserver to view the default home page, or start
-up the built-in webserver with:
+    - Foreign keys name should be tablename_id.
 
-```bash
-bin/cake server -p 8765
-```
 
-Then visit `http://localhost:8765` to see the welcome page.
+- Model Conventions
+  - Table names are plural, CamelCase and end in **Table**.
 
-## Update
 
-Since this skeleton is a starting point for your application and various files
-would have been modified as per your needs, there isn't a way to provide
-automated upgrades, so you have to do any updates manually.
+- View Conventions
+  - View Template files are named after the controller function.
 
-## Configuration
+***For more information about Conventions: https://book.cakephp.org/4/en/intro/conventions.html***
 
-Read and edit the environment specific `config/app_local.php` and setup the 
-`'Datasources'` and any other configuration relevant for your application.
-Other environment agnostic settings can be changed in `config/app.php`.
+**Section 2: File System**</br>
+***Important Directories***
+- config
+  - app_local.php: set up database connection, for instance: setting password and database name for connection.
 
-## Layout
+- src
+  - Controller Directory: Contains the all controller that for the website, which controller the functionalities of each page.
 
-The app skeleton uses [Milligram](https://milligram.io/) (v1.3) minimalist CSS
-framework by default. You can, however, replace it with any other library or
-custom styles.
+
+- templates
+  - templates Directory: Contains all the frontend code for the pages.
+
+
+- webroot
+  - img Directory: Contains all the images uploaded to the website.
+
+***For more information about CakePhp: https://book.cakephp.org/4/en/intro/conventions.html***
+
+
+
